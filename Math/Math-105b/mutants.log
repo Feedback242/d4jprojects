@@ -1,0 +1,219 @@
+1:ROR:==(long,long):<=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):106:n == 0 |==> n <= 0
+2:ROR:==(long,long):>=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):106:n == 0 |==> n >= 0
+3:ROR:==(long,long):FALSE(long,long):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):106:n == 0 |==> false
+4:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):110:x - xbar |==> x % xbar
+5:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):110:x - xbar |==> x * xbar
+6:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):110:x - xbar |==> x + xbar
+7:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):110:x - xbar |==> x / xbar
+8:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):111:y - ybar |==> y % ybar
+9:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):111:y - ybar |==> y * ybar
+10:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):111:y - ybar |==> y + ybar
+11:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):111:y - ybar |==> y / ybar
+12:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx |==> dx % dx
+13:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx |==> dx + dx
+14:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx |==> dx - dx
+15:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx |==> dx / dx
+16:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n |==> dx * dx % (double)n
+17:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n |==> dx * dx + (double)n
+18:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n |==> dx * dx - (double)n
+19:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n |==> dx * dx / (double)n
+20:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:n + 1.0 |==> n % 1.0
+21:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:n + 1.0 |==> n * 1.0
+22:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:n + 1.0 |==> n - 1.0
+23:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:n + 1.0 |==> n / 1.0
+24:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n / (double)(n + 1.0) |==> dx * dx * (double)n % (double)(n + 1.0)
+25:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n / (double)(n + 1.0) |==> dx * dx * (double)n * (double)(n + 1.0)
+26:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n / (double)(n + 1.0) |==> dx * dx * (double)n + (double)(n + 1.0)
+27:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):112:dx * dx * (double)n / (double)(n + 1.0) |==> dx * dx * (double)n - (double)(n + 1.0)
+28:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy |==> dy % dy
+29:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy |==> dy + dy
+30:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy |==> dy - dy
+31:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy |==> dy / dy
+32:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n |==> dy * dy % (double)n
+33:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n |==> dy * dy + (double)n
+34:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n |==> dy * dy - (double)n
+35:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n |==> dy * dy / (double)n
+36:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:n + 1.0 |==> n % 1.0
+37:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:n + 1.0 |==> n * 1.0
+38:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:n + 1.0 |==> n - 1.0
+39:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:n + 1.0 |==> n / 1.0
+40:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n / (double)(n + 1.0) |==> dy * dy * (double)n % (double)(n + 1.0)
+41:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n / (double)(n + 1.0) |==> dy * dy * (double)n * (double)(n + 1.0)
+42:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n / (double)(n + 1.0) |==> dy * dy * (double)n + (double)(n + 1.0)
+43:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):113:dy * dy * (double)n / (double)(n + 1.0) |==> dy * dy * (double)n - (double)(n + 1.0)
+44:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy |==> dx % dy
+45:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy |==> dx + dy
+46:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy |==> dx - dy
+47:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy |==> dx / dy
+48:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n |==> dx * dy % (double)n
+49:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n |==> dx * dy + (double)n
+50:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n |==> dx * dy - (double)n
+51:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n |==> dx * dy / (double)n
+52:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:n + 1.0 |==> n % 1.0
+53:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:n + 1.0 |==> n * 1.0
+54:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:n + 1.0 |==> n - 1.0
+55:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:n + 1.0 |==> n / 1.0
+56:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n / (double)(n + 1.0) |==> dx * dy * (double)n % (double)(n + 1.0)
+57:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n / (double)(n + 1.0) |==> dx * dy * (double)n * (double)(n + 1.0)
+58:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n / (double)(n + 1.0) |==> dx * dy * (double)n + (double)(n + 1.0)
+59:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):114:dx * dy * (double)n / (double)(n + 1.0) |==> dx * dy * (double)n - (double)(n + 1.0)
+60:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:n + 1.0 |==> n % 1.0
+61:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:n + 1.0 |==> n * 1.0
+62:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:n + 1.0 |==> n - 1.0
+63:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:n + 1.0 |==> n / 1.0
+64:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:dx / (double)(n + 1.0) |==> dx % (double)(n + 1.0)
+65:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:dx / (double)(n + 1.0) |==> dx * (double)(n + 1.0)
+66:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:dx / (double)(n + 1.0) |==> dx + (double)(n + 1.0)
+67:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):115:dx / (double)(n + 1.0) |==> dx - (double)(n + 1.0)
+68:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:n + 1.0 |==> n % 1.0
+69:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:n + 1.0 |==> n * 1.0
+70:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:n + 1.0 |==> n - 1.0
+71:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:n + 1.0 |==> n / 1.0
+72:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:dy / (double)(n + 1.0) |==> dy % (double)(n + 1.0)
+73:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:dy / (double)(n + 1.0) |==> dy * (double)(n + 1.0)
+74:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:dy / (double)(n + 1.0) |==> dy + (double)(n + 1.0)
+75:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@addData(double,double):116:dy / (double)(n + 1.0) |==> dy - (double)(n + 1.0)
+76:ROR:<(int,int):!=(int,int):org.apache.commons.math.stat.regression.SimpleRegression@addData(double[][]):140:i < data.length |==> i != data.length
+77:ROR:<(int,int):<=(int,int):org.apache.commons.math.stat.regression.SimpleRegression@addData(double[][]):140:i < data.length |==> i <= data.length
+78:ROR:<(int,int):FALSE(int,int):org.apache.commons.math.stat.regression.SimpleRegression@addData(double[][]):140:i < data.length |==> false
+79:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:b1 * x |==> b1 % x
+80:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:b1 * x |==> b1 + x
+81:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:b1 * x |==> b1 - x
+82:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:b1 * x |==> b1 / x
+83:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:getIntercept(b1) + b1 * x |==> getIntercept(b1) % (b1 * x)
+84:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:getIntercept(b1) + b1 * x |==> getIntercept(b1) * (b1 * x)
+85:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:getIntercept(b1) + b1 * x |==> getIntercept(b1) - b1 * x
+86:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@predict(double):185:getIntercept(b1) + b1 * x |==> getIntercept(b1) / (b1 * x)
+87:ROR:<(long,long):!=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():225:n < 2 |==> n != 2
+88:ROR:<(long,long):<=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():225:n < 2 |==> n <= 2
+89:ROR:<(long,long):FALSE(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():225:n < 2 |==> false
+90:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():228:10 * Double.MIN_VALUE |==> 10 % Double.MIN_VALUE
+91:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():228:10 * Double.MIN_VALUE |==> 10 + Double.MIN_VALUE
+92:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():228:10 * Double.MIN_VALUE |==> 10 - Double.MIN_VALUE
+93:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():228:10 * Double.MIN_VALUE |==> 10 / Double.MIN_VALUE
+94:ROR:<(double,double):!=(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():228:Math.abs(sumXX) < 10 * Double.MIN_VALUE |==> Math.abs(sumXX) != 10 * Double.MIN_VALUE
+95:ROR:<(double,double):<=(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():228:Math.abs(sumXX) < 10 * Double.MIN_VALUE |==> Math.abs(sumXX) <= 10 * Double.MIN_VALUE
+96:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():228:Math.abs(sumXX) < 10 * Double.MIN_VALUE |==> false
+97:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():231:sumXY / sumXX |==> sumXY % sumXX
+98:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():231:sumXY / sumXX |==> sumXY * sumXX
+99:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():231:sumXY / sumXX |==> sumXY + sumXX
+100:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlope():231:sumXY / sumXX |==> sumXY - sumXX
+101:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY |==> sumXY % sumXY
+102:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY |==> sumXY + sumXY
+103:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY |==> sumXY - sumXY
+104:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY |==> sumXY / sumXY
+105:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY / sumXX |==> sumXY * sumXY % sumXX
+106:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY / sumXX |==> sumXY * sumXY * sumXX
+107:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY / sumXX |==> sumXY * sumXY + sumXX
+108:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumXY * sumXY / sumXX |==> sumXY * sumXY - sumXX
+109:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumYY - sumXY * sumXY / sumXX |==> sumYY % (sumXY * sumXY / sumXX)
+110:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumYY - sumXY * sumXY / sumXX |==> sumYY * (sumXY * sumXY / sumXX)
+111:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumYY - sumXY * sumXY / sumXX |==> sumYY + sumXY * sumXY / sumXX
+112:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSumSquaredErrors():264:sumYY - sumXY * sumXY / sumXX |==> sumYY / (sumXY * sumXY / sumXX)
+113:ROR:<(long,long):!=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getTotalSumSquares():278:n < 2 |==> n != 2
+114:ROR:<(long,long):<=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getTotalSumSquares():278:n < 2 |==> n <= 2
+115:ROR:<(long,long):FALSE(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getTotalSumSquares():278:n < 2 |==> false
+116:ROR:<(long,long):!=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():315:n < 3 |==> n != 3
+117:ROR:<(long,long):<=(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():315:n < 3 |==> n <= 3
+118:ROR:<(long,long):FALSE(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():315:n < 3 |==> false
+119:AOR:-(long,long):%(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:n - 2 |==> n % 2
+120:AOR:-(long,long):*(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:n - 2 |==> n * 2
+121:AOR:-(long,long):+(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:n - 2 |==> n + 2
+122:AOR:-(long,long):/(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:n - 2 |==> n / 2
+123:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:getSumSquaredErrors() / (double)(n - 2) |==> getSumSquaredErrors() % (double)(n - 2)
+124:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:getSumSquaredErrors() / (double)(n - 2) |==> getSumSquaredErrors() * (double)(n - 2)
+125:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:getSumSquaredErrors() / (double)(n - 2) |==> getSumSquaredErrors() + (double)(n - 2)
+126:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getMeanSquareError():318:getSumSquaredErrors() / (double)(n - 2) |==> getSumSquaredErrors() - (double)(n - 2)
+127:ROR:<(double,double):!=(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getR():338:b1 < 0 |==> b1 != 0
+128:ROR:<(double,double):<=(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getR():338:b1 < 0 |==> b1 <= 0
+129:ROR:<(double,double):FALSE(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getR():338:b1 < 0 |==> false
+130:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:ssto - getSumSquaredErrors() |==> ssto % getSumSquaredErrors()
+131:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:ssto - getSumSquaredErrors() |==> ssto * getSumSquaredErrors()
+132:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:ssto - getSumSquaredErrors() |==> ssto + getSumSquaredErrors()
+133:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:ssto - getSumSquaredErrors() |==> ssto / getSumSquaredErrors()
+134:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:(ssto - getSumSquaredErrors()) / ssto |==> (ssto - getSumSquaredErrors()) % ssto
+135:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:(ssto - getSumSquaredErrors()) / ssto |==> (ssto - getSumSquaredErrors()) * ssto
+136:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:(ssto - getSumSquaredErrors()) / ssto |==> (ssto - getSumSquaredErrors()) + ssto
+137:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRSquare():360:(ssto - getSumSquaredErrors()) / ssto |==> (ssto - getSumSquaredErrors()) - ssto
+138:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:1.0 / (double)n |==> 1.0 % (double)n
+139:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:1.0 / (double)n |==> 1.0 * (double)n
+140:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:1.0 / (double)n |==> 1.0 + (double)n
+141:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:1.0 / (double)n |==> 1.0 - (double)n
+142:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:xbar * xbar |==> xbar % xbar
+143:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:xbar * xbar |==> xbar + xbar
+144:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:xbar * xbar |==> xbar - xbar
+145:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:xbar * xbar |==> xbar / xbar
+146:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(xbar * xbar) / sumXX |==> (xbar * xbar) % sumXX
+147:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(xbar * xbar) / sumXX |==> (xbar * xbar) * sumXX
+148:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(xbar * xbar) / sumXX |==> (xbar * xbar) + sumXX
+149:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(xbar * xbar) / sumXX |==> (xbar * xbar) - sumXX
+150:AOR:+(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(1.0 / (double)n) + (xbar * xbar) / sumXX |==> (1.0 / (double)n) % ((xbar * xbar) / sumXX)
+151:AOR:+(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(1.0 / (double)n) + (xbar * xbar) / sumXX |==> (1.0 / (double)n) * ((xbar * xbar) / sumXX)
+152:AOR:+(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(1.0 / (double)n) + (xbar * xbar) / sumXX |==> (1.0 / (double)n) - (xbar * xbar) / sumXX
+153:AOR:+(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:(1.0 / (double)n) + (xbar * xbar) / sumXX |==> (1.0 / (double)n) / ((xbar * xbar) / sumXX)
+154:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:getMeanSquareError() * ((1.0 / (double)n) + (xbar * xbar) / sumXX) |==> getMeanSquareError() % ((1.0 / (double)n) + (xbar * xbar) / sumXX)
+155:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:getMeanSquareError() * ((1.0 / (double)n) + (xbar * xbar) / sumXX) |==> getMeanSquareError() + ((1.0 / (double)n) + (xbar * xbar) / sumXX)
+156:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:getMeanSquareError() * ((1.0 / (double)n) + (xbar * xbar) / sumXX) |==> getMeanSquareError() - ((1.0 / (double)n) + (xbar * xbar) / sumXX)
+157:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getInterceptStdErr():376:getMeanSquareError() * ((1.0 / (double)n) + (xbar * xbar) / sumXX) |==> getMeanSquareError() / ((1.0 / (double)n) + (xbar * xbar) / sumXX)
+158:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeStdErr():390:getMeanSquareError() / sumXX |==> getMeanSquareError() % sumXX
+159:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeStdErr():390:getMeanSquareError() / sumXX |==> getMeanSquareError() * sumXX
+160:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeStdErr():390:getMeanSquareError() / sumXX |==> getMeanSquareError() + sumXX
+161:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeStdErr():390:getMeanSquareError() / sumXX |==> getMeanSquareError() - sumXX
+162:ROR:>=(double,double):==(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha >= 1 |==> alpha == 1
+163:ROR:>=(double,double):>(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha >= 1 |==> alpha > 1
+164:ROR:>=(double,double):TRUE(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha >= 1 |==> true
+165:ROR:<=(double,double):<(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha <= 0 |==> alpha < 0
+166:ROR:<=(double,double):==(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha <= 0 |==> alpha == 0
+167:ROR:<=(double,double):TRUE(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha <= 0 |==> true
+168:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha >= 1 || alpha <= 0 |==> alpha >= 1 != alpha <= 0
+169:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha >= 1 || alpha <= 0 |==> alpha >= 1
+170:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha >= 1 || alpha <= 0 |==> alpha <= 0
+171:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):453:alpha >= 1 || alpha <= 0 |==> true
+172:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:alpha / 2.0 |==> alpha % 2.0
+173:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:alpha / 2.0 |==> alpha * 2.0
+174:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:alpha / 2.0 |==> alpha + 2.0
+175:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:alpha / 2.0 |==> alpha - 2.0
+176:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:1.0 - alpha / 2.0 |==> 1.0 % (alpha / 2.0)
+177:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:1.0 - alpha / 2.0 |==> 1.0 * (alpha / 2.0)
+178:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:1.0 - alpha / 2.0 |==> 1.0 + alpha / 2.0
+179:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):457:1.0 - alpha / 2.0 |==> 1.0 / (alpha / 2.0)
+180:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):456:getSlopeStdErr() * getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0) |==> getSlopeStdErr() % getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0)
+181:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):456:getSlopeStdErr() * getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0) |==> getSlopeStdErr() + getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0)
+182:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):456:getSlopeStdErr() * getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0) |==> getSlopeStdErr() - getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0)
+183:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSlopeConfidenceInterval(double):456:getSlopeStdErr() * getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0) |==> getSlopeStdErr() / getTDistribution().inverseCumulativeProbability(1.0 - alpha / 2.0)
+184:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():483:Math.abs(getSlope()) / getSlopeStdErr() |==> Math.abs(getSlope()) % getSlopeStdErr()
+185:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():483:Math.abs(getSlope()) / getSlopeStdErr() |==> Math.abs(getSlope()) * getSlopeStdErr()
+186:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():483:Math.abs(getSlope()) / getSlopeStdErr() |==> Math.abs(getSlope()) + getSlopeStdErr()
+187:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():483:Math.abs(getSlope()) / getSlopeStdErr() |==> Math.abs(getSlope()) - getSlopeStdErr()
+188:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()) |==> 1.0 % getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())
+189:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()) |==> 1.0 * getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())
+190:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()) |==> 1.0 + getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())
+191:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()) |==> 1.0 / getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())
+192:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:2.0 * (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())) |==> 2.0 % (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()))
+193:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:2.0 * (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())) |==> 2.0 + (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()))
+194:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:2.0 * (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())) |==> 2.0 - (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()))
+195:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getSignificance():482:2.0 * (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr())) |==> 2.0 / (1.0 - getTDistribution().cumulativeProbability(Math.abs(getSlope()) / getSlopeStdErr()))
+196:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:slope * sumX |==> slope % sumX
+197:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:slope * sumX |==> slope + sumX
+198:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:slope * sumX |==> slope - sumX
+199:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:slope * sumX |==> slope / sumX
+200:AOR:-(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:sumY - slope * sumX |==> sumY % (slope * sumX)
+201:AOR:-(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:sumY - slope * sumX |==> sumY * (slope * sumX)
+202:AOR:-(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:sumY - slope * sumX |==> sumY + slope * sumX
+203:AOR:-(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:sumY - slope * sumX |==> sumY / (slope * sumX)
+204:AOR:/(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:(sumY - slope * sumX) / ((double)n) |==> (sumY - slope * sumX) % ((double)n)
+205:AOR:/(double,double):*(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:(sumY - slope * sumX) / ((double)n) |==> (sumY - slope * sumX) * ((double)n)
+206:AOR:/(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:(sumY - slope * sumX) / ((double)n) |==> (sumY - slope * sumX) + ((double)n)
+207:AOR:/(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getIntercept(double):497:(sumY - slope * sumX) / ((double)n) |==> (sumY - slope * sumX) - ((double)n)
+208:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope |==> slope % slope
+209:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope |==> slope + slope
+210:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope |==> slope - slope
+211:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope |==> slope / slope
+212:AOR:*(double,double):%(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope * sumXX |==> slope * slope % sumXX
+213:AOR:*(double,double):+(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope * sumXX |==> slope * slope + sumXX
+214:AOR:*(double,double):-(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope * sumXX |==> slope * slope - sumXX
+215:AOR:*(double,double):/(double,double):org.apache.commons.math.stat.regression.SimpleRegression@getRegressionSumSquares(double):507:slope * slope * sumXX |==> slope * slope / sumXX
+216:AOR:-(long,long):%(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getTDistribution():517:n - 2 |==> n % 2
+217:AOR:-(long,long):*(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getTDistribution():517:n - 2 |==> n * 2
+218:AOR:-(long,long):+(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getTDistribution():517:n - 2 |==> n + 2
+219:AOR:-(long,long):/(long,long):org.apache.commons.math.stat.regression.SimpleRegression@getTDistribution():517:n - 2 |==> n / 2

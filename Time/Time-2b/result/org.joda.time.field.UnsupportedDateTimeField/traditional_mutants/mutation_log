@@ -1,0 +1,73 @@
+ROR_1:26:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): cCache == null  =>   cCache != null
+ROR_2:31:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field != null  =>   field == null
+ROR_3:31:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field.getDurationField() != durationField  =>   field.getDurationField() == durationField
+ROR_4:35:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field == null  =>   field != null
+ROR_5:48:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): type == null  =>   type != null
+ROR_6:48:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): durationField == null  =>   durationField != null
+COR_1:31:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field != null && field.getDurationField() != durationField  =>   field != null || field.getDurationField() != durationField
+COR_2:31:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field != null && field.getDurationField() != durationField  =>   field != null ^ field.getDurationField() != durationField
+COR_3:48:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): type == null || durationField == null  =>   type == null && durationField == null
+COR_4:48:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): type == null || durationField == null  =>   type == null ^ durationField == null
+SDL_1:31:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): org.joda.time.field.UnsupportedDateTimeField field; if (cCache == null) {     cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 );     field = null; } else {     field = cCache.get( type );     if (field != null && field.getDurationField() != durationField) {         field = null;     } } if (field == null) {     field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField );     cCache.put( type, field ); } return field;  =>   org.joda.time.field.UnsupportedDateTimeField field; if (field == null) {     field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField );     cCache.put( type, field ); } return field;
+SDL_2:36:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): org.joda.time.field.UnsupportedDateTimeField field; if (cCache == null) {     cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 );     field = null; } else {     field = cCache.get( type );     if (field != null && field.getDurationField() != durationField) {         field = null;     } } if (field == null) {     field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField );     cCache.put( type, field ); } return field;  =>   org.joda.time.field.UnsupportedDateTimeField field; if (cCache == null) {     cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 );     field = null; } else {     field = cCache.get( type );     if (field != null && field.getDurationField() != durationField) {         field = null;     } } return field;
+SDL_3:28:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 ); field = null;  =>   field = null;
+SDL_4:28:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 ); field = null;  =>   cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 );
+SDL_5:35:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): if (cCache == null) {     cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 );     field = null; } else {     field = cCache.get( type );     if (field != null && field.getDurationField() != durationField) {         field = null;     } }  =>   if (true) {     cCache = new java.util.HashMap<DateTimeFieldType,UnsupportedDateTimeField>( 7 );     field = null; } else {     field = cCache.get( type );     if (field != null && field.getDurationField() != durationField) {         field = null;     } }
+SDL_6:33:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field = cCache.get( type ); if (field != null && field.getDurationField() != durationField) {     field = null; }  =>   if (field != null && field.getDurationField() != durationField) {     field = null; }
+SDL_7:31:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field = cCache.get( type ); if (field != null && field.getDurationField() != durationField) {     field = null; }  =>   field = cCache.get( type );
+SDL_8:32:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field = null;  =>  
+SDL_9:34:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): if (field != null && field.getDurationField() != durationField) {     field = null; }  =>   if (true) {     field = null; }
+SDL_10:37:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField ); cCache.put( type, field );  =>   cCache.put( type, field );
+SDL_11:37:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField ); cCache.put( type, field );  =>   field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField );
+SDL_12:39:org.joda.time.field.UnsupportedDateTimeField_getInstance(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): if (field == null) {     field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField );     cCache.put( type, field ); }  =>   if (true) {     field = new org.joda.time.field.UnsupportedDateTimeField( type, durationField );     cCache.put( type, field ); }
+SDL_13:50:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): if (type == null || durationField == null) {     throw new java.lang.IllegalArgumentException(); } iType = type; iDurationField = durationField;  =>   iType = type; iDurationField = durationField;
+SDL_14:52:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): if (type == null || durationField == null) {     throw new java.lang.IllegalArgumentException(); } iType = type; iDurationField = durationField;  =>   if (type == null || durationField == null) {     throw new java.lang.IllegalArgumentException(); } iDurationField = durationField;
+SDL_15:52:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): if (type == null || durationField == null) {     throw new java.lang.IllegalArgumentException(); } iType = type; iDurationField = durationField;  =>   if (type == null || durationField == null) {     throw new java.lang.IllegalArgumentException(); } iType = type;
+SDL_16:49:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): throw new java.lang.IllegalArgumentException();  =>  
+SDL_17:51:UnsupportedDateTimeField(org.joda.time.DateTimeFieldType,org.joda.time.DurationField): if (type == null || durationField == null) {     throw new java.lang.IllegalArgumentException(); }  =>   if (true) {     throw new java.lang.IllegalArgumentException(); }
+SDL_18:63:java.lang.String_getName(): return iType.getName();  =>   return \"\";
+SDL_19:68:boolean_isSupported(): return false;  =>   return true;
+SDL_20:73:boolean_isLenient(): return false;  =>   return true;
+SDL_21:77:int_get(long): throw unsupported();  =>  
+SDL_22:82:java.lang.String_getAsText(long,java.util.Locale): throw unsupported();  =>  
+SDL_23:87:java.lang.String_getAsText(long): throw unsupported();  =>  
+SDL_24:92:java.lang.String_getAsText(org.joda.time.ReadablePartial,int,java.util.Locale): throw unsupported();  =>  
+SDL_25:97:java.lang.String_getAsText(org.joda.time.ReadablePartial,java.util.Locale): throw unsupported();  =>  
+SDL_26:102:java.lang.String_getAsText(int,java.util.Locale): throw unsupported();  =>  
+SDL_27:107:java.lang.String_getAsShortText(long,java.util.Locale): throw unsupported();  =>  
+SDL_28:112:java.lang.String_getAsShortText(long): throw unsupported();  =>  
+SDL_29:117:java.lang.String_getAsShortText(org.joda.time.ReadablePartial,int,java.util.Locale): throw unsupported();  =>  
+SDL_30:122:java.lang.String_getAsShortText(org.joda.time.ReadablePartial,java.util.Locale): throw unsupported();  =>  
+SDL_31:127:java.lang.String_getAsShortText(int,java.util.Locale): throw unsupported();  =>  
+SDL_32:133:long_add(long,int): return getDurationField().add( instant, value );  =>   return 0;
+SDL_33:138:long_add(long,long): return getDurationField().add( instant, value );  =>   return 0;
+SDL_34:142:int_add(org.joda.time.ReadablePartial,int,int,int): throw unsupported();  =>  
+SDL_35:147:int_addWrapPartial(org.joda.time.ReadablePartial,int,int,int): throw unsupported();  =>  
+SDL_36:152:long_addWrapField(long,int): throw unsupported();  =>  
+SDL_37:157:int_addWrapField(org.joda.time.ReadablePartial,int,int,int): throw unsupported();  =>  
+SDL_38:163:int_getDifference(long,long): return getDurationField().getDifference( minuendInstant, subtrahendInstant );  =>   return 0;
+SDL_39:168:long_getDifferenceAsLong(long,long): return getDurationField().getDifferenceAsLong( minuendInstant, subtrahendInstant );  =>   return 0;
+SDL_40:172:long_set(long,int): throw unsupported();  =>  
+SDL_41:177:int_set(org.joda.time.ReadablePartial,int,int,int): throw unsupported();  =>  
+SDL_42:182:long_set(long,java.lang.String,java.util.Locale): throw unsupported();  =>  
+SDL_43:187:long_set(long,java.lang.String): throw unsupported();  =>  
+SDL_44:192:int_set(org.joda.time.ReadablePartial,int,int,java.lang.String,java.util.Locale): throw unsupported();  =>  
+SDL_45:207:boolean_isLeap(long): throw unsupported();  =>  
+SDL_46:212:int_getLeapAmount(long): throw unsupported();  =>  
+SDL_47:222:int_getMinimumValue(): throw unsupported();  =>  
+SDL_48:227:int_getMinimumValue(long): throw unsupported();  =>  
+SDL_49:232:int_getMinimumValue(org.joda.time.ReadablePartial): throw unsupported();  =>  
+SDL_50:237:int_getMinimumValue(org.joda.time.ReadablePartial,int): throw unsupported();  =>  
+SDL_51:242:int_getMaximumValue(): throw unsupported();  =>  
+SDL_52:247:int_getMaximumValue(long): throw unsupported();  =>  
+SDL_53:252:int_getMaximumValue(org.joda.time.ReadablePartial): throw unsupported();  =>  
+SDL_54:257:int_getMaximumValue(org.joda.time.ReadablePartial,int): throw unsupported();  =>  
+SDL_55:262:int_getMaximumTextLength(java.util.Locale): throw unsupported();  =>  
+SDL_56:267:int_getMaximumShortTextLength(java.util.Locale): throw unsupported();  =>  
+SDL_57:272:long_roundFloor(long): throw unsupported();  =>  
+SDL_58:277:long_roundCeiling(long): throw unsupported();  =>  
+SDL_59:282:long_roundHalfFloor(long): throw unsupported();  =>  
+SDL_60:287:long_roundHalfCeiling(long): throw unsupported();  =>  
+SDL_61:292:long_roundHalfEven(long): throw unsupported();  =>  
+SDL_62:297:long_remainder(long): throw unsupported();  =>  
+SDL_63:303:java.lang.String_toString(): return \"UnsupportedDateTimeField\";  =>   return \"\";

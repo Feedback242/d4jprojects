@@ -1,0 +1,341 @@
+1:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):128:s1 instanceof Line2D && s2 instanceof Line2D |==> s1 instanceof Line2D == s2 instanceof Line2D
+2:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):128:s1 instanceof Line2D && s2 instanceof Line2D |==> false
+3:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):128:s1 instanceof Line2D && s2 instanceof Line2D |==> s1 instanceof Line2D
+4:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):128:s1 instanceof Line2D && s2 instanceof Line2D |==> s2 instanceof Line2D
+5:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):131:s1 instanceof Ellipse2D && s2 instanceof Ellipse2D |==> s1 instanceof Ellipse2D == s2 instanceof Ellipse2D
+6:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):131:s1 instanceof Ellipse2D && s2 instanceof Ellipse2D |==> false
+7:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):131:s1 instanceof Ellipse2D && s2 instanceof Ellipse2D |==> s1 instanceof Ellipse2D
+8:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):131:s1 instanceof Ellipse2D && s2 instanceof Ellipse2D |==> s2 instanceof Ellipse2D
+9:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):134:s1 instanceof Arc2D && s2 instanceof Arc2D |==> s1 instanceof Arc2D == s2 instanceof Arc2D
+10:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):134:s1 instanceof Arc2D && s2 instanceof Arc2D |==> false
+11:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):134:s1 instanceof Arc2D && s2 instanceof Arc2D |==> s1 instanceof Arc2D
+12:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):134:s1 instanceof Arc2D && s2 instanceof Arc2D |==> s2 instanceof Arc2D
+13:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):137:s1 instanceof Polygon && s2 instanceof Polygon |==> s1 instanceof Polygon == s2 instanceof Polygon
+14:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):137:s1 instanceof Polygon && s2 instanceof Polygon |==> false
+15:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):137:s1 instanceof Polygon && s2 instanceof Polygon |==> s1 instanceof Polygon
+16:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):137:s1 instanceof Polygon && s2 instanceof Polygon |==> s2 instanceof Polygon
+17:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):140:s1 instanceof GeneralPath && s2 instanceof GeneralPath |==> s1 instanceof GeneralPath == s2 instanceof GeneralPath
+18:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):140:s1 instanceof GeneralPath && s2 instanceof GeneralPath |==> false
+19:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):140:s1 instanceof GeneralPath && s2 instanceof GeneralPath |==> s1 instanceof GeneralPath
+20:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Shape,java.awt.Shape):140:s1 instanceof GeneralPath && s2 instanceof GeneralPath |==> s2 instanceof GeneralPath
+21:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Line2D,java.awt.geom.Line2D):159:l1 == null |==> false
+22:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Line2D,java.awt.geom.Line2D):160:l2 == null |==> false
+23:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Line2D,java.awt.geom.Line2D):162:l2 == null |==> false
+24:COR:l1.getP1().equals(l2.getP1()):TRUE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Line2D,java.awt.geom.Line2D):165:l1.getP1().equals(l2.getP1()) |==> false
+25:COR:l1.getP1().equals(l2.getP1()):FALSE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Line2D,java.awt.geom.Line2D):165:l1.getP1().equals(l2.getP1()) |==> true
+26:COR:l1.getP2().equals(l2.getP2()):TRUE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Line2D,java.awt.geom.Line2D):168:l1.getP2().equals(l2.getP2()) |==> false
+27:COR:l1.getP2().equals(l2.getP2()):FALSE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Line2D,java.awt.geom.Line2D):168:l1.getP2().equals(l2.getP2()) |==> true
+28:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Ellipse2D,java.awt.geom.Ellipse2D):184:e1 == null |==> false
+29:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Ellipse2D,java.awt.geom.Ellipse2D):185:e2 == null |==> false
+30:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Ellipse2D,java.awt.geom.Ellipse2D):187:e2 == null |==> false
+31:COR:e1.getFrame().equals(e2.getFrame()):TRUE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Ellipse2D,java.awt.geom.Ellipse2D):190:e1.getFrame().equals(e2.getFrame()) |==> false
+32:COR:e1.getFrame().equals(e2.getFrame()):FALSE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Ellipse2D,java.awt.geom.Ellipse2D):190:e1.getFrame().equals(e2.getFrame()) |==> true
+33:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):206:a1 == null |==> false
+34:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):207:a2 == null |==> false
+35:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):209:a2 == null |==> false
+36:COR:a1.getFrame().equals(a2.getFrame()):TRUE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):212:a1.getFrame().equals(a2.getFrame()) |==> false
+37:COR:a1.getFrame().equals(a2.getFrame()):FALSE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):212:a1.getFrame().equals(a2.getFrame()) |==> true
+38:ROR:!=(double,double):<(double,double):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):215:a1.getAngleStart() != a2.getAngleStart() |==> a1.getAngleStart() < a2.getAngleStart()
+39:ROR:!=(double,double):>(double,double):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):215:a1.getAngleStart() != a2.getAngleStart() |==> a1.getAngleStart() > a2.getAngleStart()
+40:ROR:!=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):215:a1.getAngleStart() != a2.getAngleStart() |==> true
+41:ROR:!=(double,double):<(double,double):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):218:a1.getAngleExtent() != a2.getAngleExtent() |==> a1.getAngleExtent() < a2.getAngleExtent()
+42:ROR:!=(double,double):>(double,double):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):218:a1.getAngleExtent() != a2.getAngleExtent() |==> a1.getAngleExtent() > a2.getAngleExtent()
+43:ROR:!=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):218:a1.getAngleExtent() != a2.getAngleExtent() |==> true
+44:ROR:!=(int,int):<(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):221:a1.getArcType() != a2.getArcType() |==> a1.getArcType() < a2.getArcType()
+45:ROR:!=(int,int):>(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):221:a1.getArcType() != a2.getArcType() |==> a1.getArcType() > a2.getArcType()
+46:ROR:!=(int,int):TRUE(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.Arc2D,java.awt.geom.Arc2D):221:a1.getArcType() != a2.getArcType() |==> true
+47:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):237:p1 == null |==> false
+48:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):238:p2 == null |==> false
+49:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):240:p2 == null |==> false
+50:ROR:!=(int,int):<(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):243:p1.npoints != p2.npoints |==> p1.npoints < p2.npoints
+51:ROR:!=(int,int):>(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):243:p1.npoints != p2.npoints |==> p1.npoints > p2.npoints
+52:ROR:!=(int,int):TRUE(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):243:p1.npoints != p2.npoints |==> true
+53:COR:Arrays.equals(p1.xpoints, p2.xpoints):TRUE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):246:Arrays.equals(p1.xpoints, p2.xpoints) |==> false
+54:COR:Arrays.equals(p1.xpoints, p2.xpoints):FALSE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):246:Arrays.equals(p1.xpoints, p2.xpoints) |==> true
+55:COR:Arrays.equals(p1.ypoints, p2.ypoints):TRUE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):249:Arrays.equals(p1.ypoints, p2.ypoints) |==> false
+56:COR:Arrays.equals(p1.ypoints, p2.ypoints):FALSE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.Polygon,java.awt.Polygon):249:Arrays.equals(p1.ypoints, p2.ypoints) |==> true
+57:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):265:p1 == null |==> false
+58:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):266:p2 == null |==> false
+59:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):268:p2 == null |==> false
+60:ROR:!=(int,int):<(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):271:p1.getWindingRule() != p2.getWindingRule() |==> p1.getWindingRule() < p2.getWindingRule()
+61:ROR:!=(int,int):>(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):271:p1.getWindingRule() != p2.getWindingRule() |==> p1.getWindingRule() > p2.getWindingRule()
+62:ROR:!=(int,int):TRUE(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):271:p1.getWindingRule() != p2.getWindingRule() |==> true
+63:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):278:iterator1.isDone() && iterator2.isDone() |==> iterator1.isDone() == iterator2.isDone()
+64:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):278:iterator1.isDone() && iterator2.isDone() |==> false
+65:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):278:iterator1.isDone() && iterator2.isDone() |==> iterator1.isDone()
+66:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):278:iterator1.isDone() && iterator2.isDone() |==> iterator2.isDone()
+67:ROR:!=(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):280:iterator1.isDone() != iterator2.isDone() |==> iterator1.isDone()
+68:ROR:!=(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):280:iterator1.isDone() != iterator2.isDone() |==> iterator2.isDone()
+69:ROR:!=(boolean,boolean):TRUE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):280:iterator1.isDone() != iterator2.isDone() |==> true
+70:ROR:!=(int,int):<(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):285:seg1 != seg2 |==> seg1 < seg2
+71:ROR:!=(int,int):>(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):285:seg1 != seg2 |==> seg1 > seg2
+72:ROR:!=(int,int):TRUE(int,int):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):285:seg1 != seg2 |==> true
+73:COR:Arrays.equals(d1, d2):TRUE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):288:Arrays.equals(d1, d2) |==> false
+74:COR:Arrays.equals(d1, d2):FALSE:org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):288:Arrays.equals(d1, d2) |==> true
+75:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):293:iterator1.isDone() && iterator2.isDone() |==> iterator1.isDone() == iterator2.isDone()
+76:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):293:iterator1.isDone() && iterator2.isDone() |==> false
+77:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):293:iterator1.isDone() && iterator2.isDone() |==> iterator1.isDone()
+78:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@equal(java.awt.geom.GeneralPath,java.awt.geom.GeneralPath):293:iterator1.isDone() && iterator2.isDone() |==> iterator2.isDone()
+79:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,double,double):310:shape == null |==> false
+80:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):334:shape == null |==> false
+81:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):337:anchor == null |==> false
+82:AOR:-(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationX - anchorPoint.getX() |==> locationX % anchorPoint.getX()
+83:AOR:-(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationX - anchorPoint.getX() |==> locationX * anchorPoint.getX()
+84:AOR:-(double,double):+(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationX - anchorPoint.getX() |==> locationX + anchorPoint.getX()
+85:AOR:-(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationX - anchorPoint.getX() |==> locationX / anchorPoint.getX()
+86:AOR:-(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationY - anchorPoint.getY() |==> locationY % anchorPoint.getY()
+87:AOR:-(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationY - anchorPoint.getY() |==> locationY * anchorPoint.getY()
+88:AOR:-(double,double):+(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationY - anchorPoint.getY() |==> locationY + anchorPoint.getY()
+89:AOR:-(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@createTranslatedShape(java.awt.Shape,org.jfree.chart.util.RectangleAnchor,double,double):343:locationY - anchorPoint.getY() |==> locationY / anchorPoint.getY()
+90:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeUtilities@rotateShape(java.awt.Shape,double,float,float):360:base == null |==> false
+91:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l - t |==> -l % t
+92:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l - t |==> -l * t
+93:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l - t |==> -l + t
+94:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l - t |==> -l / t
+95:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l + t |==> -l % t
+96:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l + t |==> -l * t
+97:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l + t |==> -l - t
+98:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):401:-l + t |==> -l / t
+99:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l + t |==> -l % t
+100:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l + t |==> -l * t
+101:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l + t |==> -l - t
+102:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l + t |==> -l / t
+103:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l - t |==> -l % t
+104:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l - t |==> -l * t
+105:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l - t |==> -l + t
+106:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):402:-l - t |==> -l / t
+107:AOR:*(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):403:-t * SQRT2 |==> -t % SQRT2
+108:AOR:*(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):403:-t * SQRT2 |==> -t + SQRT2
+109:AOR:*(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):403:-t * SQRT2 |==> -t - SQRT2
+110:AOR:*(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):403:-t * SQRT2 |==> -t / SQRT2
+111:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:l - t |==> l % t
+112:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:l - t |==> l * t
+113:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:l - t |==> l + t
+114:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:l - t |==> l / t
+115:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:-l - t |==> -l % t
+116:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:-l - t |==> -l * t
+117:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:-l - t |==> -l + t
+118:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):404:-l - t |==> -l / t
+119:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:l + t |==> l % t
+120:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:l + t |==> l * t
+121:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:l + t |==> l - t
+122:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:l + t |==> l / t
+123:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:-l + t |==> -l % t
+124:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:-l + t |==> -l * t
+125:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:-l + t |==> -l - t
+126:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):405:-l + t |==> -l / t
+127:AOR:*(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):406:t * SQRT2 |==> t % SQRT2
+128:AOR:*(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):406:t * SQRT2 |==> t + SQRT2
+129:AOR:*(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):406:t * SQRT2 |==> t - SQRT2
+130:AOR:*(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):406:t * SQRT2 |==> t / SQRT2
+131:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l + t |==> l % t
+132:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l + t |==> l * t
+133:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l + t |==> l - t
+134:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l + t |==> l / t
+135:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l - t |==> l % t
+136:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l - t |==> l * t
+137:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l - t |==> l + t
+138:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):407:l - t |==> l / t
+139:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l - t |==> l % t
+140:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l - t |==> l * t
+141:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l - t |==> l + t
+142:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l - t |==> l / t
+143:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l + t |==> l % t
+144:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l + t |==> l * t
+145:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l + t |==> l - t
+146:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):408:l + t |==> l / t
+147:AOR:*(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):409:t * SQRT2 |==> t % SQRT2
+148:AOR:*(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):409:t * SQRT2 |==> t + SQRT2
+149:AOR:*(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):409:t * SQRT2 |==> t - SQRT2
+150:AOR:*(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):409:t * SQRT2 |==> t / SQRT2
+151:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:-l + t |==> -l % t
+152:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:-l + t |==> -l * t
+153:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:-l + t |==> -l - t
+154:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:-l + t |==> -l / t
+155:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:l + t |==> l % t
+156:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:l + t |==> l * t
+157:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:l + t |==> l - t
+158:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):410:l + t |==> l / t
+159:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:-l - t |==> -l % t
+160:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:-l - t |==> -l * t
+161:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:-l - t |==> -l + t
+162:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:-l - t |==> -l / t
+163:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:l - t |==> l % t
+164:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:l - t |==> l * t
+165:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:l - t |==> l + t
+166:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):411:l - t |==> l / t
+167:AOR:*(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):412:-t * SQRT2 |==> -t % SQRT2
+168:AOR:*(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):412:-t * SQRT2 |==> -t + SQRT2
+169:AOR:*(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):412:-t * SQRT2 |==> -t - SQRT2
+170:AOR:*(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createDiagonalCross(float,float):412:-t * SQRT2 |==> -t / SQRT2
+171:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):508:x2 - x1 |==> x2 % x1
+172:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):508:x2 - x1 |==> x2 * x1
+173:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):508:x2 - x1 |==> x2 + x1
+174:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):508:x2 - x1 |==> x2 / x1
+175:ROR:!=(double,double):<(double,double):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):508:(x2 - x1) != 0.0 |==> (x2 - x1) < 0.0
+176:ROR:!=(double,double):>(double,double):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):508:(x2 - x1) != 0.0 |==> (x2 - x1) > 0.0
+177:ROR:!=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):508:(x2 - x1) != 0.0 |==> true
+178:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:y2 - y1 |==> y2 % y1
+179:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:y2 - y1 |==> y2 * y1
+180:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:y2 - y1 |==> y2 + y1
+181:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:y2 - y1 |==> y2 / y1
+182:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:x2 - x1 |==> x2 % x1
+183:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:x2 - x1 |==> x2 * x1
+184:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:x2 - x1 |==> x2 + x1
+185:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:x2 - x1 |==> x2 / x1
+186:AOR:/(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:(y2 - y1) / (x2 - x1) |==> (y2 - y1) % (x2 - x1)
+187:AOR:/(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:(y2 - y1) / (x2 - x1) |==> (y2 - y1) * (x2 - x1)
+188:AOR:/(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:(y2 - y1) / (x2 - x1) |==> (y2 - y1) + (x2 - x1)
+189:AOR:/(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):509:(y2 - y1) / (x2 - x1) |==> (y2 - y1) - (x2 - x1)
+190:AOR:*(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):510:(float)Math.sin(theta) * width |==> (float)Math.sin(theta) % width
+191:AOR:*(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):510:(float)Math.sin(theta) * width |==> (float)Math.sin(theta) + width
+192:AOR:*(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):510:(float)Math.sin(theta) * width |==> (float)Math.sin(theta) - width
+193:AOR:*(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):510:(float)Math.sin(theta) * width |==> (float)Math.sin(theta) / width
+194:AOR:*(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):511:(float)Math.cos(theta) * width |==> (float)Math.cos(theta) % width
+195:AOR:*(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):511:(float)Math.cos(theta) * width |==> (float)Math.cos(theta) + width
+196:AOR:*(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):511:(float)Math.cos(theta) * width |==> (float)Math.cos(theta) - width
+197:AOR:*(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):511:(float)Math.cos(theta) * width |==> (float)Math.cos(theta) / width
+198:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:x1 - dx |==> x1 % dx
+199:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:x1 - dx |==> x1 * dx
+200:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:x1 - dx |==> x1 + dx
+201:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:x1 - dx |==> x1 / dx
+202:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:y1 + dy |==> y1 % dy
+203:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:y1 + dy |==> y1 * dy
+204:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:y1 + dy |==> y1 - dy
+205:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):512:y1 + dy |==> y1 / dy
+206:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:x1 + dx |==> x1 % dx
+207:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:x1 + dx |==> x1 * dx
+208:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:x1 + dx |==> x1 - dx
+209:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:x1 + dx |==> x1 / dx
+210:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:y1 - dy |==> y1 % dy
+211:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:y1 - dy |==> y1 * dy
+212:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:y1 - dy |==> y1 + dy
+213:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):513:y1 - dy |==> y1 / dy
+214:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:x2 + dx |==> x2 % dx
+215:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:x2 + dx |==> x2 * dx
+216:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:x2 + dx |==> x2 - dx
+217:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:x2 + dx |==> x2 / dx
+218:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:y2 - dy |==> y2 % dy
+219:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:y2 - dy |==> y2 * dy
+220:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:y2 - dy |==> y2 + dy
+221:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):514:y2 - dy |==> y2 / dy
+222:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:x2 - dx |==> x2 % dx
+223:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:x2 - dx |==> x2 * dx
+224:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:x2 - dx |==> x2 + dx
+225:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:x2 - dx |==> x2 / dx
+226:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:y2 + dy |==> y2 % dy
+227:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:y2 + dy |==> y2 * dy
+228:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:y2 + dy |==> y2 - dy
+229:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):515:y2 + dy |==> y2 / dy
+230:AOR:/(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:width / 2.0F |==> width % 2.0F
+231:AOR:/(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:width / 2.0F |==> width * 2.0F
+232:AOR:/(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:width / 2.0F |==> width + 2.0F
+233:AOR:/(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:width / 2.0F |==> width - 2.0F
+234:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:x1 - width / 2.0F |==> x1 % (width / 2.0F)
+235:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:x1 - width / 2.0F |==> x1 * (width / 2.0F)
+236:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:x1 - width / 2.0F |==> x1 + width / 2.0F
+237:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):520:x1 - width / 2.0F |==> x1 / (width / 2.0F)
+238:AOR:/(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:width / 2.0F |==> width % 2.0F
+239:AOR:/(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:width / 2.0F |==> width * 2.0F
+240:AOR:/(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:width / 2.0F |==> width + 2.0F
+241:AOR:/(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:width / 2.0F |==> width - 2.0F
+242:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:x1 + width / 2.0F |==> x1 % (width / 2.0F)
+243:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:x1 + width / 2.0F |==> x1 * (width / 2.0F)
+244:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:x1 + width / 2.0F |==> x1 - width / 2.0F
+245:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):521:x1 + width / 2.0F |==> x1 / (width / 2.0F)
+246:AOR:/(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:width / 2.0F |==> width % 2.0F
+247:AOR:/(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:width / 2.0F |==> width * 2.0F
+248:AOR:/(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:width / 2.0F |==> width + 2.0F
+249:AOR:/(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:width / 2.0F |==> width - 2.0F
+250:AOR:+(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:x2 + width / 2.0F |==> x2 % (width / 2.0F)
+251:AOR:+(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:x2 + width / 2.0F |==> x2 * (width / 2.0F)
+252:AOR:+(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:x2 + width / 2.0F |==> x2 - width / 2.0F
+253:AOR:+(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):522:x2 + width / 2.0F |==> x2 / (width / 2.0F)
+254:AOR:/(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:width / 2.0F |==> width % 2.0F
+255:AOR:/(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:width / 2.0F |==> width * 2.0F
+256:AOR:/(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:width / 2.0F |==> width + 2.0F
+257:AOR:/(float,float):-(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:width / 2.0F |==> width - 2.0F
+258:AOR:-(float,float):%(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:x2 - width / 2.0F |==> x2 % (width / 2.0F)
+259:AOR:-(float,float):*(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:x2 - width / 2.0F |==> x2 * (width / 2.0F)
+260:AOR:-(float,float):+(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:x2 - width / 2.0F |==> x2 + width / 2.0F
+261:AOR:-(float,float):/(float,float):org.jfree.chart.util.ShapeUtilities@createLineRegion(java.awt.geom.Line2D,float):523:x2 - width / 2.0F |==> x2 / (width / 2.0F)
+262:ROR:>=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:x >= x0 |==> x == x0
+263:ROR:>=(double,double):>(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:x >= x0 |==> x > x0
+264:ROR:>=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:x >= x0 |==> true
+265:ROR:>=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:y >= y0 |==> y == y0
+266:ROR:>=(double,double):>(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:y >= y0 |==> y > y0
+267:ROR:>=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:y >= y0 |==> true
+268:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) |==> (x >= x0) == (y >= y0)
+269:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) |==> false
+270:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) |==> (x >= x0)
+271:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) |==> (y >= y0)
+272:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x + w |==> x % w
+273:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x + w |==> x * w
+274:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x + w |==> x - w
+275:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x + w |==> x / w
+276:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x0 + rect1.getWidth() |==> x0 % rect1.getWidth()
+277:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x0 + rect1.getWidth() |==> x0 * rect1.getWidth()
+278:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x0 + rect1.getWidth() |==> x0 - rect1.getWidth()
+279:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:x0 + rect1.getWidth() |==> x0 / rect1.getWidth()
+280:ROR:<=(double,double):<(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:(x + w) <= (x0 + rect1.getWidth()) |==> (x + w) < (x0 + rect1.getWidth())
+281:ROR:<=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:(x + w) <= (x0 + rect1.getWidth()) |==> (x + w) == (x0 + rect1.getWidth())
+282:ROR:<=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:(x + w) <= (x0 + rect1.getWidth()) |==> true
+283:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) |==> ((x >= x0) && (y >= y0)) == ((x + w) <= (x0 + rect1.getWidth()))
+284:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) |==> false
+285:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) |==> (x >= x0) && (y >= y0)
+286:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):570:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) |==> ((x + w) <= (x0 + rect1.getWidth()))
+287:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y + h |==> y % h
+288:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y + h |==> y * h
+289:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y + h |==> y - h
+290:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y + h |==> y / h
+291:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y0 + rect1.getHeight() |==> y0 % rect1.getHeight()
+292:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y0 + rect1.getHeight() |==> y0 * rect1.getHeight()
+293:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y0 + rect1.getHeight() |==> y0 - rect1.getHeight()
+294:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:y0 + rect1.getHeight() |==> y0 / rect1.getHeight()
+295:ROR:<=(double,double):<(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:(y + h) <= (y0 + rect1.getHeight()) |==> (y + h) < (y0 + rect1.getHeight())
+296:ROR:<=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:(y + h) <= (y0 + rect1.getHeight()) |==> (y + h) == (y0 + rect1.getHeight())
+297:ROR:<=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:(y + h) <= (y0 + rect1.getHeight()) |==> true
+298:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) && ((y + h) <= (y0 + rect1.getHeight())) |==> ((x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth()))) == ((y + h) <= (y0 + rect1.getHeight()))
+299:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) && ((y + h) <= (y0 + rect1.getHeight())) |==> false
+300:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):569:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) && ((y + h) <= (y0 + rect1.getHeight())) |==> (x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth()))
+301:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@contains(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):571:(x >= x0) && (y >= y0) && ((x + w) <= (x0 + rect1.getWidth())) && ((y + h) <= (y0 + rect1.getHeight())) |==> ((y + h) <= (y0 + rect1.getHeight()))
+302:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width |==> x % width
+303:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width |==> x * width
+304:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width |==> x - width
+305:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width |==> x / width
+306:ROR:>=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 |==> x + width == x0
+307:ROR:>=(double,double):>(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 |==> x + width > x0
+308:ROR:>=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 |==> true
+309:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:y + height |==> y % height
+310:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:y + height |==> y * height
+311:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:y + height |==> y - height
+312:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:y + height |==> y / height
+313:ROR:>=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:y + height >= y0 |==> y + height == y0
+314:ROR:>=(double,double):>(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:y + height >= y0 |==> y + height > y0
+315:ROR:>=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:y + height >= y0 |==> true
+316:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 |==> x + width >= x0 == y + height >= y0
+317:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 |==> false
+318:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 |==> x + width >= x0
+319:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 |==> y + height >= y0
+320:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x0 + rect1.getWidth() |==> x0 % rect1.getWidth()
+321:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x0 + rect1.getWidth() |==> x0 * rect1.getWidth()
+322:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x0 + rect1.getWidth() |==> x0 - rect1.getWidth()
+323:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x0 + rect1.getWidth() |==> x0 / rect1.getWidth()
+324:ROR:<=(double,double):<(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x <= x0 + rect1.getWidth() |==> x < x0 + rect1.getWidth()
+325:ROR:<=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x <= x0 + rect1.getWidth() |==> x == x0 + rect1.getWidth()
+326:ROR:<=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x <= x0 + rect1.getWidth() |==> true
+327:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() |==> (x + width >= x0 && y + height >= y0) == x <= x0 + rect1.getWidth()
+328:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() |==> false
+329:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() |==> x + width >= x0 && y + height >= y0
+330:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() |==> x <= x0 + rect1.getWidth()
+331:AOR:+(double,double):%(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:y0 + rect1.getHeight() |==> y0 % rect1.getHeight()
+332:AOR:+(double,double):*(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:y0 + rect1.getHeight() |==> y0 * rect1.getHeight()
+333:AOR:+(double,double):-(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:y0 + rect1.getHeight() |==> y0 - rect1.getHeight()
+334:AOR:+(double,double):/(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:y0 + rect1.getHeight() |==> y0 / rect1.getHeight()
+335:ROR:<=(double,double):<(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:y <= y0 + rect1.getHeight() |==> y < y0 + rect1.getHeight()
+336:ROR:<=(double,double):==(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:y <= y0 + rect1.getHeight() |==> y == y0 + rect1.getHeight()
+337:ROR:<=(double,double):TRUE(double,double):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:y <= y0 + rect1.getHeight() |==> true
+338:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() && y <= y0 + rect1.getHeight() |==> (x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth()) == y <= y0 + rect1.getHeight()
+339:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() && y <= y0 + rect1.getHeight() |==> false
+340:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):594:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() && y <= y0 + rect1.getHeight() |==> x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth()
+341:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.chart.util.ShapeUtilities@intersects(java.awt.geom.Rectangle2D,java.awt.geom.Rectangle2D):595:x + width >= x0 && y + height >= y0 && x <= x0 + rect1.getWidth() && y <= y0 + rect1.getHeight() |==> y <= y0 + rect1.getHeight()

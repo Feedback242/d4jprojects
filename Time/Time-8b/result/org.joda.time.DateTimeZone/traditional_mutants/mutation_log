@@ -1,0 +1,390 @@
+AORB_9:154:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursOffset * 60 => hoursOffset / 60
+AORB_10:154:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursOffset * 60 => hoursOffset % 60
+AORB_11:154:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursOffset * 60 => hoursOffset + 60
+AORB_12:154:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursOffset * 60 => hoursOffset - 60
+AORB_13:156:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes - minutesOffset => hoursInMinutes * minutesOffset
+AORB_14:156:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes - minutesOffset => hoursInMinutes / minutesOffset
+AORB_15:156:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes - minutesOffset => hoursInMinutes % minutesOffset
+AORB_16:156:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes - minutesOffset => hoursInMinutes + minutesOffset
+AORB_17:158:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes + minutesOffset => hoursInMinutes * minutesOffset
+AORB_18:158:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes + minutesOffset => hoursInMinutes / minutesOffset
+AORB_19:158:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes + minutesOffset => hoursInMinutes % minutesOffset
+AORB_20:158:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int):hoursInMinutes + minutesOffset => hoursInMinutes - minutesOffset
+AORB_21:423:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_HOUR => offset * DateTimeConstants.MILLIS_PER_HOUR
+AORB_22:423:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_HOUR => offset % DateTimeConstants.MILLIS_PER_HOUR
+AORB_23:423:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_HOUR => offset + DateTimeConstants.MILLIS_PER_HOUR
+AORB_24:423:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_HOUR => offset - DateTimeConstants.MILLIS_PER_HOUR
+AORB_25:425:java.lang.String_printOffset(int):hours * (int) DateTimeConstants.MILLIS_PER_HOUR => hours / (int) DateTimeConstants.MILLIS_PER_HOUR
+AORB_26:425:java.lang.String_printOffset(int):hours * (int) DateTimeConstants.MILLIS_PER_HOUR => hours % (int) DateTimeConstants.MILLIS_PER_HOUR
+AORB_27:425:java.lang.String_printOffset(int):hours * (int) DateTimeConstants.MILLIS_PER_HOUR => hours + (int) DateTimeConstants.MILLIS_PER_HOUR
+AORB_28:425:java.lang.String_printOffset(int):hours * (int) DateTimeConstants.MILLIS_PER_HOUR => hours - (int) DateTimeConstants.MILLIS_PER_HOUR
+AORB_29:426:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_MINUTE => offset * DateTimeConstants.MILLIS_PER_MINUTE
+AORB_30:426:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_MINUTE => offset % DateTimeConstants.MILLIS_PER_MINUTE
+AORB_31:426:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_MINUTE => offset + DateTimeConstants.MILLIS_PER_MINUTE
+AORB_32:426:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_MINUTE => offset - DateTimeConstants.MILLIS_PER_MINUTE
+AORB_33:429:java.lang.String_printOffset(int):minutes * DateTimeConstants.MILLIS_PER_MINUTE => minutes / DateTimeConstants.MILLIS_PER_MINUTE
+AORB_34:429:java.lang.String_printOffset(int):minutes * DateTimeConstants.MILLIS_PER_MINUTE => minutes % DateTimeConstants.MILLIS_PER_MINUTE
+AORB_35:429:java.lang.String_printOffset(int):minutes * DateTimeConstants.MILLIS_PER_MINUTE => minutes + DateTimeConstants.MILLIS_PER_MINUTE
+AORB_36:429:java.lang.String_printOffset(int):minutes * DateTimeConstants.MILLIS_PER_MINUTE => minutes - DateTimeConstants.MILLIS_PER_MINUTE
+AORB_37:433:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_SECOND => offset * DateTimeConstants.MILLIS_PER_SECOND
+AORB_38:433:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_SECOND => offset % DateTimeConstants.MILLIS_PER_SECOND
+AORB_39:433:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_SECOND => offset + DateTimeConstants.MILLIS_PER_SECOND
+AORB_40:433:java.lang.String_printOffset(int):offset / DateTimeConstants.MILLIS_PER_SECOND => offset - DateTimeConstants.MILLIS_PER_SECOND
+AORB_41:436:java.lang.String_printOffset(int):seconds * DateTimeConstants.MILLIS_PER_SECOND => seconds / DateTimeConstants.MILLIS_PER_SECOND
+AORB_42:436:java.lang.String_printOffset(int):seconds * DateTimeConstants.MILLIS_PER_SECOND => seconds % DateTimeConstants.MILLIS_PER_SECOND
+AORB_43:436:java.lang.String_printOffset(int):seconds * DateTimeConstants.MILLIS_PER_SECOND => seconds + DateTimeConstants.MILLIS_PER_SECOND
+AORB_44:436:java.lang.String_printOffset(int):seconds * DateTimeConstants.MILLIS_PER_SECOND => seconds - DateTimeConstants.MILLIS_PER_SECOND
+AORB_45:532:int_getOffsetFromLocal(long):instantLocal - offsetLocal => instantLocal * offsetLocal
+AORB_46:532:int_getOffsetFromLocal(long):instantLocal - offsetLocal => instantLocal / offsetLocal
+AORB_47:532:int_getOffsetFromLocal(long):instantLocal - offsetLocal => instantLocal % offsetLocal
+AORB_48:532:int_getOffsetFromLocal(long):instantLocal - offsetLocal => instantLocal + offsetLocal
+AORB_49:535:int_getOffsetFromLocal(long):offsetLocal - offsetAdjusted => offsetLocal * offsetAdjusted
+AORB_50:535:int_getOffsetFromLocal(long):offsetLocal - offsetAdjusted => offsetLocal / offsetAdjusted
+AORB_51:535:int_getOffsetFromLocal(long):offsetLocal - offsetAdjusted => offsetLocal % offsetAdjusted
+AORB_52:535:int_getOffsetFromLocal(long):offsetLocal - offsetAdjusted => offsetLocal + offsetAdjusted
+AORB_53:537:int_getOffsetFromLocal(long):instantLocal - offsetAdjusted => instantLocal * offsetAdjusted
+AORB_54:537:int_getOffsetFromLocal(long):instantLocal - offsetAdjusted => instantLocal / offsetAdjusted
+AORB_55:537:int_getOffsetFromLocal(long):instantLocal - offsetAdjusted => instantLocal % offsetAdjusted
+AORB_56:537:int_getOffsetFromLocal(long):instantLocal - offsetAdjusted => instantLocal + offsetAdjusted
+AORB_57:547:int_getOffsetFromLocal(long):offsetPrev - offsetLocal => offsetPrev * offsetLocal
+AORB_58:547:int_getOffsetFromLocal(long):offsetPrev - offsetLocal => offsetPrev / offsetLocal
+AORB_59:547:int_getOffsetFromLocal(long):offsetPrev - offsetLocal => offsetPrev % offsetLocal
+AORB_60:547:int_getOffsetFromLocal(long):offsetPrev - offsetLocal => offsetPrev + offsetLocal
+AORB_61:548:int_getOffsetFromLocal(long):instantAdjusted - prev => instantAdjusted * prev
+AORB_62:548:int_getOffsetFromLocal(long):instantAdjusted - prev => instantAdjusted / prev
+AORB_63:548:int_getOffsetFromLocal(long):instantAdjusted - prev => instantAdjusted % prev
+AORB_64:548:int_getOffsetFromLocal(long):instantAdjusted - prev => instantAdjusted + prev
+AORB_65:560:long_convertUTCToLocal(long):instantUTC + offset => instantUTC * offset
+AORB_66:560:long_convertUTCToLocal(long):instantUTC + offset => instantUTC / offset
+AORB_67:560:long_convertUTCToLocal(long):instantUTC + offset => instantUTC % offset
+AORB_68:560:long_convertUTCToLocal(long):instantUTC + offset => instantUTC - offset
+AORB_69:570:long_convertLocalToUTC(long,boolean,long):instantLocal - offsetOriginal => instantLocal * offsetOriginal
+AORB_70:570:long_convertLocalToUTC(long,boolean,long):instantLocal - offsetOriginal => instantLocal / offsetOriginal
+AORB_71:570:long_convertLocalToUTC(long,boolean,long):instantLocal - offsetOriginal => instantLocal % offsetOriginal
+AORB_72:570:long_convertLocalToUTC(long,boolean,long):instantLocal - offsetOriginal => instantLocal + offsetOriginal
+AORB_73:581:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal * offsetLocal
+AORB_74:581:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal / offsetLocal
+AORB_75:581:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal % offsetLocal
+AORB_76:581:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal + offsetLocal
+AORB_77:584:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal * offsetLocal
+AORB_78:584:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal / offsetLocal
+AORB_79:584:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal % offsetLocal
+AORB_80:584:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal + offsetLocal
+AORB_81:585:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal * offsetLocal
+AORB_82:585:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal / offsetLocal
+AORB_83:585:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal % offsetLocal
+AORB_84:585:long_convertLocalToUTC(long,boolean):instantLocal - offsetLocal => instantLocal + offsetLocal
+AORB_85:588:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal * offset
+AORB_86:588:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal / offset
+AORB_87:588:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal % offset
+AORB_88:588:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal + offset
+AORB_89:589:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal * offset
+AORB_90:589:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal / offset
+AORB_91:589:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal % offset
+AORB_92:589:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal + offset
+AORB_93:601:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal * offset
+AORB_94:601:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal / offset
+AORB_95:601:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal % offset
+AORB_96:601:long_convertLocalToUTC(long,boolean):instantLocal - offset => instantLocal + offset
+AORB_97:635:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 / DateTimeConstants.MILLIS_PER_HOUR
+AORB_98:635:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 % DateTimeConstants.MILLIS_PER_HOUR
+AORB_99:635:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 + DateTimeConstants.MILLIS_PER_HOUR
+AORB_100:635:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 - DateTimeConstants.MILLIS_PER_HOUR
+AORB_101:635:long_adjustOffset(long,boolean):instant - 3 * DateTimeConstants.MILLIS_PER_HOUR => instant * (3 * DateTimeConstants.MILLIS_PER_HOUR)
+AORB_102:635:long_adjustOffset(long,boolean):instant - 3 * DateTimeConstants.MILLIS_PER_HOUR => instant / (3 * DateTimeConstants.MILLIS_PER_HOUR)
+AORB_103:635:long_adjustOffset(long,boolean):instant - 3 * DateTimeConstants.MILLIS_PER_HOUR => instant % (3 * DateTimeConstants.MILLIS_PER_HOUR)
+AORB_104:635:long_adjustOffset(long,boolean):instant - 3 * DateTimeConstants.MILLIS_PER_HOUR => instant + 3 * DateTimeConstants.MILLIS_PER_HOUR
+AORB_105:636:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 / DateTimeConstants.MILLIS_PER_HOUR
+AORB_106:636:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 % DateTimeConstants.MILLIS_PER_HOUR
+AORB_107:636:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 + DateTimeConstants.MILLIS_PER_HOUR
+AORB_108:636:long_adjustOffset(long,boolean):3 * DateTimeConstants.MILLIS_PER_HOUR => 3 - DateTimeConstants.MILLIS_PER_HOUR
+AORB_109:636:long_adjustOffset(long,boolean):instant + 3 * DateTimeConstants.MILLIS_PER_HOUR => instant * (3 * DateTimeConstants.MILLIS_PER_HOUR)
+AORB_110:636:long_adjustOffset(long,boolean):instant + 3 * DateTimeConstants.MILLIS_PER_HOUR => instant / (3 * DateTimeConstants.MILLIS_PER_HOUR)
+AORB_111:636:long_adjustOffset(long,boolean):instant + 3 * DateTimeConstants.MILLIS_PER_HOUR => instant % (3 * DateTimeConstants.MILLIS_PER_HOUR)
+AORB_112:636:long_adjustOffset(long,boolean):instant + 3 * DateTimeConstants.MILLIS_PER_HOUR => instant - 3 * DateTimeConstants.MILLIS_PER_HOUR
+AORB_113:642:long_adjustOffset(long,boolean):offsetBefore - offsetAfter => offsetBefore * offsetAfter
+AORB_114:642:long_adjustOffset(long,boolean):offsetBefore - offsetAfter => offsetBefore / offsetAfter
+AORB_115:642:long_adjustOffset(long,boolean):offsetBefore - offsetAfter => offsetBefore % offsetAfter
+AORB_116:642:long_adjustOffset(long,boolean):offsetBefore - offsetAfter => offsetBefore + offsetAfter
+AORB_117:644:long_adjustOffset(long,boolean):transition - diff => transition * diff
+AORB_118:644:long_adjustOffset(long,boolean):transition - diff => transition / diff
+AORB_119:644:long_adjustOffset(long,boolean):transition - diff => transition % diff
+AORB_120:644:long_adjustOffset(long,boolean):transition - diff => transition + diff
+AORB_121:645:long_adjustOffset(long,boolean):transition + diff => transition * diff
+AORB_122:645:long_adjustOffset(long,boolean):transition + diff => transition / diff
+AORB_123:645:long_adjustOffset(long,boolean):transition + diff => transition % diff
+AORB_124:645:long_adjustOffset(long,boolean):transition + diff => transition - diff
+AORB_125:649:long_adjustOffset(long,boolean):instant - overlapStart => instant * overlapStart
+AORB_126:649:long_adjustOffset(long,boolean):instant - overlapStart => instant / overlapStart
+AORB_127:649:long_adjustOffset(long,boolean):instant - overlapStart => instant % overlapStart
+AORB_128:649:long_adjustOffset(long,boolean):instant - overlapStart => instant + overlapStart
+AORB_129:651:long_adjustOffset(long,boolean):instant - diff => instant * diff
+AORB_130:651:long_adjustOffset(long,boolean):instant - diff => instant / diff
+AORB_131:651:long_adjustOffset(long,boolean):instant - diff => instant % diff
+AORB_132:651:long_adjustOffset(long,boolean):instant - diff => instant + diff
+AORB_133:653:long_adjustOffset(long,boolean):instant + diff => instant * diff
+AORB_134:653:long_adjustOffset(long,boolean):instant + diff => instant / diff
+AORB_135:653:long_adjustOffset(long,boolean):instant + diff => instant % diff
+AORB_136:653:long_adjustOffset(long,boolean):instant + diff => instant - diff
+AORB_137:672:int_hashCode():57 + getID().hashCode() => 57 * getID().hashCode()
+AORB_138:672:int_hashCode():57 + getID().hashCode() => 57 / getID().hashCode()
+AORB_139:672:int_hashCode():57 + getID().hashCode() => 57 % getID().hashCode()
+AORB_140:672:int_hashCode():57 + getID().hashCode() => 57 - getID().hashCode()
+ROR_1:65:org.joda.time.DateTimeZone_getDefault(): zone == null  =>   zone != null
+ROR_2:69:org.joda.time.DateTimeZone_getDefault(): zone == null  =>   zone != null
+ROR_3:74:org.joda.time.DateTimeZone_getDefault(): id != null  =>   id == null
+ROR_4:79:org.joda.time.DateTimeZone_getDefault(): temp == null  =>   temp != null
+ROR_5:84:org.joda.time.DateTimeZone_getDefault(): temp == null  =>   temp != null
+ROR_6:98:void_setDefault(org.joda.time.DateTimeZone): sm != null  =>   sm == null
+ROR_7:101:void_setDefault(org.joda.time.DateTimeZone): zone == null  =>   zone != null
+ROR_8:112:org.joda.time.DateTimeZone_forID(java.lang.String): id == null  =>   id != null
+ROR_9:119:org.joda.time.DateTimeZone_forID(java.lang.String): zone != null  =>   zone == null
+ROR_10:124:org.joda.time.DateTimeZone_forID(java.lang.String): offset == 0L  =>   offset > 0L
+ROR_11:124:org.joda.time.DateTimeZone_forID(java.lang.String): offset == 0L  =>   offset >= 0L
+ROR_12:124:org.joda.time.DateTimeZone_forID(java.lang.String): offset == 0L  =>   offset < 0L
+ROR_13:124:org.joda.time.DateTimeZone_forID(java.lang.String): offset == 0L  =>   offset <= 0L
+ROR_14:124:org.joda.time.DateTimeZone_forID(java.lang.String): offset == 0L  =>   offset != 0L
+ROR_15:124:org.joda.time.DateTimeZone_forID(java.lang.String): offset == 0L  =>   true
+ROR_16:124:org.joda.time.DateTimeZone_forID(java.lang.String): offset == 0L  =>   false
+ROR_17:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset == 0  =>   hoursOffset > 0
+ROR_18:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset == 0  =>   hoursOffset >= 0
+ROR_19:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset == 0  =>   hoursOffset < 0
+ROR_20:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset == 0  =>   hoursOffset <= 0
+ROR_21:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset == 0  =>   hoursOffset != 0
+ROR_22:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset == 0  =>   true
+ROR_23:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset == 0  =>   false
+ROR_24:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset == 0  =>   minutesOffset > 0
+ROR_25:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset == 0  =>   minutesOffset >= 0
+ROR_26:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset == 0  =>   minutesOffset < 0
+ROR_27:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset == 0  =>   minutesOffset <= 0
+ROR_28:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset == 0  =>   minutesOffset != 0
+ROR_29:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset == 0  =>   true
+ROR_30:143:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset == 0  =>   false
+ROR_31:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset < -23  =>   hoursOffset > -23
+ROR_32:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset < -23  =>   hoursOffset >= -23
+ROR_33:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset < -23  =>   hoursOffset <= -23
+ROR_34:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset < -23  =>   hoursOffset == -23
+ROR_35:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset < -23  =>   hoursOffset != -23
+ROR_36:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset < -23  =>   true
+ROR_37:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset < -23  =>   false
+ROR_38:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset > 23  =>   hoursOffset >= 23
+ROR_39:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset > 23  =>   hoursOffset < 23
+ROR_40:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset > 23  =>   hoursOffset <= 23
+ROR_41:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset > 23  =>   hoursOffset == 23
+ROR_42:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset > 23  =>   hoursOffset != 23
+ROR_43:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset > 23  =>   true
+ROR_44:146:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursOffset > 23  =>   false
+ROR_45:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset < 0  =>   minutesOffset > 0
+ROR_46:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset < 0  =>   minutesOffset >= 0
+ROR_47:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset < 0  =>   minutesOffset <= 0
+ROR_48:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset < 0  =>   minutesOffset == 0
+ROR_49:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset < 0  =>   minutesOffset != 0
+ROR_50:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset < 0  =>   true
+ROR_51:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset < 0  =>   false
+ROR_52:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset > 59  =>   minutesOffset >= 59
+ROR_53:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset > 59  =>   minutesOffset < 59
+ROR_54:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset > 59  =>   minutesOffset <= 59
+ROR_55:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset > 59  =>   minutesOffset == 59
+ROR_56:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset > 59  =>   minutesOffset != 59
+ROR_57:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset > 59  =>   true
+ROR_58:149:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): minutesOffset > 59  =>   false
+ROR_59:155:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursInMinutes < 0  =>   hoursInMinutes > 0
+ROR_60:155:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursInMinutes < 0  =>   hoursInMinutes >= 0
+ROR_61:155:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursInMinutes < 0  =>   hoursInMinutes <= 0
+ROR_62:155:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursInMinutes < 0  =>   hoursInMinutes == 0
+ROR_63:155:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursInMinutes < 0  =>   hoursInMinutes != 0
+ROR_64:155:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursInMinutes < 0  =>   true
+ROR_65:155:org.joda.time.DateTimeZone_forOffsetHoursMinutes(int,int): hoursInMinutes < 0  =>   false
+ROR_66:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset < -MAX_MILLIS  =>   millisOffset > -MAX_MILLIS
+ROR_67:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset < -MAX_MILLIS  =>   millisOffset >= -MAX_MILLIS
+ROR_68:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset < -MAX_MILLIS  =>   millisOffset <= -MAX_MILLIS
+ROR_69:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset < -MAX_MILLIS  =>   millisOffset == -MAX_MILLIS
+ROR_70:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset < -MAX_MILLIS  =>   millisOffset != -MAX_MILLIS
+ROR_71:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset < -MAX_MILLIS  =>   true
+ROR_72:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset < -MAX_MILLIS  =>   false
+ROR_73:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset > MAX_MILLIS  =>   millisOffset >= MAX_MILLIS
+ROR_74:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset > MAX_MILLIS  =>   millisOffset < MAX_MILLIS
+ROR_75:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset > MAX_MILLIS  =>   millisOffset <= MAX_MILLIS
+ROR_76:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset > MAX_MILLIS  =>   millisOffset == MAX_MILLIS
+ROR_77:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset > MAX_MILLIS  =>   millisOffset != MAX_MILLIS
+ROR_78:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset > MAX_MILLIS  =>   true
+ROR_79:169:org.joda.time.DateTimeZone_forOffsetMillis(int): millisOffset > MAX_MILLIS  =>   false
+ROR_80:178:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): zone == null  =>   zone != null
+ROR_81:187:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): convId != null  =>   convId == null
+ROR_82:190:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): dtz == null  =>   dtz != null
+ROR_83:193:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): dtz != null  =>   dtz == null
+ROR_84:196:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): convId == null  =>   convId != null
+ROR_85:201:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): offset == 0L  =>   offset > 0L
+ROR_86:201:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): offset == 0L  =>   offset >= 0L
+ROR_87:201:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): offset == 0L  =>   offset < 0L
+ROR_88:201:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): offset == 0L  =>   offset <= 0L
+ROR_89:201:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): offset == 0L  =>   offset != 0L
+ROR_90:201:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): offset == 0L  =>   true
+ROR_91:201:org.joda.time.DateTimeZone_forTimeZone(java.util.TimeZone): offset == 0L  =>   false
+ROR_92:214:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): offset == 0  =>   offset > 0
+ROR_93:214:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): offset == 0  =>   offset >= 0
+ROR_94:214:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): offset == 0  =>   offset < 0
+ROR_95:214:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): offset == 0  =>   offset <= 0
+ROR_96:214:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): offset == 0  =>   offset != 0
+ROR_97:214:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): offset == 0  =>   true
+ROR_98:214:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): offset == 0  =>   false
+ROR_99:217:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): iFixedOffsetCache == null  =>   iFixedOffsetCache != null
+ROR_100:222:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): ref != null  =>   ref == null
+ROR_101:224:org.joda.time.DateTimeZone_fixedOffsetZone(java.lang.String,int): zone != null  =>   zone == null
+ROR_102:247:void_setProvider(org.joda.time.tz.Provider): sm != null  =>   sm == null
+ROR_103:255:void_setProvider0(org.joda.time.tz.Provider): provider == null  =>   provider != null
+ROR_104:259:void_setProvider0(org.joda.time.tz.Provider): ids == null  =>   ids != null
+ROR_105:259:void_setProvider0(org.joda.time.tz.Provider): ids.size() == 0  =>   ids.size() > 0
+ROR_106:259:void_setProvider0(org.joda.time.tz.Provider): ids.size() == 0  =>   ids.size() >= 0
+ROR_107:259:void_setProvider0(org.joda.time.tz.Provider): ids.size() == 0  =>   ids.size() < 0
+ROR_108:259:void_setProvider0(org.joda.time.tz.Provider): ids.size() == 0  =>   ids.size() <= 0
+ROR_109:259:void_setProvider0(org.joda.time.tz.Provider): ids.size() == 0  =>   ids.size() != 0
+ROR_110:259:void_setProvider0(org.joda.time.tz.Provider): ids.size() == 0  =>   true
+ROR_111:259:void_setProvider0(org.joda.time.tz.Provider): ids.size() == 0  =>   false
+ROR_112:277:org.joda.time.tz.Provider_getDefaultProvider(): providerClass != null  =>   providerClass == null
+ROR_113:287:org.joda.time.tz.Provider_getDefaultProvider(): provider == null  =>   provider != null
+ROR_114:295:org.joda.time.tz.Provider_getDefaultProvider(): provider == null  =>   provider != null
+ROR_115:310:void_setNameProvider(org.joda.time.tz.NameProvider): sm != null  =>   sm == null
+ROR_116:318:void_setNameProvider0(org.joda.time.tz.NameProvider): nameProvider == null  =>   nameProvider != null
+ROR_117:329:org.joda.time.tz.NameProvider_getDefaultNameProvider(): providerClass != null  =>   providerClass == null
+ROR_118:339:org.joda.time.tz.NameProvider_getDefaultNameProvider(): nameProvider == null  =>   nameProvider != null
+ROR_119:348:java.lang.String_getConvertedId(java.lang.String): map == null  =>   map != null
+ROR_120:417:java.lang.String_printOffset(int): offset >= 0  =>   offset > 0
+ROR_121:417:java.lang.String_printOffset(int): offset >= 0  =>   offset < 0
+ROR_122:417:java.lang.String_printOffset(int): offset >= 0  =>   offset <= 0
+ROR_123:417:java.lang.String_printOffset(int): offset >= 0  =>   offset == 0
+ROR_124:417:java.lang.String_printOffset(int): offset >= 0  =>   offset != 0
+ROR_125:417:java.lang.String_printOffset(int): offset >= 0  =>   true
+ROR_126:417:java.lang.String_printOffset(int): offset >= 0  =>   false
+ROR_127:430:java.lang.String_printOffset(int): offset == 0  =>   offset > 0
+ROR_128:430:java.lang.String_printOffset(int): offset == 0  =>   offset >= 0
+ROR_129:430:java.lang.String_printOffset(int): offset == 0  =>   offset < 0
+ROR_130:430:java.lang.String_printOffset(int): offset == 0  =>   offset <= 0
+ROR_131:430:java.lang.String_printOffset(int): offset == 0  =>   offset != 0
+ROR_132:430:java.lang.String_printOffset(int): offset == 0  =>   true
+ROR_133:430:java.lang.String_printOffset(int): offset == 0  =>   false
+ROR_134:437:java.lang.String_printOffset(int): offset == 0  =>   offset > 0
+ROR_135:437:java.lang.String_printOffset(int): offset == 0  =>   offset >= 0
+ROR_136:437:java.lang.String_printOffset(int): offset == 0  =>   offset < 0
+ROR_137:437:java.lang.String_printOffset(int): offset == 0  =>   offset <= 0
+ROR_138:437:java.lang.String_printOffset(int): offset == 0  =>   offset != 0
+ROR_139:437:java.lang.String_printOffset(int): offset == 0  =>   true
+ROR_140:437:java.lang.String_printOffset(int): offset == 0  =>   false
+ROR_141:447:org.joda.time.format.DateTimeFormatter_offsetFormatter(): cOffsetFormatter == null  =>   cOffsetFormatter != null
+ROR_142:457:DateTimeZone(java.lang.String): id == null  =>   id != null
+ROR_143:477:java.lang.String_getShortName(long,java.util.Locale): locale == null  =>   locale != null
+ROR_144:481:java.lang.String_getShortName(long,java.util.Locale): nameKey == null  =>   nameKey != null
+ROR_145:485:java.lang.String_getShortName(long,java.util.Locale): name != null  =>   name == null
+ROR_146:498:java.lang.String_getName(long,java.util.Locale): locale == null  =>   locale != null
+ROR_147:502:java.lang.String_getName(long,java.util.Locale): nameKey == null  =>   nameKey != null
+ROR_148:506:java.lang.String_getName(long,java.util.Locale): name != null  =>   name == null
+ROR_149:516:int_getOffset(org.joda.time.ReadableInstant): instant == null  =>   instant != null
+ROR_150:526:boolean_isStandardOffset(long): getOffset( instant ) == getStandardOffset( instant )  =>   getOffset( instant ) > getStandardOffset( instant )
+ROR_151:526:boolean_isStandardOffset(long): getOffset( instant ) == getStandardOffset( instant )  =>   getOffset( instant ) >= getStandardOffset( instant )
+ROR_152:526:boolean_isStandardOffset(long): getOffset( instant ) == getStandardOffset( instant )  =>   getOffset( instant ) < getStandardOffset( instant )
+ROR_153:526:boolean_isStandardOffset(long): getOffset( instant ) == getStandardOffset( instant )  =>   getOffset( instant ) <= getStandardOffset( instant )
+ROR_154:526:boolean_isStandardOffset(long): getOffset( instant ) == getStandardOffset( instant )  =>   getOffset( instant ) != getStandardOffset( instant )
+ROR_155:526:boolean_isStandardOffset(long): getOffset( instant ) == getStandardOffset( instant )  =>   true
+ROR_156:526:boolean_isStandardOffset(long): getOffset( instant ) == getStandardOffset( instant )  =>   false
+ROR_157:534:int_getOffsetFromLocal(long): offsetLocal != offsetAdjusted  =>   offsetLocal > offsetAdjusted
+ROR_158:534:int_getOffsetFromLocal(long): offsetLocal != offsetAdjusted  =>   offsetLocal >= offsetAdjusted
+ROR_159:534:int_getOffsetFromLocal(long): offsetLocal != offsetAdjusted  =>   offsetLocal < offsetAdjusted
+ROR_160:534:int_getOffsetFromLocal(long): offsetLocal != offsetAdjusted  =>   offsetLocal <= offsetAdjusted
+ROR_161:534:int_getOffsetFromLocal(long): offsetLocal != offsetAdjusted  =>   offsetLocal == offsetAdjusted
+ROR_162:534:int_getOffsetFromLocal(long): offsetLocal != offsetAdjusted  =>   true
+ROR_163:534:int_getOffsetFromLocal(long): offsetLocal != offsetAdjusted  =>   false
+ROR_164:535:int_getOffsetFromLocal(long): offsetLocal - offsetAdjusted < 0  =>   offsetLocal - offsetAdjusted > 0
+ROR_165:535:int_getOffsetFromLocal(long): offsetLocal - offsetAdjusted < 0  =>   offsetLocal - offsetAdjusted >= 0
+ROR_166:535:int_getOffsetFromLocal(long): offsetLocal - offsetAdjusted < 0  =>   offsetLocal - offsetAdjusted <= 0
+ROR_167:535:int_getOffsetFromLocal(long): offsetLocal - offsetAdjusted < 0  =>   offsetLocal - offsetAdjusted == 0
+ROR_168:535:int_getOffsetFromLocal(long): offsetLocal - offsetAdjusted < 0  =>   offsetLocal - offsetAdjusted != 0
+ROR_169:535:int_getOffsetFromLocal(long): offsetLocal - offsetAdjusted < 0  =>   true
+ROR_170:535:int_getOffsetFromLocal(long): offsetLocal - offsetAdjusted < 0  =>   false
+ROR_171:538:int_getOffsetFromLocal(long): nextLocal != nextAdjusted  =>   nextLocal > nextAdjusted
+ROR_172:538:int_getOffsetFromLocal(long): nextLocal != nextAdjusted  =>   nextLocal >= nextAdjusted
+ROR_173:538:int_getOffsetFromLocal(long): nextLocal != nextAdjusted  =>   nextLocal < nextAdjusted
+ROR_174:538:int_getOffsetFromLocal(long): nextLocal != nextAdjusted  =>   nextLocal <= nextAdjusted
+ROR_175:538:int_getOffsetFromLocal(long): nextLocal != nextAdjusted  =>   nextLocal == nextAdjusted
+ROR_176:538:int_getOffsetFromLocal(long): nextLocal != nextAdjusted  =>   true
+ROR_177:538:int_getOffsetFromLocal(long): nextLocal != nextAdjusted  =>   false
+ROR_178:543:int_getOffsetFromLocal(long): offsetLocal >= 0  =>   offsetLocal > 0
+ROR_179:543:int_getOffsetFromLocal(long): offsetLocal >= 0  =>   offsetLocal < 0
+ROR_180:543:int_getOffsetFromLocal(long): offsetLocal >= 0  =>   offsetLocal <= 0
+ROR_181:543:int_getOffsetFromLocal(long): offsetLocal >= 0  =>   offsetLocal == 0
+ROR_182:543:int_getOffsetFromLocal(long): offsetLocal >= 0  =>   offsetLocal != 0
+ROR_183:543:int_getOffsetFromLocal(long): offsetLocal >= 0  =>   true
+ROR_184:543:int_getOffsetFromLocal(long): offsetLocal >= 0  =>   false
+ROR_185:545:int_getOffsetFromLocal(long): prev < instantAdjusted  =>   prev > instantAdjusted
+ROR_186:545:int_getOffsetFromLocal(long): prev < instantAdjusted  =>   prev >= instantAdjusted
+ROR_187:545:int_getOffsetFromLocal(long): prev < instantAdjusted  =>   prev <= instantAdjusted
+ROR_188:545:int_getOffsetFromLocal(long): prev < instantAdjusted  =>   prev == instantAdjusted
+ROR_189:545:int_getOffsetFromLocal(long): prev < instantAdjusted  =>   prev != instantAdjusted
+ROR_190:545:int_getOffsetFromLocal(long): prev < instantAdjusted  =>   true
+ROR_191:545:int_getOffsetFromLocal(long): prev < instantAdjusted  =>   false
+ROR_192:548:int_getOffsetFromLocal(long): instantAdjusted - prev <= diff  =>   instantAdjusted - prev > diff
+ROR_193:548:int_getOffsetFromLocal(long): instantAdjusted - prev <= diff  =>   instantAdjusted - prev >= diff
+ROR_194:548:int_getOffsetFromLocal(long): instantAdjusted - prev <= diff  =>   instantAdjusted - prev < diff
+ROR_195:548:int_getOffsetFromLocal(long): instantAdjusted - prev <= diff  =>   instantAdjusted - prev == diff
+ROR_196:548:int_getOffsetFromLocal(long): instantAdjusted - prev <= diff  =>   instantAdjusted - prev != diff
+ROR_197:548:int_getOffsetFromLocal(long): instantAdjusted - prev <= diff  =>   true
+ROR_198:548:int_getOffsetFromLocal(long): instantAdjusted - prev <= diff  =>   false
+ROR_199:561:long_convertUTCToLocal(long): (instantUTC ^ instantLocal) < 0  =>   (instantUTC ^ instantLocal) > 0
+ROR_200:561:long_convertUTCToLocal(long): (instantUTC ^ instantLocal) < 0  =>   (instantUTC ^ instantLocal) >= 0
+ROR_201:561:long_convertUTCToLocal(long): (instantUTC ^ instantLocal) < 0  =>   (instantUTC ^ instantLocal) <= 0
+ROR_202:561:long_convertUTCToLocal(long): (instantUTC ^ instantLocal) < 0  =>   (instantUTC ^ instantLocal) == 0
+ROR_203:561:long_convertUTCToLocal(long): (instantUTC ^ instantLocal) < 0  =>   (instantUTC ^ instantLocal) != 0
+ROR_204:561:long_convertUTCToLocal(long): (instantUTC ^ instantLocal) < 0  =>   true
+ROR_205:561:long_convertUTCToLocal(long): (instantUTC ^ instantLocal) < 0  =>   false
+ROR_206:561:long_convertUTCToLocal(long): (instantUTC ^ offset) >= 0  =>   (instantUTC ^ offset) > 0
+ROR_207:561:long_convertUTCToLocal(long): (instantUTC ^ offset) >= 0  =>   (instantUTC ^ offset) < 0
+ROR_208:561:long_convertUTCToLocal(long): (instantUTC ^ offset) >= 0  =>   (instantUTC ^ offset) <= 0
+ROR_209:561:long_convertUTCToLocal(long): (instantUTC ^ offset) >= 0  =>   (instantUTC ^ offset) == 0
+ROR_210:561:long_convertUTCToLocal(long): (instantUTC ^ offset) >= 0  =>   (instantUTC ^ offset) != 0
+ROR_211:561:long_convertUTCToLocal(long): (instantUTC ^ offset) >= 0  =>   true
+ROR_212:561:long_convertUTCToLocal(long): (instantUTC ^ offset) >= 0  =>   false
+ROR_213:572:long_convertLocalToUTC(long,boolean,long): offsetLocalFromOriginal == offsetOriginal  =>   offsetLocalFromOriginal > offsetOriginal
+ROR_214:572:long_convertLocalToUTC(long,boolean,long): offsetLocalFromOriginal == offsetOriginal  =>   offsetLocalFromOriginal >= offsetOriginal
+ROR_215:572:long_convertLocalToUTC(long,boolean,long): offsetLocalFromOriginal == offsetOriginal  =>   offsetLocalFromOriginal < offsetOriginal
+ROR_216:572:long_convertLocalToUTC(long,boolean,long): offsetLocalFromOriginal == offsetOriginal  =>   offsetLocalFromOriginal <= offsetOriginal
+ROR_217:572:long_convertLocalToUTC(long,boolean,long): offsetLocalFromOriginal == offsetOriginal  =>   offsetLocalFromOriginal != offsetOriginal
+ROR_218:572:long_convertLocalToUTC(long,boolean,long): offsetLocalFromOriginal == offsetOriginal  =>   true
+ROR_219:572:long_convertLocalToUTC(long,boolean,long): offsetLocalFromOriginal == offsetOriginal  =>   false
+ROR_220:582:long_convertLocalToUTC(long,boolean): offsetLocal != offset  =>   offsetLocal > offset
+ROR_221:582:long_convertLocalToUTC(long,boolean): offsetLocal != offset  =>   offsetLocal >= offset
+ROR_222:582:long_convertLocalToUTC(long,boolean): offsetLocal != offset  =>   offsetLocal < offset
+ROR_223:582:long_convertLocalToUTC(long,boolean): offsetLocal != offset  =>   offsetLocal <= offset
+ROR_224:582:long_convertLocalToUTC(long,boolean): offsetLocal != offset  =>   offsetLocal == offset
+ROR_225:582:long_convertLocalToUTC(long,boolean): offsetLocal != offset  =>   true
+ROR_226:582:long_convertLocalToUTC(long,boolean): offsetLocal != offset  =>   false
+ROR_227:583:long_convertLocalToUTC(long,boolean): offsetLocal < 0  =>   offsetLocal > 0
+ROR_228:583:long_convertLocalToUTC(long,boolean): offsetLocal < 0  =>   offsetLocal >= 0
+ROR_229:583:long_convertLocalToUTC(long,boolean): offsetLocal < 0  =>   offsetLocal <= 0
+ROR_230:583:long_convertLocalToUTC(long,boolean): offsetLocal < 0  =>   offsetLocal == 0
+ROR_231:583:long_convertLocalToUTC(long,boolean): offsetLocal < 0  =>   offsetLocal != 0
+ROR_232:583:long_convertLocalToUTC(long,boolean): offsetLocal < 0  =>   true
+ROR_233:583:long_convertLocalToUTC(long,boolean): offsetLocal < 0  =>   false
+ROR_234:585:long_convertLocalToUTC(long,boolean): nextLocal == instantLocal - offsetLocal  =>   nextLocal > instantLocal - offsetLocal
+ROR_235:585:long_convertLocalToUTC(long,boolean): nextLocal == instantLocal - offsetLocal  =>   nextLocal >= instantLocal - offsetLocal
+ROR_236:585:long_convertLocalToUTC(long,boolean): nextLocal == instantLocal - offsetLocal  =>   nextLocal < instantLocal - offsetLocal
+ROR_237:585:long_convertLocalToUTC(long,boolean): nextLocal == instantLocal - offsetLocal  =>   nextLocal <= instantLocal - offsetLocal
+ROR_238:585:long_convertLocalToUTC(long,boolean): nextLocal == instantLocal - offsetLocal  =>   nextLocal != instantLocal - offsetLocal
+ROR_239:585:long_convertLocalToUTC(long,boolean): nextLocal == instantLocal - offsetLocal  =>   true
+ROR_240:585:long_convertLocalToUTC(long,boolean): nextLocal == instantLocal - offsetLocal  =>   false
+ROR_241:589:long_convertLocalToUTC(long,boolean): nextAdjusted == instantLocal - offset  =>   nextAdjusted > instantLocal - offset
+ROR_242:589:long_convertLocalToUTC(long,boolean): nextAdjusted == instantLocal - offset  =>   nextAdjusted >= instantLocal - offset
+ROR_243:589:long_convertLocalToUTC(long,boolean): nextAdjusted == instantLocal - offset  =>   nextAdjusted < instantLocal - offset
+ROR_244:589:long_convertLocalToUTC(long,boolean): nextAdjusted == instantLocal - offset  =>   nextAdjusted <= instantLocal - offset
+ROR_245:589:long_convertLocalToUTC(long,boolean): nextAdjusted == instantLocal - offset  =>   nextAdjusted != instantLocal - offset
+ROR_246:589:long_convertLocalToUTC(long,boolean): nextAdjusted == instantLocal - offset  =>   true
+ROR_247:589:long_convertLocalToUTC(long,boolean): nextAdjusted == instantLocal - offset  =>   false
+ROR_248:592:long_convertLocalToUTC(long,boolean): nextLocal != nextAdjusted  =>   nextLocal > nextAdjusted
+ROR_249:592:long_convertLocalToUTC(long,boolean): nextLocal != nextAdjusted  =>   nextLocal >= nextAdjusted
+ROR_250:592:long_convertLocalToUTC(long,boolean): nextLocal != nextAdjusted  =>   nextLocal < nextAdjusted
+ROR_251:592:long_convertLocalToUTC(long,boolean): nextLocal != nextAdjusted  =>   nextLocal <= nextAdjusted
+ROR_252:592:long_convertLocalToUTC(long,boolean): nextLocal != nextAdjusted  =>   nextLocal == nextAdjusted
+ROR_253:592:long_convertLocalToUTC(long,boolean): nextLocal != nextAdjusted  =>   true
+ROR_254:592:long_convertLocalToUTC(long,boolean): nextLocal != nextAdjusted  =>   false
+ROR_255:602:long_convertLocalToUTC(long,boolean): (instantLocal ^ instantUTC) < 0  =>   (instantLocal ^ instantUTC) > 0
+ROR_256:602:long_convertLocalToUTC(long,boolean): (instantLocal ^ instantUTC) < 0  =>   (instantLocal ^ instantUTC) >= 0
+ROR_257:602:long_convertLocalToUTC(long,boolean): (instantLocal ^ instantUTC) < 0  =>   (instantLocal ^ instantUTC) <= 0
+ROR_258:602:long_convertLocalToUTC(long,boolean): (instantLocal ^ instantUT

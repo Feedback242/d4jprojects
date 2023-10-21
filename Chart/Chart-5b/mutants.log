@@ -1,0 +1,166 @@
+1:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@setMaximumItemCount(int):227:this.data.size() > maximum |==> this.data.size() != maximum
+2:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@setMaximumItemCount(int):227:this.data.size() > maximum |==> this.data.size() >= maximum
+3:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@setMaximumItemCount(int):227:this.data.size() > maximum |==> false
+4:COR:dataRemoved:TRUE:org.jfree.data.xy.XYSeries@setMaximumItemCount(int):231:dataRemoved |==> false
+5:COR:dataRemoved:FALSE:org.jfree.data.xy.XYSeries@setMaximumItemCount(int):231:dataRemoved |==> true
+6:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):348:item == null |==> false
+7:COR:this.autoSort:TRUE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):352:this.autoSort |==> false
+8:COR:this.autoSort:FALSE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):352:this.autoSort |==> true
+9:ROR:<(int,int):!=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):354:index < 0 |==> index != 0
+10:ROR:<(int,int):<=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):354:index < 0 |==> index <= 0
+11:ROR:<(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):354:index < 0 |==> false
+12:AOR:-(int,int):%(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):355:-index - 1 |==> -index % 1
+13:AOR:-(int,int):*(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):355:-index - 1 |==> -index * 1
+14:AOR:-(int,int):+(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):355:-index - 1 |==> -index + 1
+15:AOR:-(int,int):/(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):355:-index - 1 |==> -index / 1
+16:COR:this.allowDuplicateXValues:TRUE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):358:this.allowDuplicateXValues |==> false
+17:COR:this.allowDuplicateXValues:FALSE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):358:this.allowDuplicateXValues |==> true
+18:ROR:<(int,int):!=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):361:index < size |==> index != size
+19:ROR:<(int,int):<=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):361:index < size |==> index <= size
+20:ROR:<(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):361:index < size |==> false
+21:ROR:==(int,int):<=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):362:item.compareTo(this.data.get(index)) == 0 |==> item.compareTo(this.data.get(index)) <= 0
+22:ROR:==(int,int):>=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):362:item.compareTo(this.data.get(index)) == 0 |==> item.compareTo(this.data.get(index)) >= 0
+23:ROR:==(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):362:item.compareTo(this.data.get(index)) == 0 |==> false
+24:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):361:index < size && item.compareTo(this.data.get(index)) == 0 |==> index < size == (item.compareTo(this.data.get(index)) == 0)
+25:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):362:index < size && item.compareTo(this.data.get(index)) == 0 |==> false
+26:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):361:index < size && item.compareTo(this.data.get(index)) == 0 |==> index < size
+27:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):362:index < size && item.compareTo(this.data.get(index)) == 0 |==> item.compareTo(this.data.get(index)) == 0
+28:ROR:<(int,int):!=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):365:index < this.data.size() |==> index != this.data.size()
+29:ROR:<(int,int):<=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):365:index < this.data.size() |==> index <= this.data.size()
+30:ROR:<(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):365:index < this.data.size() |==> false
+31:COR:this.allowDuplicateXValues:TRUE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):378:this.allowDuplicateXValues |==> false
+32:COR:this.allowDuplicateXValues:FALSE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):378:this.allowDuplicateXValues |==> true
+33:ROR:>=(int,int):==(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):382:index >= 0 |==> index == 0
+34:ROR:>=(int,int):>(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):382:index >= 0 |==> index > 0
+35:ROR:>=(int,int):TRUE(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):382:index >= 0 |==> true
+36:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):388:getItemCount() > this.maximumItemCount |==> getItemCount() != this.maximumItemCount
+37:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):388:getItemCount() > this.maximumItemCount |==> getItemCount() >= this.maximumItemCount
+38:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):388:getItemCount() > this.maximumItemCount |==> false
+39:COR:notify:TRUE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):391:notify |==> false
+40:COR:notify:FALSE:org.jfree.data.xy.XYSeries@add(org.jfree.data.xy.XYDataItem,boolean):391:notify |==> true
+41:ROR:<=(int,int):<(int,int):org.jfree.data.xy.XYSeries@delete(int,int):404:i <= end |==> i < end
+42:ROR:<=(int,int):==(int,int):org.jfree.data.xy.XYSeries@delete(int,int):404:i <= end |==> i == end
+43:ROR:<=(int,int):TRUE(int,int):org.jfree.data.xy.XYSeries@delete(int,int):404:i <= end |==> true
+44:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@clear():440:this.data.size() > 0 |==> this.data.size() != 0
+45:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@clear():440:this.data.size() > 0 |==> this.data.size() >= 0
+46:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@clear():440:this.data.size() > 0 |==> false
+47:ROR:<(int,int):!=(int,int):org.jfree.data.xy.XYSeries@update(java.lang.Number,java.lang.Number):505:index < 0 |==> index != 0
+48:ROR:<(int,int):<=(int,int):org.jfree.data.xy.XYSeries@update(java.lang.Number,java.lang.Number):505:index < 0 |==> index <= 0
+49:ROR:<(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@update(java.lang.Number,java.lang.Number):505:index < 0 |==> false
+50:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):541:x == null |==> false
+51:ROR:>=(int,int):==(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):548:index >= 0 |==> index == 0
+52:ROR:>=(int,int):>(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):548:index >= 0 |==> index > 0
+53:ROR:>=(int,int):TRUE(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):548:index >= 0 |==> true
+54:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):548:index >= 0 && !this.allowDuplicateXValues |==> index >= 0 == !this.allowDuplicateXValues
+55:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):548:index >= 0 && !this.allowDuplicateXValues |==> false
+56:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):548:index >= 0 && !this.allowDuplicateXValues |==> index >= 0
+57:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):548:index >= 0 && !this.allowDuplicateXValues |==> !this.allowDuplicateXValues
+58:COR:this.autoSort:TRUE:org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):563:this.autoSort |==> false
+59:COR:this.autoSort:FALSE:org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):563:this.autoSort |==> true
+60:AOR:-(int,int):%(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):564:-index - 1 |==> -index % 1
+61:AOR:-(int,int):*(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):564:-index - 1 |==> -index * 1
+62:AOR:-(int,int):+(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):564:-index - 1 |==> -index + 1
+63:AOR:-(int,int):/(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):564:-index - 1 |==> -index / 1
+64:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):570:getItemCount() > this.maximumItemCount |==> getItemCount() != this.maximumItemCount
+65:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):570:getItemCount() > this.maximumItemCount |==> getItemCount() >= this.maximumItemCount
+66:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@addOrUpdate(java.lang.Number,java.lang.Number):570:getItemCount() > this.maximumItemCount |==> false
+67:COR:this.autoSort:TRUE:org.jfree.data.xy.XYSeries@indexOf(java.lang.Number):589:this.autoSort |==> false
+68:COR:this.autoSort:FALSE:org.jfree.data.xy.XYSeries@indexOf(java.lang.Number):589:this.autoSort |==> true
+69:ROR:<(int,int):!=(int,int):org.jfree.data.xy.XYSeries@indexOf(java.lang.Number):593:i < this.data.size() |==> i != this.data.size()
+70:ROR:<(int,int):<=(int,int):org.jfree.data.xy.XYSeries@indexOf(java.lang.Number):593:i < this.data.size() |==> i <= this.data.size()
+71:ROR:<(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@indexOf(java.lang.Number):593:i < this.data.size() |==> false
+72:COR:item.getX().equals(x):TRUE:org.jfree.data.xy.XYSeries@indexOf(java.lang.Number):595:item.getX().equals(x) |==> false
+73:COR:item.getX().equals(x):FALSE:org.jfree.data.xy.XYSeries@indexOf(java.lang.Number):595:item.getX().equals(x) |==> true
+74:ROR:<(int,int):!=(int,int):org.jfree.data.xy.XYSeries@toArray():613:i < itemCount |==> i != itemCount
+75:ROR:<(int,int):<=(int,int):org.jfree.data.xy.XYSeries@toArray():613:i < itemCount |==> i <= itemCount
+76:ROR:<(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@toArray():613:i < itemCount |==> false
+77:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.xy.XYSeries@toArray():616:y != null |==> true
+78:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@createCopy(int,int):654:this.data.size() > 0 |==> this.data.size() != 0
+79:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@createCopy(int,int):654:this.data.size() > 0 |==> this.data.size() >= 0
+80:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@createCopy(int,int):654:this.data.size() > 0 |==> false
+81:ROR:<=(int,int):<(int,int):org.jfree.data.xy.XYSeries@createCopy(int,int):655:index <= end |==> index < end
+82:ROR:<=(int,int):==(int,int):org.jfree.data.xy.XYSeries@createCopy(int,int):655:index <= end |==> index == end
+83:ROR:<=(int,int):TRUE(int,int):org.jfree.data.xy.XYSeries@createCopy(int,int):655:index <= end |==> true
+84:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.xy.XYSeries@equals(java.lang.Object):679:obj == this |==> false
+85:COR:super.equals(obj):TRUE:org.jfree.data.xy.XYSeries@equals(java.lang.Object):685:super.equals(obj) |==> false
+86:COR:super.equals(obj):FALSE:org.jfree.data.xy.XYSeries@equals(java.lang.Object):685:super.equals(obj) |==> true
+87:ROR:!=(int,int):<(int,int):org.jfree.data.xy.XYSeries@equals(java.lang.Object):689:this.maximumItemCount != that.maximumItemCount |==> this.maximumItemCount < that.maximumItemCount
+88:ROR:!=(int,int):>(int,int):org.jfree.data.xy.XYSeries@equals(java.lang.Object):689:this.maximumItemCount != that.maximumItemCount |==> this.maximumItemCount > that.maximumItemCount
+89:ROR:!=(int,int):TRUE(int,int):org.jfree.data.xy.XYSeries@equals(java.lang.Object):689:this.maximumItemCount != that.maximumItemCount |==> true
+90:ROR:!=(boolean,boolean):LHS(boolean,boolean):org.jfree.data.xy.XYSeries@equals(java.lang.Object):692:this.autoSort != that.autoSort |==> this.autoSort
+91:ROR:!=(boolean,boolean):RHS(boolean,boolean):org.jfree.data.xy.XYSeries@equals(java.lang.Object):692:this.autoSort != that.autoSort |==> that.autoSort
+92:ROR:!=(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.xy.XYSeries@equals(java.lang.Object):692:this.autoSort != that.autoSort |==> true
+93:ROR:!=(boolean,boolean):LHS(boolean,boolean):org.jfree.data.xy.XYSeries@equals(java.lang.Object):695:this.allowDuplicateXValues != that.allowDuplicateXValues |==> this.allowDuplicateXValues
+94:ROR:!=(boolean,boolean):RHS(boolean,boolean):org.jfree.data.xy.XYSeries@equals(java.lang.Object):695:this.allowDuplicateXValues != that.allowDuplicateXValues |==> that.allowDuplicateXValues
+95:ROR:!=(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.xy.XYSeries@equals(java.lang.Object):695:this.allowDuplicateXValues != that.allowDuplicateXValues |==> true
+96:COR:ObjectUtilities.equal(this.data, that.data):TRUE:org.jfree.data.xy.XYSeries@equals(java.lang.Object):698:ObjectUtilities.equal(this.data, that.data) |==> false
+97:COR:ObjectUtilities.equal(this.data, that.data):FALSE:org.jfree.data.xy.XYSeries@equals(java.lang.Object):698:ObjectUtilities.equal(this.data, that.data) |==> true
+98:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@hashCode():714:count > 0 |==> count != 0
+99:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@hashCode():714:count > 0 |==> count >= 0
+100:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@hashCode():714:count > 0 |==> false
+101:AOR:*(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result |==> 29 % result
+102:AOR:*(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result |==> 29 + result
+103:AOR:*(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result |==> 29 - result
+104:AOR:*(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result |==> 29 / result
+105:AOR:+(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result + item.hashCode() |==> 29 * result % item.hashCode()
+106:AOR:+(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result + item.hashCode() |==> 29 * result * item.hashCode()
+107:AOR:+(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result + item.hashCode() |==> 29 * result - item.hashCode()
+108:AOR:+(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():716:29 * result + item.hashCode() |==> 29 * result / item.hashCode()
+109:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@hashCode():718:count > 1 |==> count != 1
+110:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@hashCode():718:count > 1 |==> count >= 1
+111:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@hashCode():718:count > 1 |==> false
+112:AOR:-(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():719:count - 1 |==> count % 1
+113:AOR:-(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():719:count - 1 |==> count * 1
+114:AOR:-(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():719:count - 1 |==> count + 1
+115:AOR:-(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():719:count - 1 |==> count / 1
+116:AOR:*(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result |==> 29 % result
+117:AOR:*(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result |==> 29 + result
+118:AOR:*(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result |==> 29 - result
+119:AOR:*(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result |==> 29 / result
+120:AOR:+(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result + item.hashCode() |==> 29 * result % item.hashCode()
+121:AOR:+(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result + item.hashCode() |==> 29 * result * item.hashCode()
+122:AOR:+(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result + item.hashCode() |==> 29 * result - item.hashCode()
+123:AOR:+(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():720:29 * result + item.hashCode() |==> 29 * result / item.hashCode()
+124:ROR:>(int,int):!=(int,int):org.jfree.data.xy.XYSeries@hashCode():722:count > 2 |==> count != 2
+125:ROR:>(int,int):>=(int,int):org.jfree.data.xy.XYSeries@hashCode():722:count > 2 |==> count >= 2
+126:ROR:>(int,int):FALSE(int,int):org.jfree.data.xy.XYSeries@hashCode():722:count > 2 |==> false
+127:AOR:/(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():723:count / 2 |==> count % 2
+128:AOR:/(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():723:count / 2 |==> count * 2
+129:AOR:/(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():723:count / 2 |==> count + 2
+130:AOR:/(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():723:count / 2 |==> count - 2
+131:AOR:*(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result |==> 29 % result
+132:AOR:*(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result |==> 29 + result
+133:AOR:*(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result |==> 29 - result
+134:AOR:*(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result |==> 29 / result
+135:AOR:+(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result + item.hashCode() |==> 29 * result % item.hashCode()
+136:AOR:+(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result + item.hashCode() |==> 29 * result * item.hashCode()
+137:AOR:+(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result + item.hashCode() |==> 29 * result - item.hashCode()
+138:AOR:+(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():724:29 * result + item.hashCode() |==> 29 * result / item.hashCode()
+139:AOR:*(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result |==> 29 % result
+140:AOR:*(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result |==> 29 + result
+141:AOR:*(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result |==> 29 - result
+142:AOR:*(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result |==> 29 / result
+143:AOR:+(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result + this.maximumItemCount |==> 29 * result % this.maximumItemCount
+144:AOR:+(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result + this.maximumItemCount |==> 29 * result * this.maximumItemCount
+145:AOR:+(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result + this.maximumItemCount |==> 29 * result - this.maximumItemCount
+146:AOR:+(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():726:29 * result + this.maximumItemCount |==> 29 * result / this.maximumItemCount
+147:AOR:*(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result |==> 29 % result
+148:AOR:*(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result |==> 29 + result
+149:AOR:*(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result |==> 29 - result
+150:AOR:*(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result |==> 29 / result
+151:COR:this.autoSort:TRUE:org.jfree.data.xy.XYSeries@hashCode():727:this.autoSort |==> false
+152:COR:this.autoSort:FALSE:org.jfree.data.xy.XYSeries@hashCode():727:this.autoSort |==> true
+153:AOR:+(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result + (this.autoSort ? 1 : 0) |==> 29 * result % (this.autoSort ? 1 : 0)
+154:AOR:+(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result + (this.autoSort ? 1 : 0) |==> 29 * result * (this.autoSort ? 1 : 0)
+155:AOR:+(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result + (this.autoSort ? 1 : 0) |==> 29 * result - (this.autoSort ? 1 : 0)
+156:AOR:+(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():727:29 * result + (this.autoSort ? 1 : 0) |==> 29 * result / (this.autoSort ? 1 : 0)
+157:AOR:*(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result |==> 29 % result
+158:AOR:*(int,int):+(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result |==> 29 + result
+159:AOR:*(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result |==> 29 - result
+160:AOR:*(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result |==> 29 / result
+161:COR:this.allowDuplicateXValues:TRUE:org.jfree.data.xy.XYSeries@hashCode():728:this.allowDuplicateXValues |==> false
+162:COR:this.allowDuplicateXValues:FALSE:org.jfree.data.xy.XYSeries@hashCode():728:this.allowDuplicateXValues |==> true
+163:AOR:+(int,int):%(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result + (this.allowDuplicateXValues ? 1 : 0) |==> 29 * result % (this.allowDuplicateXValues ? 1 : 0)
+164:AOR:+(int,int):*(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result + (this.allowDuplicateXValues ? 1 : 0) |==> 29 * result * (this.allowDuplicateXValues ? 1 : 0)
+165:AOR:+(int,int):-(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result + (this.allowDuplicateXValues ? 1 : 0) |==> 29 * result - (this.allowDuplicateXValues ? 1 : 0)
+166:AOR:+(int,int):/(int,int):org.jfree.data.xy.XYSeries@hashCode():728:29 * result + (this.allowDuplicateXValues ? 1 : 0) |==> 29 * result / (this.allowDuplicateXValues ? 1 : 0)

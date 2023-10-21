@@ -1,0 +1,81 @@
+
+initialise:
+
+compile:
+    [javac] /home/rein/IdeaProjects/defects4j/framework/projects/Chart/Chart.build.xml:57: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-experimental:
+    [javac] /home/rein/IdeaProjects/defects4j/framework/projects/Chart/Chart.build.xml:106: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /home/rein/IdeaProjects/defects4j/framework/projects/Chart/Chart.build.xml:123: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: [1;31morg.jfree.data.junit.KeyedObjects2DTests[testRemoveColumnByKey] failed![0m
+    [junit] MAJOR: [1;31m -> org.jfree.data.UnknownKeyException[0m
+    [junit] MAJOR: [1;31m -> "The key (C2) is not recognised."[0m
+    [junit] MAJOR: [1;31morg.jfree.data.junit.KeyedObjects2DTests[testRemoveValue] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "expected:<1> but was:<2>"[0m
+    [junit] MAJOR: [1;31morg.jfree.data.junit.KeyedObjects2DTests[testGetValueByKey] failed![0m
+    [junit] MAJOR: [1;31m -> org.jfree.data.UnknownKeyException[0m
+    [junit] MAJOR: [1;31m -> "The key (C2) is not recognised."[0m
+    [junit] MAJOR: [1;31morg.jfree.data.junit.KeyedObjects2DTests[testRemoveColumnByIndex] failed![0m
+    [junit] MAJOR: [1;31m -> org.jfree.data.UnknownKeyException[0m
+    [junit] MAJOR: [1;31m -> "The key (C1) is not recognised."[0m
+    [junit] MAJOR: [1;31morg.jfree.data.junit.KeyedObjects2DTests[testSetObject] failed![0m
+    [junit] MAJOR: [1;31m -> org.jfree.data.UnknownKeyException[0m
+    [junit] MAJOR: [1;31m -> "The key (C2) is not recognised."[0m
+    [junit] MAJOR: [1;31morg.jfree.data.junit.KeyedObjects2DTests[testRemoveRowByKey] failed![0m
+    [junit] MAJOR: [1;31m -> java.lang.ArrayIndexOutOfBoundsException[0m
+    [junit] MAJOR: [1;31m -> "-1"[0m
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR: [1;31m - org.jfree.data.junit.KeyedObjects2DTests[0m
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 5 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 0.60 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 70
+    [junit] MAJOR: Mutants covered:   45 (64.29%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 5 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m1/5 - org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests (16ms / 44):[0m
+    [junit] MAJOR: 654 (13 / 44 / 44) -> AVG-RTPM: 14ms
+    [junit] MAJOR: Mutants killed / live: 13 (6-7-0) / 32
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m2/5 - org.jfree.data.statistics.junit.DefaultStatisticalCategoryDatasetTests (18ms / 45):[0m
+    [junit] MAJOR: 1041 (5 / 32 / 45) -> AVG-RTPM: 12ms
+    [junit] MAJOR: Mutants killed / live: 18 (9-9-0) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m3/5 - org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests (55ms / 13):[0m
+    [junit] MAJOR: 1510 (0 / 7 / 13) -> AVG-RTPM: 67ms
+    [junit] MAJOR: Mutants killed / live: 18 (9-9-0) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m4/5 - org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests (82ms / 13):[0m
+    [junit] MAJOR: 1949 (0 / 7 / 13) -> AVG-RTPM: 62ms
+    [junit] MAJOR: Mutants killed / live: 18 (9-9-0) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m5/5 - org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests (177ms / 13):[0m
+    [junit] MAJOR: 2472 (0 / 7 / 13) -> AVG-RTPM: 74ms
+    [junit] MAJOR: Mutants killed / live: 18 (9-9-0) / 27
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  2.5 seconds
+    [junit] MAJOR: Mutation score: 25.71% (40.00%)
+    [junit] MAJOR: Mutants killed / live: 18 (9-9-0) / 27
+    [junit] MAJOR: Mutant executions: 97
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /tmp/Chart/Chart-22b/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 3 seconds

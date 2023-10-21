@@ -1,0 +1,12 @@
+JTD_1:50:this.lower => lower
+JTD_2:51:this.upper => upper
+JTI_1:34:lower  -->  this.lower
+JTI_2:34:upper  -->  this.upper
+JTI_3:40:lower  -->  this.lower
+JTI_4:40:upper  -->  this.upper
+JTI_5:47:lower  -->  this.lower
+JTI_6:47:upper  -->  this.upper
+JTI_7:48:lower  -->  this.lower
+JTI_8:48:upper  -->  this.upper
+JTI_9:50:lower  -->  this.lower
+JTI_10:51:upper  -->  this.upper

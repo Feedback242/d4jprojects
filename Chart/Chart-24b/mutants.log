@@ -1,0 +1,26 @@
+1:ROR:>=(double,double):==(double,double):org.jfree.chart.renderer.GrayPaintScale@<init>(double,double):85:lowerBound >= upperBound |==> lowerBound == upperBound
+2:ROR:>=(double,double):>(double,double):org.jfree.chart.renderer.GrayPaintScale@<init>(double,double):85:lowerBound >= upperBound |==> lowerBound > upperBound
+3:ROR:>=(double,double):TRUE(double,double):org.jfree.chart.renderer.GrayPaintScale@<init>(double,double):85:lowerBound >= upperBound |==> true
+4:AOR:-(double,double):%(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:value - this.lowerBound |==> value % this.lowerBound
+5:AOR:-(double,double):*(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:value - this.lowerBound |==> value * this.lowerBound
+6:AOR:-(double,double):+(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:value - this.lowerBound |==> value + this.lowerBound
+7:AOR:-(double,double):/(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:value - this.lowerBound |==> value / this.lowerBound
+8:AOR:-(double,double):%(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:this.upperBound - this.lowerBound |==> this.upperBound % this.lowerBound
+9:AOR:-(double,double):*(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:this.upperBound - this.lowerBound |==> this.upperBound * this.lowerBound
+10:AOR:-(double,double):+(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:this.upperBound - this.lowerBound |==> this.upperBound + this.lowerBound
+11:AOR:-(double,double):/(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:this.upperBound - this.lowerBound |==> this.upperBound / this.lowerBound
+12:AOR:/(double,double):%(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) |==> (value - this.lowerBound) % (this.upperBound - this.lowerBound)
+13:AOR:/(double,double):*(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) |==> (value - this.lowerBound) * (this.upperBound - this.lowerBound)
+14:AOR:/(double,double):+(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) |==> (value - this.lowerBound) + (this.upperBound - this.lowerBound)
+15:AOR:/(double,double):-(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) |==> (value - this.lowerBound) - (this.upperBound - this.lowerBound)
+16:AOR:*(double,double):%(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 |==> (value - this.lowerBound) / (this.upperBound - this.lowerBound) % 255.0
+17:AOR:*(double,double):+(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 |==> (value - this.lowerBound) / (this.upperBound - this.lowerBound) + 255.0
+18:AOR:*(double,double):-(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 |==> (value - this.lowerBound) / (this.upperBound - this.lowerBound) - 255.0
+19:AOR:*(double,double):/(double,double):org.jfree.chart.renderer.GrayPaintScale@getPaint(double):126:(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 |==> (value - this.lowerBound) / (this.upperBound - this.lowerBound) / 255.0
+20:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.renderer.GrayPaintScale@equals(java.lang.Object):145:obj == this |==> false
+21:ROR:!=(double,double):<(double,double):org.jfree.chart.renderer.GrayPaintScale@equals(java.lang.Object):152:this.lowerBound != that.lowerBound |==> this.lowerBound < that.lowerBound
+22:ROR:!=(double,double):>(double,double):org.jfree.chart.renderer.GrayPaintScale@equals(java.lang.Object):152:this.lowerBound != that.lowerBound |==> this.lowerBound > that.lowerBound
+23:ROR:!=(double,double):TRUE(double,double):org.jfree.chart.renderer.GrayPaintScale@equals(java.lang.Object):152:this.lowerBound != that.lowerBound |==> true
+24:ROR:!=(double,double):<(double,double):org.jfree.chart.renderer.GrayPaintScale@equals(java.lang.Object):155:this.upperBound != that.upperBound |==> this.upperBound < that.upperBound
+25:ROR:!=(double,double):>(double,double):org.jfree.chart.renderer.GrayPaintScale@equals(java.lang.Object):155:this.upperBound != that.upperBound |==> this.upperBound > that.upperBound
+26:ROR:!=(double,double):TRUE(double,double):org.jfree.chart.renderer.GrayPaintScale@equals(java.lang.Object):155:this.upperBound != that.upperBound |==> true

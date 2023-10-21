@@ -1,0 +1,248 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):257:start == null |==> false
+2:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):257:end == null |==> false
+3:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):257:start == null || end == null |==> start == null != (end == null)
+4:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):257:start == null || end == null |==> start == null
+5:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):257:start == null || end == null |==> end == null
+6:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):257:start == null || end == null |==> true
+7:ROR:!=(int,int):<(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):260:start.size() != end.size() |==> start.size() < end.size()
+8:ROR:!=(int,int):>(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):260:start.size() != end.size() |==> start.size() > end.size()
+9:ROR:!=(int,int):TRUE(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):260:start.size() != end.size() |==> true
+10:ROR:<(int,int):!=(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):265:i < isize |==> i != isize
+11:ROR:<(int,int):<=(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):265:i < isize |==> i <= isize
+12:ROR:<(int,int):FALSE(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):265:i < isize |==> false
+13:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):266:start.getFieldType(i) != end.getFieldType(i) |==> true
+14:ROR:>(int,int):!=(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i > 0 |==> i != 0
+15:ROR:>(int,int):>=(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i > 0 |==> i >= 0
+16:ROR:>(int,int):FALSE(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i > 0 |==> false
+17:AOR:-(int,int):%(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i - 1 |==> i % 1
+18:AOR:-(int,int):*(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i - 1 |==> i * 1
+19:AOR:-(int,int):+(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i - 1 |==> i + 1
+20:AOR:-(int,int):/(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i - 1 |==> i / 1
+21:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:types[i - 1] == types[i] |==> false
+22:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i > 0 && types[i - 1] == types[i] |==> i > 0 == (types[i - 1] == types[i])
+23:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i > 0 && types[i - 1] == types[i] |==> false
+24:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i > 0 && types[i - 1] == types[i] |==> i > 0
+25:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):270:i > 0 && types[i - 1] == types[i] |==> types[i - 1] == types[i]
+26:AOR:-(int,int):%(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):273:end.getValue(i) - start.getValue(i) |==> end.getValue(i) % start.getValue(i)
+27:AOR:-(int,int):*(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):273:end.getValue(i) - start.getValue(i) |==> end.getValue(i) * start.getValue(i)
+28:AOR:-(int,int):+(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):273:end.getValue(i) - start.getValue(i) |==> end.getValue(i) + start.getValue(i)
+29:AOR:-(int,int):/(int,int):org.joda.time.Period@fieldDifference(org.joda.time.ReadablePartial,org.joda.time.ReadablePartial):273:end.getValue(i) - start.getValue(i) |==> end.getValue(i) / start.getValue(i)
+30:COR:type.equals(getPeriodType()):TRUE:org.joda.time.Period@withPeriodType(org.joda.time.PeriodType):817:type.equals(getPeriodType()) |==> false
+31:COR:type.equals(getPeriodType()):FALSE:org.joda.time.Period@withPeriodType(org.joda.time.PeriodType):817:type.equals(getPeriodType()) |==> true
+32:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@withFields(org.joda.time.ReadablePeriod):834:period == null |==> false
+33:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@withField(org.joda.time.DurationFieldType,int):854:field == null |==> false
+34:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@withFieldAdded(org.joda.time.DurationFieldType,int):873:field == null |==> false
+35:ROR:==(int,int):<=(int,int):org.joda.time.Period@withFieldAdded(org.joda.time.DurationFieldType,int):876:value == 0 |==> value <= 0
+36:ROR:==(int,int):>=(int,int):org.joda.time.Period@withFieldAdded(org.joda.time.DurationFieldType,int):876:value == 0 |==> value >= 0
+37:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@withFieldAdded(org.joda.time.DurationFieldType,int):876:value == 0 |==> false
+38:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@plus(org.joda.time.ReadablePeriod):1024:period == null |==> false
+39:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusYears(int):1050:years == 0 |==> years <= 0
+40:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusYears(int):1050:years == 0 |==> years >= 0
+41:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusYears(int):1050:years == 0 |==> false
+42:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusMonths(int):1068:months == 0 |==> months <= 0
+43:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusMonths(int):1068:months == 0 |==> months >= 0
+44:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusMonths(int):1068:months == 0 |==> false
+45:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusWeeks(int):1086:weeks == 0 |==> weeks <= 0
+46:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusWeeks(int):1086:weeks == 0 |==> weeks >= 0
+47:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusWeeks(int):1086:weeks == 0 |==> false
+48:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusDays(int):1104:days == 0 |==> days <= 0
+49:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusDays(int):1104:days == 0 |==> days >= 0
+50:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusDays(int):1104:days == 0 |==> false
+51:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusHours(int):1122:hours == 0 |==> hours <= 0
+52:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusHours(int):1122:hours == 0 |==> hours >= 0
+53:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusHours(int):1122:hours == 0 |==> false
+54:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusMinutes(int):1140:minutes == 0 |==> minutes <= 0
+55:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusMinutes(int):1140:minutes == 0 |==> minutes >= 0
+56:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusMinutes(int):1140:minutes == 0 |==> false
+57:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusSeconds(int):1158:seconds == 0 |==> seconds <= 0
+58:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusSeconds(int):1158:seconds == 0 |==> seconds >= 0
+59:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusSeconds(int):1158:seconds == 0 |==> false
+60:ROR:==(int,int):<=(int,int):org.joda.time.Period@plusMillis(int):1176:millis == 0 |==> millis <= 0
+61:ROR:==(int,int):>=(int,int):org.joda.time.Period@plusMillis(int):1176:millis == 0 |==> millis >= 0
+62:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@plusMillis(int):1176:millis == 0 |==> false
+63:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@minus(org.joda.time.ReadablePeriod):1203:period == null |==> false
+64:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Period@multipliedBy(int):1334:this == ZERO |==> false
+65:ROR:==(int,int):<=(int,int):org.joda.time.Period@multipliedBy(int):1334:scalar == 1 |==> scalar <= 1
+66:ROR:==(int,int):>=(int,int):org.joda.time.Period@multipliedBy(int):1334:scalar == 1 |==> scalar >= 1
+67:ROR:==(int,int):FALSE(int,int):org.joda.time.Period@multipliedBy(int):1334:scalar == 1 |==> false
+68:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.Period@multipliedBy(int):1334:this == ZERO || scalar == 1 |==> this == ZERO != (scalar == 1)
+69:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.Period@multipliedBy(int):1334:this == ZERO || scalar == 1 |==> this == ZERO
+70:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.Period@multipliedBy(int):1334:this == ZERO || scalar == 1 |==> scalar == 1
+71:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.Period@multipliedBy(int):1334:this == ZERO || scalar == 1 |==> true
+72:ROR:<(int,int):!=(int,int):org.joda.time.Period@multipliedBy(int):1338:i < values.length |==> i != values.length
+73:ROR:<(int,int):<=(int,int):org.joda.time.Period@multipliedBy(int):1338:i < values.length |==> i <= values.length
+74:ROR:<(int,int):FALSE(int,int):org.joda.time.Period@multipliedBy(int):1338:i < values.length |==> false
+75:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardWeeks():1378:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) % DateTimeConstants.MILLIS_PER_SECOND
+76:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardWeeks():1378:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) + DateTimeConstants.MILLIS_PER_SECOND
+77:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardWeeks():1378:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) - DateTimeConstants.MILLIS_PER_SECOND
+78:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardWeeks():1378:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) / DateTimeConstants.MILLIS_PER_SECOND
+79:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardWeeks():1379:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) % DateTimeConstants.MILLIS_PER_MINUTE
+80:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardWeeks():1379:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) + DateTimeConstants.MILLIS_PER_MINUTE
+81:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardWeeks():1379:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) - DateTimeConstants.MILLIS_PER_MINUTE
+82:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardWeeks():1379:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) / DateTimeConstants.MILLIS_PER_MINUTE
+83:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardWeeks():1380:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) % DateTimeConstants.MILLIS_PER_HOUR
+84:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardWeeks():1380:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) + DateTimeConstants.MILLIS_PER_HOUR
+85:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardWeeks():1380:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) - DateTimeConstants.MILLIS_PER_HOUR
+86:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardWeeks():1380:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) / DateTimeConstants.MILLIS_PER_HOUR
+87:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardWeeks():1381:((long)getDays()) * DateTimeConstants.MILLIS_PER_DAY |==> ((long)getDays()) % DateTimeConstants.MILLIS_PER_DAY
+88:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardWeeks():1381:((long)getDays()) * DateTimeConstants.MILLIS_PER_DAY |==> ((long)getDays()) + DateTimeConstants.MILLIS_PER_DAY
+89:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardWeeks():1381:((long)getDays()) * DateTimeConstants.MILLIS_PER_DAY |==> ((long)getDays()) - DateTimeConstants.MILLIS_PER_DAY
+90:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardWeeks():1381:((long)getDays()) * DateTimeConstants.MILLIS_PER_DAY |==> ((long)getDays()) / DateTimeConstants.MILLIS_PER_DAY
+91:AOR:/(long,long):%(long,long):org.joda.time.Period@toStandardWeeks():1382:millis / DateTimeConstants.MILLIS_PER_WEEK |==> millis % DateTimeConstants.MILLIS_PER_WEEK
+92:AOR:/(long,long):*(long,long):org.joda.time.Period@toStandardWeeks():1382:millis / DateTimeConstants.MILLIS_PER_WEEK |==> millis * DateTimeConstants.MILLIS_PER_WEEK
+93:AOR:/(long,long):+(long,long):org.joda.time.Period@toStandardWeeks():1382:millis / DateTimeConstants.MILLIS_PER_WEEK |==> millis + DateTimeConstants.MILLIS_PER_WEEK
+94:AOR:/(long,long):-(long,long):org.joda.time.Period@toStandardWeeks():1382:millis / DateTimeConstants.MILLIS_PER_WEEK |==> millis - DateTimeConstants.MILLIS_PER_WEEK
+95:AOR:+(long,long):%(long,long):org.joda.time.Period@toStandardWeeks():1382:((long)getWeeks()) + millis / DateTimeConstants.MILLIS_PER_WEEK |==> ((long)getWeeks()) % (millis / DateTimeConstants.MILLIS_PER_WEEK)
+96:AOR:+(long,long):*(long,long):org.joda.time.Period@toStandardWeeks():1382:((long)getWeeks()) + millis / DateTimeConstants.MILLIS_PER_WEEK |==> ((long)getWeeks()) * (millis / DateTimeConstants.MILLIS_PER_WEEK)
+97:AOR:+(long,long):-(long,long):org.joda.time.Period@toStandardWeeks():1382:((long)getWeeks()) + millis / DateTimeConstants.MILLIS_PER_WEEK |==> ((long)getWeeks()) - millis / DateTimeConstants.MILLIS_PER_WEEK
+98:AOR:+(long,long):/(long,long):org.joda.time.Period@toStandardWeeks():1382:((long)getWeeks()) + millis / DateTimeConstants.MILLIS_PER_WEEK |==> ((long)getWeeks()) / (millis / DateTimeConstants.MILLIS_PER_WEEK)
+99:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDays():1408:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) % DateTimeConstants.MILLIS_PER_SECOND
+100:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDays():1408:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) + DateTimeConstants.MILLIS_PER_SECOND
+101:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDays():1408:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) - DateTimeConstants.MILLIS_PER_SECOND
+102:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDays():1408:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) / DateTimeConstants.MILLIS_PER_SECOND
+103:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDays():1409:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) % DateTimeConstants.MILLIS_PER_MINUTE
+104:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDays():1409:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) + DateTimeConstants.MILLIS_PER_MINUTE
+105:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDays():1409:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) - DateTimeConstants.MILLIS_PER_MINUTE
+106:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDays():1409:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) / DateTimeConstants.MILLIS_PER_MINUTE
+107:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDays():1410:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) % DateTimeConstants.MILLIS_PER_HOUR
+108:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDays():1410:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) + DateTimeConstants.MILLIS_PER_HOUR
+109:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDays():1410:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) - DateTimeConstants.MILLIS_PER_HOUR
+110:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDays():1410:((long)getHours()) * DateTimeConstants.MILLIS_PER_HOUR |==> ((long)getHours()) / DateTimeConstants.MILLIS_PER_HOUR
+111:AOR:/(long,long):%(long,long):org.joda.time.Period@toStandardDays():1411:millis / DateTimeConstants.MILLIS_PER_DAY |==> millis % DateTimeConstants.MILLIS_PER_DAY
+112:AOR:/(long,long):*(long,long):org.joda.time.Period@toStandardDays():1411:millis / DateTimeConstants.MILLIS_PER_DAY |==> millis * DateTimeConstants.MILLIS_PER_DAY
+113:AOR:/(long,long):+(long,long):org.joda.time.Period@toStandardDays():1411:millis / DateTimeConstants.MILLIS_PER_DAY |==> millis + DateTimeConstants.MILLIS_PER_DAY
+114:AOR:/(long,long):-(long,long):org.joda.time.Period@toStandardDays():1411:millis / DateTimeConstants.MILLIS_PER_DAY |==> millis - DateTimeConstants.MILLIS_PER_DAY
+115:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDays():1413:((long)getWeeks()) * ((long)DateTimeConstants.DAYS_PER_WEEK) |==> ((long)getWeeks()) % ((long)DateTimeConstants.DAYS_PER_WEEK)
+116:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDays():1413:((long)getWeeks()) * ((long)DateTimeConstants.DAYS_PER_WEEK) |==> ((long)getWeeks()) + ((long)DateTimeConstants.DAYS_PER_WEEK)
+117:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDays():1413:((long)getWeeks()) * ((long)DateTimeConstants.DAYS_PER_WEEK) |==> ((long)getWeeks()) - ((long)DateTimeConstants.DAYS_PER_WEEK)
+118:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDays():1413:((long)getWeeks()) * ((long)DateTimeConstants.DAYS_PER_WEEK) |==> ((long)getWeeks()) / ((long)DateTimeConstants.DAYS_PER_WEEK)
+119:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardHours():1439:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) % DateTimeConstants.MILLIS_PER_SECOND
+120:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardHours():1439:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) + DateTimeConstants.MILLIS_PER_SECOND
+121:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardHours():1439:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) - DateTimeConstants.MILLIS_PER_SECOND
+122:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardHours():1439:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) / DateTimeConstants.MILLIS_PER_SECOND
+123:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardHours():1440:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) % DateTimeConstants.MILLIS_PER_MINUTE
+124:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardHours():1440:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) + DateTimeConstants.MILLIS_PER_MINUTE
+125:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardHours():1440:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) - DateTimeConstants.MILLIS_PER_MINUTE
+126:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardHours():1440:((long)getMinutes()) * DateTimeConstants.MILLIS_PER_MINUTE |==> ((long)getMinutes()) / DateTimeConstants.MILLIS_PER_MINUTE
+127:AOR:/(long,long):%(long,long):org.joda.time.Period@toStandardHours():1441:millis / DateTimeConstants.MILLIS_PER_HOUR |==> millis % DateTimeConstants.MILLIS_PER_HOUR
+128:AOR:/(long,long):*(long,long):org.joda.time.Period@toStandardHours():1441:millis / DateTimeConstants.MILLIS_PER_HOUR |==> millis * DateTimeConstants.MILLIS_PER_HOUR
+129:AOR:/(long,long):+(long,long):org.joda.time.Period@toStandardHours():1441:millis / DateTimeConstants.MILLIS_PER_HOUR |==> millis + DateTimeConstants.MILLIS_PER_HOUR
+130:AOR:/(long,long):-(long,long):org.joda.time.Period@toStandardHours():1441:millis / DateTimeConstants.MILLIS_PER_HOUR |==> millis - DateTimeConstants.MILLIS_PER_HOUR
+131:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardHours():1443:((long)getDays()) * ((long)DateTimeConstants.HOURS_PER_DAY) |==> ((long)getDays()) % ((long)DateTimeConstants.HOURS_PER_DAY)
+132:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardHours():1443:((long)getDays()) * ((long)DateTimeConstants.HOURS_PER_DAY) |==> ((long)getDays()) + ((long)DateTimeConstants.HOURS_PER_DAY)
+133:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardHours():1443:((long)getDays()) * ((long)DateTimeConstants.HOURS_PER_DAY) |==> ((long)getDays()) - ((long)DateTimeConstants.HOURS_PER_DAY)
+134:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardHours():1443:((long)getDays()) * ((long)DateTimeConstants.HOURS_PER_DAY) |==> ((long)getDays()) / ((long)DateTimeConstants.HOURS_PER_DAY)
+135:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardHours():1444:((long)getWeeks()) * ((long)DateTimeConstants.HOURS_PER_WEEK) |==> ((long)getWeeks()) % ((long)DateTimeConstants.HOURS_PER_WEEK)
+136:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardHours():1444:((long)getWeeks()) * ((long)DateTimeConstants.HOURS_PER_WEEK) |==> ((long)getWeeks()) + ((long)DateTimeConstants.HOURS_PER_WEEK)
+137:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardHours():1444:((long)getWeeks()) * ((long)DateTimeConstants.HOURS_PER_WEEK) |==> ((long)getWeeks()) - ((long)DateTimeConstants.HOURS_PER_WEEK)
+138:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardHours():1444:((long)getWeeks()) * ((long)DateTimeConstants.HOURS_PER_WEEK) |==> ((long)getWeeks()) / ((long)DateTimeConstants.HOURS_PER_WEEK)
+139:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardMinutes():1470:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) % DateTimeConstants.MILLIS_PER_SECOND
+140:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardMinutes():1470:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) + DateTimeConstants.MILLIS_PER_SECOND
+141:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardMinutes():1470:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) - DateTimeConstants.MILLIS_PER_SECOND
+142:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardMinutes():1470:((long)getSeconds()) * DateTimeConstants.MILLIS_PER_SECOND |==> ((long)getSeconds()) / DateTimeConstants.MILLIS_PER_SECOND
+143:AOR:/(long,long):%(long,long):org.joda.time.Period@toStandardMinutes():1471:millis / DateTimeConstants.MILLIS_PER_MINUTE |==> millis % DateTimeConstants.MILLIS_PER_MINUTE
+144:AOR:/(long,long):*(long,long):org.joda.time.Period@toStandardMinutes():1471:millis / DateTimeConstants.MILLIS_PER_MINUTE |==> millis * DateTimeConstants.MILLIS_PER_MINUTE
+145:AOR:/(long,long):+(long,long):org.joda.time.Period@toStandardMinutes():1471:millis / DateTimeConstants.MILLIS_PER_MINUTE |==> millis + DateTimeConstants.MILLIS_PER_MINUTE
+146:AOR:/(long,long):-(long,long):org.joda.time.Period@toStandardMinutes():1471:millis / DateTimeConstants.MILLIS_PER_MINUTE |==> millis - DateTimeConstants.MILLIS_PER_MINUTE
+147:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardMinutes():1473:((long)getHours()) * ((long)DateTimeConstants.MINUTES_PER_HOUR) |==> ((long)getHours()) % ((long)DateTimeConstants.MINUTES_PER_HOUR)
+148:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardMinutes():1473:((long)getHours()) * ((long)DateTimeConstants.MINUTES_PER_HOUR) |==> ((long)getHours()) + ((long)DateTimeConstants.MINUTES_PER_HOUR)
+149:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardMinutes():1473:((long)getHours()) * ((long)DateTimeConstants.MINUTES_PER_HOUR) |==> ((long)getHours()) - ((long)DateTimeConstants.MINUTES_PER_HOUR)
+150:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardMinutes():1473:((long)getHours()) * ((long)DateTimeConstants.MINUTES_PER_HOUR) |==> ((long)getHours()) / ((long)DateTimeConstants.MINUTES_PER_HOUR)
+151:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardMinutes():1474:((long)getDays()) * ((long)DateTimeConstants.MINUTES_PER_DAY) |==> ((long)getDays()) % ((long)DateTimeConstants.MINUTES_PER_DAY)
+152:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardMinutes():1474:((long)getDays()) * ((long)DateTimeConstants.MINUTES_PER_DAY) |==> ((long)getDays()) + ((long)DateTimeConstants.MINUTES_PER_DAY)
+153:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardMinutes():1474:((long)getDays()) * ((long)DateTimeConstants.MINUTES_PER_DAY) |==> ((long)getDays()) - ((long)DateTimeConstants.MINUTES_PER_DAY)
+154:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardMinutes():1474:((long)getDays()) * ((long)DateTimeConstants.MINUTES_PER_DAY) |==> ((long)getDays()) / ((long)DateTimeConstants.MINUTES_PER_DAY)
+155:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardMinutes():1475:((long)getWeeks()) * ((long)DateTimeConstants.MINUTES_PER_WEEK) |==> ((long)getWeeks()) % ((long)DateTimeConstants.MINUTES_PER_WEEK)
+156:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardMinutes():1475:((long)getWeeks()) * ((long)DateTimeConstants.MINUTES_PER_WEEK) |==> ((long)getWeeks()) + ((long)DateTimeConstants.MINUTES_PER_WEEK)
+157:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardMinutes():1475:((long)getWeeks()) * ((long)DateTimeConstants.MINUTES_PER_WEEK) |==> ((long)getWeeks()) - ((long)DateTimeConstants.MINUTES_PER_WEEK)
+158:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardMinutes():1475:((long)getWeeks()) * ((long)DateTimeConstants.MINUTES_PER_WEEK) |==> ((long)getWeeks()) / ((long)DateTimeConstants.MINUTES_PER_WEEK)
+159:AOR:/(int,int):%(int,int):org.joda.time.Period@toStandardSeconds():1500:getMillis() / DateTimeConstants.MILLIS_PER_SECOND |==> getMillis() % DateTimeConstants.MILLIS_PER_SECOND
+160:AOR:/(int,int):*(int,int):org.joda.time.Period@toStandardSeconds():1500:getMillis() / DateTimeConstants.MILLIS_PER_SECOND |==> getMillis() * DateTimeConstants.MILLIS_PER_SECOND
+161:AOR:/(int,int):+(int,int):org.joda.time.Period@toStandardSeconds():1500:getMillis() / DateTimeConstants.MILLIS_PER_SECOND |==> getMillis() + DateTimeConstants.MILLIS_PER_SECOND
+162:AOR:/(int,int):-(int,int):org.joda.time.Period@toStandardSeconds():1500:getMillis() / DateTimeConstants.MILLIS_PER_SECOND |==> getMillis() - DateTimeConstants.MILLIS_PER_SECOND
+163:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardSeconds():1502:((long)getMinutes()) * ((long)DateTimeConstants.SECONDS_PER_MINUTE) |==> ((long)getMinutes()) % ((long)DateTimeConstants.SECONDS_PER_MINUTE)
+164:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardSeconds():1502:((long)getMinutes()) * ((long)DateTimeConstants.SECONDS_PER_MINUTE) |==> ((long)getMinutes()) + ((long)DateTimeConstants.SECONDS_PER_MINUTE)
+165:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardSeconds():1502:((long)getMinutes()) * ((long)DateTimeConstants.SECONDS_PER_MINUTE) |==> ((long)getMinutes()) - ((long)DateTimeConstants.SECONDS_PER_MINUTE)
+166:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardSeconds():1502:((long)getMinutes()) * ((long)DateTimeConstants.SECONDS_PER_MINUTE) |==> ((long)getMinutes()) / ((long)DateTimeConstants.SECONDS_PER_MINUTE)
+167:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardSeconds():1503:((long)getHours()) * ((long)DateTimeConstants.SECONDS_PER_HOUR) |==> ((long)getHours()) % ((long)DateTimeConstants.SECONDS_PER_HOUR)
+168:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardSeconds():1503:((long)getHours()) * ((long)DateTimeConstants.SECONDS_PER_HOUR) |==> ((long)getHours()) + ((long)DateTimeConstants.SECONDS_PER_HOUR)
+169:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardSeconds():1503:((long)getHours()) * ((long)DateTimeConstants.SECONDS_PER_HOUR) |==> ((long)getHours()) - ((long)DateTimeConstants.SECONDS_PER_HOUR)
+170:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardSeconds():1503:((long)getHours()) * ((long)DateTimeConstants.SECONDS_PER_HOUR) |==> ((long)getHours()) / ((long)DateTimeConstants.SECONDS_PER_HOUR)
+171:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardSeconds():1504:((long)getDays()) * ((long)DateTimeConstants.SECONDS_PER_DAY) |==> ((long)getDays()) % ((long)DateTimeConstants.SECONDS_PER_DAY)
+172:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardSeconds():1504:((long)getDays()) * ((long)DateTimeConstants.SECONDS_PER_DAY) |==> ((long)getDays()) + ((long)DateTimeConstants.SECONDS_PER_DAY)
+173:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardSeconds():1504:((long)getDays()) * ((long)DateTimeConstants.SECONDS_PER_DAY) |==> ((long)getDays()) - ((long)DateTimeConstants.SECONDS_PER_DAY)
+174:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardSeconds():1504:((long)getDays()) * ((long)DateTimeConstants.SECONDS_PER_DAY) |==> ((long)getDays()) / ((long)DateTimeConstants.SECONDS_PER_DAY)
+175:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardSeconds():1505:((long)getWeeks()) * ((long)DateTimeConstants.SECONDS_PER_WEEK) |==> ((long)getWeeks()) % ((long)DateTimeConstants.SECONDS_PER_WEEK)
+176:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardSeconds():1505:((long)getWeeks()) * ((long)DateTimeConstants.SECONDS_PER_WEEK) |==> ((long)getWeeks()) + ((long)DateTimeConstants.SECONDS_PER_WEEK)
+177:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardSeconds():1505:((long)getWeeks()) * ((long)DateTimeConstants.SECONDS_PER_WEEK) |==> ((long)getWeeks()) - ((long)DateTimeConstants.SECONDS_PER_WEEK)
+178:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardSeconds():1505:((long)getWeeks()) * ((long)DateTimeConstants.SECONDS_PER_WEEK) |==> ((long)getWeeks()) / ((long)DateTimeConstants.SECONDS_PER_WEEK)
+179:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDuration():1531:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) % ((long)DateTimeConstants.MILLIS_PER_SECOND)
+180:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDuration():1531:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) + ((long)DateTimeConstants.MILLIS_PER_SECOND)
+181:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDuration():1531:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) - ((long)DateTimeConstants.MILLIS_PER_SECOND)
+182:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDuration():1531:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) / ((long)DateTimeConstants.MILLIS_PER_SECOND)
+183:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDuration():1532:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) % ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+184:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDuration():1532:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) + ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+185:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDuration():1532:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) - ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+186:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDuration():1532:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) / ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+187:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDuration():1533:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) % ((long)DateTimeConstants.MILLIS_PER_HOUR)
+188:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDuration():1533:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) + ((long)DateTimeConstants.MILLIS_PER_HOUR)
+189:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDuration():1533:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) - ((long)DateTimeConstants.MILLIS_PER_HOUR)
+190:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDuration():1533:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) / ((long)DateTimeConstants.MILLIS_PER_HOUR)
+191:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDuration():1534:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) % ((long)DateTimeConstants.MILLIS_PER_DAY)
+192:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDuration():1534:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) + ((long)DateTimeConstants.MILLIS_PER_DAY)
+193:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDuration():1534:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) - ((long)DateTimeConstants.MILLIS_PER_DAY)
+194:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDuration():1534:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) / ((long)DateTimeConstants.MILLIS_PER_DAY)
+195:AOR:*(long,long):%(long,long):org.joda.time.Period@toStandardDuration():1535:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) % ((long)DateTimeConstants.MILLIS_PER_WEEK)
+196:AOR:*(long,long):+(long,long):org.joda.time.Period@toStandardDuration():1535:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) + ((long)DateTimeConstants.MILLIS_PER_WEEK)
+197:AOR:*(long,long):-(long,long):org.joda.time.Period@toStandardDuration():1535:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) - ((long)DateTimeConstants.MILLIS_PER_WEEK)
+198:AOR:*(long,long):/(long,long):org.joda.time.Period@toStandardDuration():1535:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) / ((long)DateTimeConstants.MILLIS_PER_WEEK)
+199:ROR:!=(int,int):<(int,int):org.joda.time.Period@checkYearsAndMonths(java.lang.String):1546:getMonths() != 0 |==> getMonths() < 0
+200:ROR:!=(int,int):>(int,int):org.joda.time.Period@checkYearsAndMonths(java.lang.String):1546:getMonths() != 0 |==> getMonths() > 0
+201:ROR:!=(int,int):TRUE(int,int):org.joda.time.Period@checkYearsAndMonths(java.lang.String):1546:getMonths() != 0 |==> true
+202:ROR:!=(int,int):<(int,int):org.joda.time.Period@checkYearsAndMonths(java.lang.String):1549:getYears() != 0 |==> getYears() < 0
+203:ROR:!=(int,int):>(int,int):org.joda.time.Period@checkYearsAndMonths(java.lang.String):1549:getYears() != 0 |==> getYears() > 0
+204:ROR:!=(int,int):TRUE(int,int):org.joda.time.Period@checkYearsAndMonths(java.lang.String):1549:getYears() != 0 |==> true
+205:AOR:*(long,long):%(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1619:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) % ((long)DateTimeConstants.MILLIS_PER_SECOND)
+206:AOR:*(long,long):+(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1619:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) + ((long)DateTimeConstants.MILLIS_PER_SECOND)
+207:AOR:*(long,long):-(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1619:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) - ((long)DateTimeConstants.MILLIS_PER_SECOND)
+208:AOR:*(long,long):/(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1619:((long)getSeconds()) * ((long)DateTimeConstants.MILLIS_PER_SECOND) |==> ((long)getSeconds()) / ((long)DateTimeConstants.MILLIS_PER_SECOND)
+209:AOR:*(long,long):%(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1620:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) % ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+210:AOR:*(long,long):+(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1620:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) + ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+211:AOR:*(long,long):-(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1620:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) - ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+212:AOR:*(long,long):/(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1620:((long)getMinutes()) * ((long)DateTimeConstants.MILLIS_PER_MINUTE) |==> ((long)getMinutes()) / ((long)DateTimeConstants.MILLIS_PER_MINUTE)
+213:AOR:*(long,long):%(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1621:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) % ((long)DateTimeConstants.MILLIS_PER_HOUR)
+214:AOR:*(long,long):+(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1621:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) + ((long)DateTimeConstants.MILLIS_PER_HOUR)
+215:AOR:*(long,long):-(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1621:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) - ((long)DateTimeConstants.MILLIS_PER_HOUR)
+216:AOR:*(long,long):/(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1621:((long)getHours()) * ((long)DateTimeConstants.MILLIS_PER_HOUR) |==> ((long)getHours()) / ((long)DateTimeConstants.MILLIS_PER_HOUR)
+217:AOR:*(long,long):%(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1622:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) % ((long)DateTimeConstants.MILLIS_PER_DAY)
+218:AOR:*(long,long):+(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1622:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) + ((long)DateTimeConstants.MILLIS_PER_DAY)
+219:AOR:*(long,long):-(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1622:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) - ((long)DateTimeConstants.MILLIS_PER_DAY)
+220:AOR:*(long,long):/(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1622:((long)getDays()) * ((long)DateTimeConstants.MILLIS_PER_DAY) |==> ((long)getDays()) / ((long)DateTimeConstants.MILLIS_PER_DAY)
+221:AOR:*(long,long):%(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1623:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) % ((long)DateTimeConstants.MILLIS_PER_WEEK)
+222:AOR:*(long,long):+(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1623:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) + ((long)DateTimeConstants.MILLIS_PER_WEEK)
+223:AOR:*(long,long):-(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1623:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) - ((long)DateTimeConstants.MILLIS_PER_WEEK)
+224:AOR:*(long,long):/(long,long):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1623:((long)getWeeks()) * ((long)DateTimeConstants.MILLIS_PER_WEEK) |==> ((long)getWeeks()) / ((long)DateTimeConstants.MILLIS_PER_WEEK)
+225:ROR:!=(int,int):<(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:years != 0 |==> years < 0
+226:ROR:!=(int,int):>(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:years != 0 |==> years > 0
+227:ROR:!=(int,int):TRUE(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:years != 0 |==> true
+228:ROR:!=(int,int):<(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:months != 0 |==> months < 0
+229:ROR:!=(int,int):>(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:months != 0 |==> months > 0
+230:ROR:!=(int,int):TRUE(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:months != 0 |==> true
+231:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:years != 0 || months != 0 |==> years != 0 != (months != 0)
+232:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:years != 0 || months != 0 |==> years != 0
+233:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:years != 0 || months != 0 |==> months != 0
+234:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1627:years != 0 || months != 0 |==> true
+235:AOR:/(int,int):%(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1628:months / 12 |==> months % 12
+236:AOR:/(int,int):*(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1628:months / 12 |==> months * 12
+237:AOR:/(int,int):+(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1628:months / 12 |==> months + 12
+238:AOR:/(int,int):-(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1628:months / 12 |==> months - 12
+239:AOR:%(int,int):*(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1629:months % 12 |==> months * 12
+240:AOR:%(int,int):+(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1629:months % 12 |==> months + 12
+241:AOR:%(int,int):-(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1629:months % 12 |==> months - 12
+242:AOR:%(int,int):/(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1629:months % 12 |==> months / 12
+243:ROR:!=(int,int):<(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1630:years != 0 |==> years < 0
+244:ROR:!=(int,int):>(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1630:years != 0 |==> years > 0
+245:ROR:!=(int,int):TRUE(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1630:years != 0 |==> true
+246:ROR:!=(int,int):<(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1633:months != 0 |==> months < 0
+247:ROR:!=(int,int):>(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1633:months != 0 |==> months > 0
+248:ROR:!=(int,int):TRUE(int,int):org.joda.time.Period@normalizedStandard(org.joda.time.PeriodType):1633:months != 0 |==> true

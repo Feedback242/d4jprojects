@@ -1,0 +1,6 @@
+PCD_1:55:(java.lang.Integer) this.indexMap.get( key ) => this.indexMap.get( key )
+PCD_2:64:(java.util.List) this.keys.clone() => this.keys.clone()
+PCD_3:243:(org.jfree.data.DefaultKeyedValues) super.clone() => super.clone()
+PCD_4:244:(java.util.ArrayList) this.keys.clone() => this.keys.clone()
+PCD_5:245:(java.util.ArrayList) this.values.clone() => this.values.clone()
+PCD_6:246:(java.util.HashMap) this.indexMap.clone() => this.indexMap.clone()

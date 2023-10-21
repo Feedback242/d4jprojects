@@ -1,0 +1,158 @@
+1:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@getValue(int,int):145:rowData != null |==> true
+2:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(int,int):150:index >= 0 |==> index == 0
+3:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(int,int):150:index >= 0 |==> index > 0
+4:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(int,int):150:index >= 0 |==> true
+5:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@getRowIndex(java.lang.Comparable):182:key == null |==> false
+6:COR:this.sortRowKeys:TRUE:org.jfree.data.DefaultKeyedValues2D@getRowIndex(java.lang.Comparable):185:this.sortRowKeys |==> false
+7:COR:this.sortRowKeys:FALSE:org.jfree.data.DefaultKeyedValues2D@getRowIndex(java.lang.Comparable):185:this.sortRowKeys |==> true
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@getColumnIndex(java.lang.Comparable):230:key == null |==> false
+9:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):261:rowKey == null |==> false
+10:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):264:columnKey == null |==> false
+11:COR:this.columnKeys.contains(columnKey):TRUE:org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):269:this.columnKeys.contains(columnKey) |==> false
+12:COR:this.columnKeys.contains(columnKey):FALSE:org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):269:this.columnKeys.contains(columnKey) |==> true
+13:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):278:row >= 0 |==> row == 0
+14:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):278:row >= 0 |==> row > 0
+15:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):278:row >= 0 |==> true
+16:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):282:col >= 0 |==> col == 0
+17:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):282:col >= 0 |==> col > 0
+18:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@getValue(java.lang.Comparable,java.lang.Comparable):282:col >= 0 |==> true
+19:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):322:rowIndex >= 0 |==> rowIndex == 0
+20:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):322:rowIndex >= 0 |==> rowIndex > 0
+21:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):322:rowIndex >= 0 |==> true
+22:COR:this.sortRowKeys:TRUE:org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):327:this.sortRowKeys |==> false
+23:COR:this.sortRowKeys:FALSE:org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):327:this.sortRowKeys |==> true
+24:AOR:-(int,int):%(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):328:-rowIndex - 1 |==> -rowIndex % 1
+25:AOR:-(int,int):*(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):328:-rowIndex - 1 |==> -rowIndex * 1
+26:AOR:-(int,int):+(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):328:-rowIndex - 1 |==> -rowIndex + 1
+27:AOR:-(int,int):/(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):328:-rowIndex - 1 |==> -rowIndex / 1
+28:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):340:columnIndex < 0 |==> columnIndex != 0
+29:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):340:columnIndex < 0 |==> columnIndex <= 0
+30:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues2D@setValue(java.lang.Number,java.lang.Comparable,java.lang.Comparable):340:columnIndex < 0 |==> false
+31:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):363:item < itemCount |==> item != itemCount
+32:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):363:item < itemCount |==> item <= itemCount
+33:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):363:item < itemCount |==> false
+34:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):365:row.getValue(item) != null |==> true
+35:COR:allNull:TRUE:org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):371:allNull |==> false
+36:COR:allNull:FALSE:org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):371:allNull |==> true
+37:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):380:item < itemCount |==> item != itemCount
+38:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):380:item < itemCount |==> item <= itemCount
+39:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):380:item < itemCount |==> false
+40:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:columnIndex >= 0 |==> columnIndex == 0
+41:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:columnIndex >= 0 |==> columnIndex > 0
+42:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:columnIndex >= 0 |==> true
+43:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:row.getValue(columnIndex) != null |==> true
+44:COR:&&(boolean,boolean):==(boolean,boolean):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:columnIndex >= 0 && row.getValue(columnIndex) != null |==> columnIndex >= 0 == (row.getValue(columnIndex) != null)
+45:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:columnIndex >= 0 && row.getValue(columnIndex) != null |==> false
+46:COR:&&(boolean,boolean):LHS(boolean,boolean):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:columnIndex >= 0 && row.getValue(columnIndex) != null |==> columnIndex >= 0
+47:COR:&&(boolean,boolean):RHS(boolean,boolean):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):384:columnIndex >= 0 && row.getValue(columnIndex) != null |==> row.getValue(columnIndex) != null
+48:COR:allNull:TRUE:org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):390:allNull |==> false
+49:COR:allNull:FALSE:org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):390:allNull |==> true
+50:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):391:item < itemCount |==> item != itemCount
+51:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):391:item < itemCount |==> item <= itemCount
+52:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):391:item < itemCount |==> false
+53:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):395:columnIndex >= 0 |==> columnIndex == 0
+54:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):395:columnIndex >= 0 |==> columnIndex > 0
+55:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@removeValue(java.lang.Comparable,java.lang.Comparable):395:columnIndex >= 0 |==> true
+56:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):481:o == null |==> false
+57:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):484:o == this |==> false
+58:COR:getRowKeys().equals(kv2D.getRowKeys()):TRUE:org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):492:getRowKeys().equals(kv2D.getRowKeys()) |==> false
+59:COR:getRowKeys().equals(kv2D.getRowKeys()):FALSE:org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):492:getRowKeys().equals(kv2D.getRowKeys()) |==> true
+60:COR:getColumnKeys().equals(kv2D.getColumnKeys()):TRUE:org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):495:getColumnKeys().equals(kv2D.getColumnKeys()) |==> false
+61:COR:getColumnKeys().equals(kv2D.getColumnKeys()):FALSE:org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):495:getColumnKeys().equals(kv2D.getColumnKeys()) |==> true
+62:ROR:!=(int,int):<(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):499:rowCount != kv2D.getRowCount() |==> rowCount < kv2D.getRowCount()
+63:ROR:!=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):499:rowCount != kv2D.getRowCount() |==> rowCount > kv2D.getRowCount()
+64:ROR:!=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):499:rowCount != kv2D.getRowCount() |==> true
+65:ROR:!=(int,int):<(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):504:colCount != kv2D.getColumnCount() |==> colCount < kv2D.getColumnCount()
+66:ROR:!=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):504:colCount != kv2D.getColumnCount() |==> colCount > kv2D.getColumnCount()
+67:ROR:!=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):504:colCount != kv2D.getColumnCount() |==> true
+68:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):508:r < rowCount |==> r != rowCount
+69:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):508:r < rowCount |==> r <= rowCount
+70:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):508:r < rowCount |==> false
+71:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):509:c < colCount |==> c != colCount
+72:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):509:c < colCount |==> c <= colCount
+73:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):509:c < colCount |==> false
+74:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):512:v1 == null |==> false
+75:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):513:v2 != null |==> true
+76:COR:v1.equals(v2):TRUE:org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):518:v1.equals(v2) |==> false
+77:COR:v1.equals(v2):FALSE:org.jfree.data.DefaultKeyedValues2D@equals(java.lang.Object):518:v1.equals(v2) |==> true
+78:AOR:*(int,int):%(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result |==> 29 % result
+79:AOR:*(int,int):+(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result |==> 29 + result
+80:AOR:*(int,int):-(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result |==> 29 - result
+81:AOR:*(int,int):/(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result |==> 29 / result
+82:AOR:+(int,int):%(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result + this.columnKeys.hashCode() |==> 29 * result % this.columnKeys.hashCode()
+83:AOR:+(int,int):*(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result + this.columnKeys.hashCode() |==> 29 * result * this.columnKeys.hashCode()
+84:AOR:+(int,int):-(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result + this.columnKeys.hashCode() |==> 29 * result - this.columnKeys.hashCode()
+85:AOR:+(int,int):/(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():535:29 * result + this.columnKeys.hashCode() |==> 29 * result / this.columnKeys.hashCode()
+86:AOR:*(int,int):%(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result |==> 29 % result
+87:AOR:*(int,int):+(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result |==> 29 + result
+88:AOR:*(int,int):-(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result |==> 29 - result
+89:AOR:*(int,int):/(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result |==> 29 / result
+90:AOR:+(int,int):%(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result + this.rows.hashCode() |==> 29 * result % this.rows.hashCode()
+91:AOR:+(int,int):*(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result + this.rows.hashCode() |==> 29 * result * this.rows.hashCode()
+92:AOR:+(int,int):-(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result + this.rows.hashCode() |==> 29 * result - this.rows.hashCode()
+93:AOR:+(int,int):/(int,int):org.jfree.data.DefaultKeyedValues2D@hashCode():536:29 * result + this.rows.hashCode() |==> 29 * result / this.rows.hashCode()
+94:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@getIndex(java.lang.Comparable):150:key == null |==> false
+95:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@getIndex(java.lang.Comparable):154:i == null |==> false
+96:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@getValue(java.lang.Comparable):182:index < 0 |==> index != 0
+97:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@getValue(java.lang.Comparable):182:index < 0 |==> index <= 0
+98:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@getValue(java.lang.Comparable):182:index < 0 |==> false
+99:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):229:key == null |==> false
+100:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):233:keyIndex >= 0 |==> keyIndex == 0
+101:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):233:keyIndex >= 0 |==> keyIndex > 0
+102:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):233:keyIndex >= 0 |==> true
+103:AOR:-(int,int):%(int,int):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):240:this.keys.size() - 1 |==> this.keys.size() % 1
+104:AOR:-(int,int):*(int,int):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):240:this.keys.size() - 1 |==> this.keys.size() * 1
+105:AOR:-(int,int):+(int,int):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):240:this.keys.size() - 1 |==> this.keys.size() + 1
+106:AOR:-(int,int):/(int,int):org.jfree.data.DefaultKeyedValues@setValue(java.lang.Comparable,java.lang.Number):240:this.keys.size() - 1 |==> this.keys.size() / 1
+107:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position < 0 |==> position != 0
+108:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position < 0 |==> position <= 0
+109:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position < 0 |==> false
+110:ROR:>(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position > getItemCount() |==> position != getItemCount()
+111:ROR:>(int,int):>=(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position > getItemCount() |==> position >= getItemCount()
+112:ROR:>(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position > getItemCount() |==> false
+113:COR:||(boolean,boolean):!=(boolean,boolean):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position < 0 || position > getItemCount() |==> position < 0 != position > getItemCount()
+114:COR:||(boolean,boolean):LHS(boolean,boolean):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position < 0 || position > getItemCount() |==> position < 0
+115:COR:||(boolean,boolean):RHS(boolean,boolean):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position < 0 || position > getItemCount() |==> position > getItemCount()
+116:COR:||(boolean,boolean):TRUE(boolean,boolean):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):271:position < 0 || position > getItemCount() |==> true
+117:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):274:key == null |==> false
+118:ROR:==(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):278:pos == position |==> pos <= position
+119:ROR:==(int,int):>=(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):278:pos == position |==> pos >= position
+120:ROR:==(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):278:pos == position |==> false
+121:ROR:>=(int,int):==(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):283:pos >= 0 |==> pos == 0
+122:ROR:>=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):283:pos >= 0 |==> pos > 0
+123:ROR:>=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues@insertValue(int,java.lang.Comparable,java.lang.Number):283:pos >= 0 |==> true
+124:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@rebuildIndex():300:i < this.keys.size() |==> i != this.keys.size()
+125:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@rebuildIndex():300:i < this.keys.size() |==> i <= this.keys.size()
+126:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@rebuildIndex():300:i < this.keys.size() |==> false
+127:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@removeValue(int):318:index < this.keys.size() |==> index != this.keys.size()
+128:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@removeValue(int):318:index < this.keys.size() |==> index <= this.keys.size()
+129:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@removeValue(int):318:index < this.keys.size() |==> false
+130:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@removeValue(java.lang.Comparable):334:index < 0 |==> index != 0
+131:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@removeValue(java.lang.Comparable):334:index < 0 |==> index <= 0
+132:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@removeValue(java.lang.Comparable):334:index < 0 |==> false
+133:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@sortByKeys(org.jfree.chart.util.SortOrder):360:i < size |==> i != size
+134:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@sortByKeys(org.jfree.chart.util.SortOrder):360:i < size |==> i <= size
+135:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@sortByKeys(org.jfree.chart.util.SortOrder):360:i < size |==> false
+136:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@sortByKeys(org.jfree.chart.util.SortOrder):370:i < data.length |==> i != data.length
+137:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@sortByKeys(org.jfree.chart.util.SortOrder):370:i < data.length |==> i <= data.length
+138:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@sortByKeys(org.jfree.chart.util.SortOrder):370:i < data.length |==> false
+139:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@sortByValues(org.jfree.chart.util.SortOrder):386:i < size |==> i != size
+140:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@sortByValues(org.jfree.chart.util.SortOrder):386:i < size |==> i <= size
+141:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@sortByValues(org.jfree.chart.util.SortOrder):386:i < size |==> false
+142:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@sortByValues(org.jfree.chart.util.SortOrder):396:i < data.length |==> i != data.length
+143:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@sortByValues(org.jfree.chart.util.SortOrder):396:i < data.length |==> i <= data.length
+144:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@sortByValues(org.jfree.chart.util.SortOrder):396:i < data.length |==> false
+145:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):410:obj == this |==> false
+146:ROR:!=(int,int):<(int,int):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):420:count != that.getItemCount() |==> count < that.getItemCount()
+147:ROR:!=(int,int):>(int,int):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):420:count != that.getItemCount() |==> count > that.getItemCount()
+148:ROR:!=(int,int):TRUE(int,int):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):420:count != that.getItemCount() |==> true
+149:ROR:<(int,int):!=(int,int):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):424:i < count |==> i != count
+150:ROR:<(int,int):<=(int,int):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):424:i < count |==> i <= count
+151:ROR:<(int,int):FALSE(int,int):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):424:i < count |==> false
+152:COR:k1.equals(k2):TRUE:org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):427:k1.equals(k2) |==> false
+153:COR:k1.equals(k2):FALSE:org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):427:k1.equals(k2) |==> true
+154:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):432:v1 == null |==> false
+155:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):433:v2 != null |==> true
+156:COR:v1.equals(v2):TRUE:org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):438:v1.equals(v2) |==> false
+157:COR:v1.equals(v2):FALSE:org.jfree.data.DefaultKeyedValues@equals(java.lang.Object):438:v1.equals(v2) |==> true
+158:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.data.DefaultKeyedValues@hashCode():452:this.keys != null |==> true

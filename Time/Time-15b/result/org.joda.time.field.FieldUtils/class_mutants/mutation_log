@@ -1,0 +1,6 @@
+OMD_1:30:safeAdd(int val1, int val2) => method safeAdd(long,long)
+OMD_1:30:Redirect to  => safeAdd((long)val1,(long)val2)
+OMD_2:57:safeMultiply(int val1, int val2) => method safeMultiply(long,int)
+OMD_2:57:Redirect to  => safeMultiply((long)val1,val2)
+OMD_3:66:safeMultiply(long val1, int val2) => method safeMultiply(long,long)
+OMD_3:66:Redirect to  => safeMultiply(val1,(long)val2)

@@ -1,0 +1,6 @@
+TestNo,TestName
+1,org.jfree.data.statistics.junit.DefaultBoxAndWhiskerCategoryDatasetTests
+2,org.jfree.data.statistics.junit.DefaultStatisticalCategoryDatasetTests
+3,org.jfree.chart.renderer.category.junit.StatisticalLineAndShapeRendererTests
+4,org.jfree.chart.renderer.category.junit.StatisticalBarRendererTests
+5,org.jfree.chart.renderer.category.junit.BoxAndWhiskerRendererTests

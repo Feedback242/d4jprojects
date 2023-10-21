@@ -1,0 +1,8 @@
+PCD_1:44:(org.jfree.data.KeyedObjects) this.rows.get( row ) => this.rows.get( row )
+PCD_2:104:(org.jfree.data.KeyedObjects) this.rows.get( row ) => this.rows.get( row )
+PCD_3:127:(org.jfree.data.KeyedObjects) this.rows.get( rowIndex ) => this.rows.get( rowIndex )
+PCD_4:145:(org.jfree.data.KeyedObjects) this.rows.get( rowIndex ) => this.rows.get( rowIndex )
+PCD_5:184:(org.jfree.data.KeyedObjects) iterator.next() => iterator.next()
+PCD_6:198:(org.jfree.data.KeyedObjects2D) obj => obj
+PCD_7:243:(org.jfree.data.KeyedObjects2D) super.clone() => super.clone()
+PCD_8:249:(org.jfree.data.KeyedObjects) iterator.next() => iterator.next()

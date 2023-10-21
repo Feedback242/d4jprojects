@@ -1,0 +1,59 @@
+AORB_1:48:java.awt.Paint_getPaint(double):value - this.lowerBound => value * this.lowerBound
+AORB_2:48:java.awt.Paint_getPaint(double):value - this.lowerBound => value / this.lowerBound
+AORB_3:48:java.awt.Paint_getPaint(double):value - this.lowerBound => value % this.lowerBound
+AORB_4:48:java.awt.Paint_getPaint(double):value - this.lowerBound => value + this.lowerBound
+AORB_5:48:java.awt.Paint_getPaint(double):this.upperBound - this.lowerBound => this.upperBound * this.lowerBound
+AORB_6:48:java.awt.Paint_getPaint(double):this.upperBound - this.lowerBound => this.upperBound / this.lowerBound
+AORB_7:48:java.awt.Paint_getPaint(double):this.upperBound - this.lowerBound => this.upperBound % this.lowerBound
+AORB_8:48:java.awt.Paint_getPaint(double):this.upperBound - this.lowerBound => this.upperBound + this.lowerBound
+AORB_9:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) => (value - this.lowerBound) * (this.upperBound - this.lowerBound)
+AORB_10:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) => (value - this.lowerBound) % (this.upperBound - this.lowerBound)
+AORB_11:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) => value - this.lowerBound + (this.upperBound - this.lowerBound)
+AORB_12:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) => value - this.lowerBound - (this.upperBound - this.lowerBound)
+AORB_13:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 => (value - this.lowerBound) / (this.upperBound - this.lowerBound) / 255.0
+AORB_14:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 => (value - this.lowerBound) / (this.upperBound - this.lowerBound) % 255.0
+AORB_15:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 => (value - this.lowerBound) / (this.upperBound - this.lowerBound) + 255.0
+AORB_16:48:java.awt.Paint_getPaint(double):(value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0 => (value - this.lowerBound) / (this.upperBound - this.lowerBound) - 255.0
+ROR_1:27:GrayPaintScale(double,double): lowerBound >= upperBound  =>   lowerBound > upperBound
+ROR_2:27:GrayPaintScale(double,double): lowerBound >= upperBound  =>   lowerBound < upperBound
+ROR_3:27:GrayPaintScale(double,double): lowerBound >= upperBound  =>   lowerBound <= upperBound
+ROR_4:27:GrayPaintScale(double,double): lowerBound >= upperBound  =>   lowerBound == upperBound
+ROR_5:27:GrayPaintScale(double,double): lowerBound >= upperBound  =>   lowerBound != upperBound
+ROR_6:27:GrayPaintScale(double,double): lowerBound >= upperBound  =>   true
+ROR_7:27:GrayPaintScale(double,double): lowerBound >= upperBound  =>   false
+ROR_8:54:boolean_equals(java.lang.Object): obj == this  =>   obj != this
+ROR_9:61:boolean_equals(java.lang.Object): this.lowerBound != that.lowerBound  =>   this.lowerBound > that.lowerBound
+ROR_10:61:boolean_equals(java.lang.Object): this.lowerBound != that.lowerBound  =>   this.lowerBound >= that.lowerBound
+ROR_11:61:boolean_equals(java.lang.Object): this.lowerBound != that.lowerBound  =>   this.lowerBound < that.lowerBound
+ROR_12:61:boolean_equals(java.lang.Object): this.lowerBound != that.lowerBound  =>   this.lowerBound <= that.lowerBound
+ROR_13:61:boolean_equals(java.lang.Object): this.lowerBound != that.lowerBound  =>   this.lowerBound == that.lowerBound
+ROR_14:61:boolean_equals(java.lang.Object): this.lowerBound != that.lowerBound  =>   true
+ROR_15:61:boolean_equals(java.lang.Object): this.lowerBound != that.lowerBound  =>   false
+ROR_16:64:boolean_equals(java.lang.Object): this.upperBound != that.upperBound  =>   this.upperBound > that.upperBound
+ROR_17:64:boolean_equals(java.lang.Object): this.upperBound != that.upperBound  =>   this.upperBound >= that.upperBound
+ROR_18:64:boolean_equals(java.lang.Object): this.upperBound != that.upperBound  =>   this.upperBound < that.upperBound
+ROR_19:64:boolean_equals(java.lang.Object): this.upperBound != that.upperBound  =>   this.upperBound <= that.upperBound
+ROR_20:64:boolean_equals(java.lang.Object): this.upperBound != that.upperBound  =>   this.upperBound == that.upperBound
+ROR_21:64:boolean_equals(java.lang.Object): this.upperBound != that.upperBound  =>   true
+ROR_22:64:boolean_equals(java.lang.Object): this.upperBound != that.upperBound  =>   false
+SDL_1:29:GrayPaintScale(double,double): if (lowerBound >= upperBound) {     throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" ); } this.lowerBound = lowerBound; this.upperBound = upperBound;  =>   this.lowerBound = lowerBound; this.upperBound = upperBound;
+SDL_2:31:GrayPaintScale(double,double): if (lowerBound >= upperBound) {     throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" ); } this.lowerBound = lowerBound; this.upperBound = upperBound;  =>   if (lowerBound >= upperBound) {     throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" ); } this.upperBound = upperBound;
+SDL_3:31:GrayPaintScale(double,double): if (lowerBound >= upperBound) {     throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" ); } this.lowerBound = lowerBound; this.upperBound = upperBound;  =>   if (lowerBound >= upperBound) {     throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" ); } this.lowerBound = lowerBound;
+SDL_4:28:GrayPaintScale(double,double): throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" );  =>  
+SDL_5:30:GrayPaintScale(double,double): if (lowerBound >= upperBound) {     throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" ); }  =>   if (true) {     throw new java.lang.IllegalArgumentException( \"Requires lowerBound < upperBound.\" ); }
+SDL_6:37:double_getLowerBound(): return this.lowerBound;  =>   return 0;
+SDL_7:42:double_getUpperBound(): return this.upperBound;  =>   return 0;
+SDL_8:49:java.awt.Paint_getPaint(double): double v = Math.max( value, this.lowerBound ); v = Math.min( v, this.upperBound ); int g = (int) ((value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0); return new java.awt.Color( g, g, g );  =>   double v = Math.max( value, this.lowerBound ); int g = (int) ((value - this.lowerBound) / (this.upperBound - this.lowerBound) * 255.0); return new java.awt.Color( g, g, g );
+SDL_9:65:boolean_equals(java.lang.Object): if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.lowerBound != that.lowerBound) {     return false; } if (this.upperBound != that.upperBound) {     return false; } return true;  =>   if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.lowerBound != that.lowerBound) {     return false; } if (this.upperBound != that.upperBound) {     return false; } return true;
+SDL_10:65:boolean_equals(java.lang.Object): if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.lowerBound != that.lowerBound) {     return false; } if (this.upperBound != that.upperBound) {     return false; } return true;  =>   if (obj == this) {     return true; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.lowerBound != that.lowerBound) {     return false; } if (this.upperBound != that.upperBound) {     return false; } return true;
+SDL_11:65:boolean_equals(java.lang.Object): if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.lowerBound != that.lowerBound) {     return false; } if (this.upperBound != that.upperBound) {     return false; } return true;  =>   if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.upperBound != that.upperBound) {     return false; } return true;
+SDL_12:65:boolean_equals(java.lang.Object): if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.lowerBound != that.lowerBound) {     return false; } if (this.upperBound != that.upperBound) {     return false; } return true;  =>   if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; } org.jfree.chart.renderer.GrayPaintScale that = (org.jfree.chart.renderer.GrayPaintScale) obj; if (this.lowerBound != that.lowerBound) {     return false; } return true;
+SDL_13:57:boolean_equals(java.lang.Object): if (obj == this) {     return true; }  =>   if (true) {     return true; }
+SDL_14:56:boolean_equals(java.lang.Object): return true;  =>   return false;
+SDL_15:60:boolean_equals(java.lang.Object): if (!(obj instanceof org.jfree.chart.renderer.GrayPaintScale)) {     return false; }  =>   if (true) {     return false; }
+SDL_16:59:boolean_equals(java.lang.Object): return false;  =>   return true;
+SDL_17:64:boolean_equals(java.lang.Object): if (this.lowerBound != that.lowerBound) {     return false; }  =>   if (true) {     return false; }
+SDL_18:63:boolean_equals(java.lang.Object): return false;  =>   return true;
+SDL_19:67:boolean_equals(java.lang.Object): if (this.upperBound != that.upperBound) {     return false; }  =>   if (true) {     return false; }
+SDL_20:66:boolean_equals(java.lang.Object): return false;  =>   return true;
+SDL_21:68:boolean_equals(java.lang.Object): return true;  =>   return false;

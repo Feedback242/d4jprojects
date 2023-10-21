@@ -1,0 +1,193 @@
+
+init:
+     [echo] -------- Commons MATH 3.1-SNAPSHOT --------
+
+compile:
+
+check-availability:
+     [echo] doing check-availability...
+
+download-dependencies:
+     [echo] doing download-dependencies...
+
+download-junit:
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest[testTrivial] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testConstrainedRosen] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testElliRotated] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testEllipse] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testTwoAxes] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testCigar] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testRosen] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testRastrigin] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testDiagonalRosen] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testSsDiffPow] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testMaximize] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testAckley] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testCigTab] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testDiffPow] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testSphere] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testTablet] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[testCigarWithBoundaries] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest[testSumSinc] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest[testMaximize1] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest[testMaximize2] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest[testMinimize1] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest[testMinimize2] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest[testMaximize1] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest[testMaximize2] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest[testMinimize1] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest[testMinimize2] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest[testGetIterations] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: [1;31morg.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizerTest[testGetIterations] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "null"[0m
+    [junit] MAJOR: Exclude 7 failing test classes:
+    [junit] MAJOR: [1;31m - org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizerTest[0m
+    [junit] MAJOR: [1;31m - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizerTest[0m
+    [junit] MAJOR: [1;31m - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizerTest[0m
+    [junit] MAJOR: [1;31m - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerMultiDirectionalTest[0m
+    [junit] MAJOR: [1;31m - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizerNelderMeadTest[0m
+    [junit] MAJOR: [1;31m - org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizerTest[0m
+    [junit] MAJOR: [1;31m - org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizerTest[0m
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 14 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 55.06 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 2147
+    [junit] MAJOR: Mutants covered:   971 (45.23%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 14 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m1/14 - org.apache.commons.math3.optim.univariate.MultiStartUnivariateOptimizerTest (16ms / 0):[0m
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 971
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m2/14 - org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionPenaltyAdapterTest (19ms / 22):[0m
+    [junit] MAJOR: 466 (15 / 22 / 22) -> AVG-RTPM: 21ms
+    [junit] MAJOR: Mutants killed / live: 15 (5-10-0) / 956
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m3/14 - org.apache.commons.math3.optim.nonlinear.scalar.MultiStartMultivariateOptimizerTest (22ms / 132):[0m
+    [junit] MAJOR: 4017 (84 / 117 / 132) -> AVG-RTPM: 30ms
+    [junit] MAJOR: Mutants killed / live: 99 (57-42-0) / 872
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m4/14 - org.apache.commons.math3.optim.nonlinear.scalar.MultivariateFunctionMappingAdapterTest (22ms / 22):[0m
+    [junit] MAJOR: 4143 (0 / 7 / 22) -> AVG-RTPM: 18ms
+    [junit] MAJOR: Mutants killed / live: 99 (57-42-0) / 872
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m5/14 - org.apache.commons.math3.optim.nonlinear.vector.MultiStartMultivariateVectorOptimizerTest (26ms / 46):[0m
+    [junit] MAJOR: 5784 (33 / 46 / 46) -> AVG-RTPM: 35ms
+    [junit] MAJOR: Mutants killed / live: 132 (67-65-0) / 839
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m6/14 - org.apache.commons.math3.fitting.CurveFitterTest (28ms / 696):[0m
+    [junit] MAJOR: 49336 (301 / 696 / 696) -> AVG-RTPM: 62ms
+    [junit] MAJOR: Mutants killed / live: 433 (237-136-1) / 538
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m7/14 - org.apache.commons.math3.optim.univariate.BrentOptimizerTest (33ms / 0):[0m
+    [junit] MAJOR: 49336 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 433 (237-136-1) / 538
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m8/14 - org.apache.commons.math3.analysis.interpolation.SmoothingPolynomialBicubicSplineInterpolatorTest (39ms / 46):[0m
+    [junit] MAJOR: 49762 (2 / 13 / 46) -> AVG-RTPM: 32ms
+    [junit] MAJOR: Mutants killed / live: 435 (238-137-1) / 536
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m9/14 - org.apache.commons.math3.fitting.HarmonicFitterTest (60ms / 777):[0m
+    [junit] MAJOR: 102276 (76 / 476 / 777) -> AVG-RTPM: 110ms
+    [junit] MAJOR: Mutants killed / live: 511 (281-152-1) / 460
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m10/14 - org.apache.commons.math3.fitting.GaussianFitterTest (87ms / 777):[0m
+    [junit] MAJOR: 205882 (114 / 400 / 777) -> AVG-RTPM: 259ms
+    [junit] MAJOR: Mutants killed / live: 625 (375-153-1) / 346
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m11/14 - org.apache.commons.math3.optim.linear.SimplexSolverTest (143ms / 0):[0m
+    [junit] MAJOR: 205882 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 625 (375-153-1) / 346
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m12/14 - org.apache.commons.math3.optim.nonlinear.vector.jacobian.MinpackTest (239ms / 791):[0m
+    [junit] MAJOR: 265931 (149 / 300 / 791) -> AVG-RTPM: 200ms
+    [junit] MAJOR: Mutants killed / live: 774 (517-160-1) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m13/14 - org.apache.commons.math3.fitting.PolynomialFitterTest (876ms / 819):[0m
+    [junit] MAJOR: 422762 (0 / 150 / 819) -> AVG-RTPM: 1045ms
+    [junit] MAJOR: Mutants killed / live: 774 (517-160-1) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m14/14 - org.apache.commons.math3.optim.nonlinear.scalar.noderiv.BOBYQAOptimizerTest (14428ms / 0):[0m
+    [junit] MAJOR: 422762 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 774 (517-160-1) / 197
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  422.8 seconds
+    [junit] MAJOR: Mutation score: 36.05% (79.71%)
+    [junit] MAJOR: Mutants killed / live: 774 (517-160-1) / 197
+    [junit] MAJOR: Mutant executions: 2227
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /tmp/Math/Math-6b/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 7 minutes 58 seconds

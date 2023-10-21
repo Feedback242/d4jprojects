@@ -1,0 +1,2 @@
+OMD_1:38:evaluate(double x, int maxIterations) => method evaluate(double,double)
+OMD_1:38:Redirect to  => evaluate(x,(double)maxIterations)

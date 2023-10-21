@@ -1,0 +1,6 @@
+OMD_1:102:getAsText(int fieldValue, java.util.Locale locale) => method getAsText(long,class java.util.Locale)
+OMD_1:102:Redirect to  => getAsText((long)fieldValue,locale)
+OMD_2:127:getAsShortText(int fieldValue, java.util.Locale locale) => method getAsShortText(long,class java.util.Locale)
+OMD_2:127:Redirect to  => getAsShortText((long)fieldValue,locale)
+OMD_3:132:add(long instant, int value) => method add(long,long)
+OMD_3:132:Redirect to  => add(instant,(long)value)

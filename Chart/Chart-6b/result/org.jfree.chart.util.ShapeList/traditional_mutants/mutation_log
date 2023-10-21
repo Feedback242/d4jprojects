@@ -1,0 +1,50 @@
+ROR_1:39:boolean_equals(java.lang.Object): obj == this  =>   obj != this
+ROR_2:59:void_writeObject(java.io.ObjectOutputStream): i < count  =>   i > count
+ROR_3:59:void_writeObject(java.io.ObjectOutputStream): i < count  =>   i >= count
+ROR_4:59:void_writeObject(java.io.ObjectOutputStream): i < count  =>   i <= count
+ROR_5:59:void_writeObject(java.io.ObjectOutputStream): i < count  =>   i == count
+ROR_6:59:void_writeObject(java.io.ObjectOutputStream): i < count  =>   i != count
+ROR_7:59:void_writeObject(java.io.ObjectOutputStream): i < count  =>   true
+ROR_8:59:void_writeObject(java.io.ObjectOutputStream): i < count  =>   false
+ROR_9:61:void_writeObject(java.io.ObjectOutputStream): shape != null  =>   shape == null
+ROR_10:75:void_readObject(java.io.ObjectInputStream): i < count  =>   i > count
+ROR_11:75:void_readObject(java.io.ObjectInputStream): i < count  =>   i >= count
+ROR_12:75:void_readObject(java.io.ObjectInputStream): i < count  =>   i <= count
+ROR_13:75:void_readObject(java.io.ObjectInputStream): i < count  =>   i == count
+ROR_14:75:void_readObject(java.io.ObjectInputStream): i < count  =>   i != count
+ROR_15:75:void_readObject(java.io.ObjectInputStream): i < count  =>   true
+ROR_16:75:void_readObject(java.io.ObjectInputStream): i < count  =>   false
+ROR_17:77:void_readObject(java.io.ObjectInputStream): index != -1  =>   index > -1
+ROR_18:77:void_readObject(java.io.ObjectInputStream): index != -1  =>   index >= -1
+ROR_19:77:void_readObject(java.io.ObjectInputStream): index != -1  =>   index < -1
+ROR_20:77:void_readObject(java.io.ObjectInputStream): index != -1  =>   index <= -1
+ROR_21:77:void_readObject(java.io.ObjectInputStream): index != -1  =>   index == -1
+ROR_22:77:void_readObject(java.io.ObjectInputStream): index != -1  =>   true
+ROR_23:77:void_readObject(java.io.ObjectInputStream): index != -1  =>   false
+SDL_1:28:void_setShape(int,java.awt.Shape): set( index, shape );  =>  
+SDL_2:43:boolean_equals(java.lang.Object): if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.util.ShapeList)) {     return false; } return super.equals( obj );  =>   if (!(obj instanceof org.jfree.chart.util.ShapeList)) {     return false; } return super.equals( obj );
+SDL_3:43:boolean_equals(java.lang.Object): if (obj == this) {     return true; } if (!(obj instanceof org.jfree.chart.util.ShapeList)) {     return false; } return super.equals( obj );  =>   if (obj == this) {     return true; } return super.equals( obj );
+SDL_4:42:boolean_equals(java.lang.Object): if (obj == this) {     return true; }  =>   if (true) {     return true; }
+SDL_5:41:boolean_equals(java.lang.Object): return true;  =>   return false;
+SDL_6:45:boolean_equals(java.lang.Object): if (!(obj instanceof org.jfree.chart.util.ShapeList)) {     return false; }  =>   if (true) {     return false; }
+SDL_7:44:boolean_equals(java.lang.Object): return false;  =>   return true;
+SDL_8:46:boolean_equals(java.lang.Object): return super.equals( obj );  =>   return true;
+SDL_9:46:boolean_equals(java.lang.Object): return super.equals( obj );  =>   return false;
+SDL_10:51:int_hashCode(): return super.hashCode();  =>   return 0;
+SDL_11:67:void_writeObject(java.io.ObjectOutputStream): stream.defaultWriteObject(); int count = size(); stream.writeInt( count ); for (int i = 0; i < count; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }  =>   int count = size(); stream.writeInt( count ); for (int i = 0; i < count; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }
+SDL_12:67:void_writeObject(java.io.ObjectOutputStream): stream.defaultWriteObject(); int count = size(); stream.writeInt( count ); for (int i = 0; i < count; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }  =>   stream.defaultWriteObject(); int count = size(); for (int i = 0; i < count; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }
+SDL_13:59:void_writeObject(java.io.ObjectOutputStream): stream.defaultWriteObject(); int count = size(); stream.writeInt( count ); for (int i = 0; i < count; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }  =>   stream.defaultWriteObject(); int count = size(); stream.writeInt( count );
+SDL_14:61:void_writeObject(java.io.ObjectOutputStream): java.awt.Shape shape = getShape( i ); if (shape != null) {     stream.writeInt( i );     SerialUtilities.writeShape( shape, stream ); } else {     stream.writeInt( -1 ); }  =>   java.awt.Shape shape = getShape( i );
+SDL_15:68:void_writeObject(java.io.ObjectOutputStream): for (int i = 0; i < count; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }  =>   for (int i = 0;; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }
+SDL_16:68:void_writeObject(java.io.ObjectOutputStream): for (int i = 0; i < count; i++) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }  =>   for (int i = 0; i < count;) {     java.awt.Shape shape = getShape( i );     if (shape != null) {         stream.writeInt( i );         SerialUtilities.writeShape( shape, stream );     } else {         stream.writeInt( -1 );     } }
+SDL_17:63:void_writeObject(java.io.ObjectOutputStream): stream.writeInt( i ); SerialUtilities.writeShape( shape, stream );  =>   SerialUtilities.writeShape( shape, stream );
+SDL_18:63:void_writeObject(java.io.ObjectOutputStream): stream.writeInt( i ); SerialUtilities.writeShape( shape, stream );  =>   stream.writeInt( i );
+SDL_19:67:void_writeObject(java.io.ObjectOutputStream): if (shape != null) {     stream.writeInt( i );     SerialUtilities.writeShape( shape, stream ); } else {     stream.writeInt( -1 ); }  =>   if (true) {     stream.writeInt( i );     SerialUtilities.writeShape( shape, stream ); } else {     stream.writeInt( -1 ); }
+SDL_20:65:void_writeObject(java.io.ObjectOutputStream): stream.writeInt( -1 );  =>  
+SDL_21:80:void_readObject(java.io.ObjectInputStream): stream.defaultReadObject(); int count = stream.readInt(); for (int i = 0; i < count; i++) {     int index = stream.readInt();     if (index != -1) {         setShape( index, SerialUtilities.readShape( stream ) );     } }  =>   int count = stream.readInt(); for (int i = 0; i < count; i++) {     int index = stream.readInt();     if (index != -1) {         setShape( index, SerialUtilities.readShape( stream ) );     } }
+SDL_22:75:void_readObject(java.io.ObjectInputStream): stream.defaultReadObject(); int count = stream.readInt(); for (int i = 0; i < count; i++) {     int index = stream.readInt();     if (index != -1) {         setShape( index, SerialUtilities.readShape( stream ) );     } }  =>   stream.defaultReadObject(); int count = stream.readInt();
+SDL_23:77:void_readObject(java.io.ObjectInputStream): int index = stream.readInt(); if (index != -1) {     setShape( index, SerialUtilities.readShape( stream ) ); }  =>   int index = stream.readInt();
+SDL_24:81:void_readObject(java.io.ObjectInputStream): for (int i = 0; i < count; i++) {     int index = stream.readInt();     if (index != -1) {         setShape( index, SerialUtilities.readShape( stream ) );     } }  =>   for (int i = 0;; i++) {     int index = stream.readInt();     if (index != -1) {         setShape( index, SerialUtilities.readShape( stream ) );     } }
+SDL_25:81:void_readObject(java.io.ObjectInputStream): for (int i = 0; i < count; i++) {     int index = stream.readInt();     if (index != -1) {         setShape( index, SerialUtilities.readShape( stream ) );     } }  =>   for (int i = 0; i < count;) {     int index = stream.readInt();     if (index != -1) {         setShape( index, SerialUtilities.readShape( stream ) );     } }
+SDL_26:78:void_readObject(java.io.ObjectInputStream): setShape( index, SerialUtilities.readShape( stream ) );  =>  
+SDL_27:80:void_readObject(java.io.ObjectInputStream): if (index != -1) {     setShape( index, SerialUtilities.readShape( stream ) ); }  =>   if (true) {     setShape( index, SerialUtilities.readShape( stream ) ); }

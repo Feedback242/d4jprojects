@@ -1,0 +1,7 @@
+ContinuedFraction()
+double_getA(int,double)
+double_getB(int,double)
+double_evaluate(double)
+double_evaluate(double,double)
+double_evaluate(double,int)
+double_evaluate(double,double,int)

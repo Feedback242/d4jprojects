@@ -1,0 +1,7 @@
+PCD_1:44:(org.apache.commons.math3.geometry.euclidean.twod.Line) getHyperplane() => getHyperplane()
+PCD_2:57:(org.apache.commons.math3.geometry.euclidean.twod.Line) getHyperplane() => getHyperplane()
+PCD_3:58:(org.apache.commons.math3.geometry.euclidean.twod.Line) subLine.getHyperplane() => subLine.getHyperplane()
+PCD_4:82:(org.apache.commons.math3.geometry.euclidean.twod.Line) getHyperplane() => getHyperplane()
+PCD_5:83:(org.apache.commons.math3.geometry.euclidean.twod.Line) hyperplane => hyperplane
+PCD_6:96:(org.apache.commons.math3.geometry.euclidean.twod.Line) getHyperplane() => getHyperplane()
+PCD_7:97:(org.apache.commons.math3.geometry.euclidean.twod.Line) hyperplane => hyperplane

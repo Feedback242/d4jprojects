@@ -1,0 +1,11 @@
+PCD_1:54:(org.jfree.data.DefaultKeyedValues) this.rows.get( row ) => this.rows.get( row )
+PCD_2:118:(org.jfree.data.DefaultKeyedValues) this.rows.get( row ) => this.rows.get( row )
+PCD_3:136:(org.jfree.data.DefaultKeyedValues) this.rows.get( rowIndex ) => this.rows.get( rowIndex )
+PCD_4:160:(org.jfree.data.DefaultKeyedValues) this.rows.get( rowIndex ) => this.rows.get( rowIndex )
+PCD_5:173:(org.jfree.data.DefaultKeyedValues) this.rows.get( item ) => this.rows.get( item )
+PCD_6:182:(org.jfree.data.DefaultKeyedValues) this.rows.get( item ) => this.rows.get( item )
+PCD_7:213:(org.jfree.data.DefaultKeyedValues) iterator.next() => iterator.next()
+PCD_8:282:(org.jfree.data.DefaultKeyedValues2D) super.clone() => super.clone()
+PCD_9:285:(java.util.List) ObjectUtilities.deepClone( this.rows ) => ObjectUtilities.deepClone( this.rows )
+JTD_1:38:this.sortRowKeys => sortRowKeys
+JTI_1:38:sortRowKeys  -->  this.sortRowKeys

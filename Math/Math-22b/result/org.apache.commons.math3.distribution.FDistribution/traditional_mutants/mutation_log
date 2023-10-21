@@ -1,0 +1,206 @@
+AORB_1:61:double_density(double):numeratorDegreesOfFreedom / 2 => numeratorDegreesOfFreedom * 2
+AORB_2:61:double_density(double):numeratorDegreesOfFreedom / 2 => numeratorDegreesOfFreedom % 2
+AORB_3:61:double_density(double):numeratorDegreesOfFreedom / 2 => numeratorDegreesOfFreedom + 2
+AORB_4:61:double_density(double):numeratorDegreesOfFreedom / 2 => numeratorDegreesOfFreedom - 2
+AORB_5:62:double_density(double):denominatorDegreesOfFreedom / 2 => denominatorDegreesOfFreedom * 2
+AORB_6:62:double_density(double):denominatorDegreesOfFreedom / 2 => denominatorDegreesOfFreedom % 2
+AORB_7:62:double_density(double):denominatorDegreesOfFreedom / 2 => denominatorDegreesOfFreedom + 2
+AORB_8:62:double_density(double):denominatorDegreesOfFreedom / 2 => denominatorDegreesOfFreedom - 2
+AORB_9:66:double_density(double):numeratorDegreesOfFreedom * x => numeratorDegreesOfFreedom / x
+AORB_10:66:double_density(double):numeratorDegreesOfFreedom * x => numeratorDegreesOfFreedom % x
+AORB_11:66:double_density(double):numeratorDegreesOfFreedom * x => numeratorDegreesOfFreedom + x
+AORB_12:66:double_density(double):numeratorDegreesOfFreedom * x => numeratorDegreesOfFreedom - x
+AORB_13:66:double_density(double):numeratorDegreesOfFreedom * x + denominatorDegreesOfFreedom => numeratorDegreesOfFreedom * x * denominatorDegreesOfFreedom
+AORB_14:66:double_density(double):numeratorDegreesOfFreedom * x + denominatorDegreesOfFreedom => numeratorDegreesOfFreedom * x / denominatorDegreesOfFreedom
+AORB_15:66:double_density(double):numeratorDegreesOfFreedom * x + denominatorDegreesOfFreedom => numeratorDegreesOfFreedom * x % denominatorDegreesOfFreedom
+AORB_16:66:double_density(double):numeratorDegreesOfFreedom * x + denominatorDegreesOfFreedom => numeratorDegreesOfFreedom * x - denominatorDegreesOfFreedom
+AORB_17:67:double_density(double):nhalf * logn => nhalf / logn
+AORB_18:67:double_density(double):nhalf * logn => nhalf % logn
+AORB_19:67:double_density(double):nhalf * logn => nhalf + logn
+AORB_20:67:double_density(double):nhalf * logn => nhalf - logn
+AORB_21:67:double_density(double):nhalf * logx => nhalf / logx
+AORB_22:67:double_density(double):nhalf * logx => nhalf % logx
+AORB_23:67:double_density(double):nhalf * logx => nhalf + logx
+AORB_24:67:double_density(double):nhalf * logx => nhalf - logx
+AORB_25:67:double_density(double):nhalf * logn + nhalf * logx => nhalf * logn * (nhalf * logx)
+AORB_26:67:double_density(double):nhalf * logn + nhalf * logx => nhalf * logn / (nhalf * logx)
+AORB_27:67:double_density(double):nhalf * logn + nhalf * logx => nhalf * logn % (nhalf * logx)
+AORB_28:67:double_density(double):nhalf * logn + nhalf * logx => nhalf * logn - nhalf * logx
+AORB_29:67:double_density(double):nhalf * logn + nhalf * logx - logx => (nhalf * logn + nhalf * logx) * logx
+AORB_30:67:double_density(double):nhalf * logn + nhalf * logx - logx => (nhalf * logn + nhalf * logx) / logx
+AORB_31:67:double_density(double):nhalf * logn + nhalf * logx - logx => (nhalf * logn + nhalf * logx) % logx
+AORB_32:67:double_density(double):nhalf * logn + nhalf * logx - logx => nhalf * logn + nhalf * logx + logx
+AORB_33:67:double_density(double):mhalf * logm => mhalf / logm
+AORB_34:67:double_density(double):mhalf * logm => mhalf % logm
+AORB_35:67:double_density(double):mhalf * logm => mhalf + logm
+AORB_36:67:double_density(double):mhalf * logm => mhalf - logm
+AORB_37:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm => (nhalf * logn + nhalf * logx - logx) * (mhalf * logm)
+AORB_38:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm => (nhalf * logn + nhalf * logx - logx) / (mhalf * logm)
+AORB_39:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm => (nhalf * logn + nhalf * logx - logx) % (mhalf * logm)
+AORB_40:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm => nhalf * logn + nhalf * logx - logx - mhalf * logm
+AORB_41:67:double_density(double):nhalf * lognxm => nhalf / lognxm
+AORB_42:67:double_density(double):nhalf * lognxm => nhalf % lognxm
+AORB_43:67:double_density(double):nhalf * lognxm => nhalf + lognxm
+AORB_44:67:double_density(double):nhalf * lognxm => nhalf - lognxm
+AORB_45:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm => (nhalf * logn + nhalf * logx - logx + mhalf * logm) * (nhalf * lognxm)
+AORB_46:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm => (nhalf * logn + nhalf * logx - logx + mhalf * logm) / (nhalf * lognxm)
+AORB_47:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm => (nhalf * logn + nhalf * logx - logx + mhalf * logm) % (nhalf * lognxm)
+AORB_48:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm => nhalf * logn + nhalf * logx - logx + mhalf * logm + nhalf * lognxm
+AORB_49:67:double_density(double):mhalf * lognxm => mhalf / lognxm
+AORB_50:67:double_density(double):mhalf * lognxm => mhalf % lognxm
+AORB_51:67:double_density(double):mhalf * lognxm => mhalf + lognxm
+AORB_52:67:double_density(double):mhalf * lognxm => mhalf - lognxm
+AORB_53:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm => (nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm) * (mhalf * lognxm)
+AORB_54:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm => (nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm) / (mhalf * lognxm)
+AORB_55:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm => (nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm) % (mhalf * lognxm)
+AORB_56:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm => nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm + mhalf * lognxm
+AORB_57:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm - Beta.logBeta( nhalf, mhalf ) => (nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm) * Beta.logBeta( nhalf, mhalf )
+AORB_58:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm - Beta.logBeta( nhalf, mhalf ) => (nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm) / Beta.logBeta( nhalf, mhalf )
+AORB_59:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm - Beta.logBeta( nhalf, mhalf ) => (nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm) % Beta.logBeta( nhalf, mhalf )
+AORB_60:67:double_density(double):nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm - Beta.logBeta( nhalf, mhalf ) => nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm + Beta.logBeta( nhalf, mhalf )
+AORB_61:78:double_cumulativeProbability(double):n * x => n / x
+AORB_62:78:double_cumulativeProbability(double):n * x => n % x
+AORB_63:78:double_cumulativeProbability(double):n * x => n + x
+AORB_64:78:double_cumulativeProbability(double):n * x => n - x
+AORB_65:78:double_cumulativeProbability(double):n * x => n / x
+AORB_66:78:double_cumulativeProbability(double):n * x => n % x
+AORB_67:78:double_cumulativeProbability(double):n * x => n + x
+AORB_68:78:double_cumulativeProbability(double):n * x => n - x
+AORB_69:78:double_cumulativeProbability(double):m + n * x => m * (n * x)
+AORB_70:78:double_cumulativeProbability(double):m + n * x => m / (n * x)
+AORB_71:78:double_cumulativeProbability(double):m + n * x => m % (n * x)
+AORB_72:78:double_cumulativeProbability(double):m + n * x => m - n * x
+AORB_73:78:double_cumulativeProbability(double):n * x / (m + n * x) => n * x * (m + n * x)
+AORB_74:78:double_cumulativeProbability(double):n * x / (m + n * x) => n * x % (m + n * x)
+AORB_75:78:double_cumulativeProbability(double):n * x / (m + n * x) => n * x + (m + n * x)
+AORB_76:78:double_cumulativeProbability(double):n * x / (m + n * x) => n * x - (m + n * x)
+AORB_77:78:double_cumulativeProbability(double):0.5 * n => 0.5 / n
+AORB_78:78:double_cumulativeProbability(double):0.5 * n => 0.5 % n
+AORB_79:78:double_cumulativeProbability(double):0.5 * n => 0.5 + n
+AORB_80:78:double_cumulativeProbability(double):0.5 * n => 0.5 - n
+AORB_81:78:double_cumulativeProbability(double):0.5 * m => 0.5 / m
+AORB_82:78:double_cumulativeProbability(double):0.5 * m => 0.5 % m
+AORB_83:78:double_cumulativeProbability(double):0.5 * m => 0.5 + m
+AORB_84:78:double_cumulativeProbability(double):0.5 * m => 0.5 - m
+AORB_85:102:double_getNumericalMean():denominatorDF - 2 => denominatorDF * 2
+AORB_86:102:double_getNumericalMean():denominatorDF - 2 => denominatorDF / 2
+AORB_87:102:double_getNumericalMean():denominatorDF - 2 => denominatorDF % 2
+AORB_88:102:double_getNumericalMean():denominatorDF - 2 => denominatorDF + 2
+AORB_89:102:double_getNumericalMean():denominatorDF / (denominatorDF - 2) => denominatorDF * (denominatorDF - 2)
+AORB_90:102:double_getNumericalMean():denominatorDF / (denominatorDF - 2) => denominatorDF % (denominatorDF - 2)
+AORB_91:102:double_getNumericalMean():denominatorDF / (denominatorDF - 2) => denominatorDF + (denominatorDF - 2)
+AORB_92:102:double_getNumericalMean():denominatorDF / (denominatorDF - 2) => denominatorDF - (denominatorDF - 2)
+AORB_93:121:double_calculateNumericalVariance():denominatorDF - 2 => denominatorDF * 2
+AORB_94:121:double_calculateNumericalVariance():denominatorDF - 2 => denominatorDF / 2
+AORB_95:121:double_calculateNumericalVariance():denominatorDF - 2 => denominatorDF % 2
+AORB_96:121:double_calculateNumericalVariance():denominatorDF - 2 => denominatorDF + 2
+AORB_97:122:double_calculateNumericalVariance():denominatorDF * denominatorDF => denominatorDF / denominatorDF
+AORB_98:122:double_calculateNumericalVariance():denominatorDF * denominatorDF => denominatorDF % denominatorDF
+AORB_99:122:double_calculateNumericalVariance():denominatorDF * denominatorDF => denominatorDF + denominatorDF
+AORB_100:122:double_calculateNumericalVariance():denominatorDF * denominatorDF => denominatorDF - denominatorDF
+AORB_101:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) => 2 / (denominatorDF * denominatorDF)
+AORB_102:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) => 2 % (denominatorDF * denominatorDF)
+AORB_103:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) => 2 + denominatorDF * denominatorDF
+AORB_104:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) => 2 - denominatorDF * denominatorDF
+AORB_105:122:double_calculateNumericalVariance():numeratorDF + denominatorDF => numeratorDF * denominatorDF
+AORB_106:122:double_calculateNumericalVariance():numeratorDF + denominatorDF => numeratorDF / denominatorDF
+AORB_107:122:double_calculateNumericalVariance():numeratorDF + denominatorDF => numeratorDF % denominatorDF
+AORB_108:122:double_calculateNumericalVariance():numeratorDF + denominatorDF => numeratorDF - denominatorDF
+AORB_109:122:double_calculateNumericalVariance():numeratorDF + denominatorDF - 2 => (numeratorDF + denominatorDF) * 2
+AORB_110:122:double_calculateNumericalVariance():numeratorDF + denominatorDF - 2 => (numeratorDF + denominatorDF) / 2
+AORB_111:122:double_calculateNumericalVariance():numeratorDF + denominatorDF - 2 => (numeratorDF + denominatorDF) % 2
+AORB_112:122:double_calculateNumericalVariance():numeratorDF + denominatorDF - 2 => numeratorDF + denominatorDF + 2
+AORB_113:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) => 2 * (denominatorDF * denominatorDF) / (numeratorDF + denominatorDF - 2)
+AORB_114:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) => 2 * (denominatorDF * denominatorDF) % (numeratorDF + denominatorDF - 2)
+AORB_115:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) => 2 * (denominatorDF * denominatorDF) + (numeratorDF + denominatorDF - 2)
+AORB_116:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) => 2 * (denominatorDF * denominatorDF) - (numeratorDF + denominatorDF - 2)
+AORB_117:122:double_calculateNumericalVariance():denomDFMinusTwo * denomDFMinusTwo => denomDFMinusTwo / denomDFMinusTwo
+AORB_118:122:double_calculateNumericalVariance():denomDFMinusTwo * denomDFMinusTwo => denomDFMinusTwo % denomDFMinusTwo
+AORB_119:122:double_calculateNumericalVariance():denomDFMinusTwo * denomDFMinusTwo => denomDFMinusTwo + denomDFMinusTwo
+AORB_120:122:double_calculateNumericalVariance():denomDFMinusTwo * denomDFMinusTwo => denomDFMinusTwo - denomDFMinusTwo
+AORB_121:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) => numeratorDF / (denomDFMinusTwo * denomDFMinusTwo)
+AORB_122:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) => numeratorDF % (denomDFMinusTwo * denomDFMinusTwo)
+AORB_123:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) => numeratorDF + denomDFMinusTwo * denomDFMinusTwo
+AORB_124:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) => numeratorDF - denomDFMinusTwo * denomDFMinusTwo
+AORB_125:122:double_calculateNumericalVariance():denominatorDF - 4 => denominatorDF * 4
+AORB_126:122:double_calculateNumericalVariance():denominatorDF - 4 => denominatorDF / 4
+AORB_127:122:double_calculateNumericalVariance():denominatorDF - 4 => denominatorDF % 4
+AORB_128:122:double_calculateNumericalVariance():denominatorDF - 4 => denominatorDF + 4
+AORB_129:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4) => numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) / (denominatorDF - 4)
+AORB_130:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4) => numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) % (denominatorDF - 4)
+AORB_131:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4) => numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) + (denominatorDF - 4)
+AORB_132:122:double_calculateNumericalVariance():numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4) => numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) - (denominatorDF - 4)
+AORB_133:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)) => 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) * (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4))
+AORB_134:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)) => 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) % (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4))
+AORB_135:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)) => 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) + numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)
+AORB_136:122:double_calculateNumericalVariance():2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)) => 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) - numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)
+ROR_1:48:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): numeratorDegreesOfFreedom <= 0  =>   numeratorDegreesOfFreedom > 0
+ROR_2:48:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): numeratorDegreesOfFreedom <= 0  =>   numeratorDegreesOfFreedom >= 0
+ROR_3:48:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): numeratorDegreesOfFreedom <= 0  =>   numeratorDegreesOfFreedom < 0
+ROR_4:48:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): numeratorDegreesOfFreedom <= 0  =>   numeratorDegreesOfFreedom == 0
+ROR_5:48:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): numeratorDegreesOfFreedom <= 0  =>   numeratorDegreesOfFreedom != 0
+ROR_6:48:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): numeratorDegreesOfFreedom <= 0  =>   true
+ROR_7:48:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): numeratorDegreesOfFreedom <= 0  =>   false
+ROR_8:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): denominatorDegreesOfFreedom <= 0  =>   denominatorDegreesOfFreedom > 0
+ROR_9:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): denominatorDegreesOfFreedom <= 0  =>   denominatorDegreesOfFreedom >= 0
+ROR_10:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): denominatorDegreesOfFreedom <= 0  =>   denominatorDegreesOfFreedom < 0
+ROR_11:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): denominatorDegreesOfFreedom <= 0  =>   denominatorDegreesOfFreedom == 0
+ROR_12:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): denominatorDegreesOfFreedom <= 0  =>   denominatorDegreesOfFreedom != 0
+ROR_13:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): denominatorDegreesOfFreedom <= 0  =>   true
+ROR_14:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): denominatorDegreesOfFreedom <= 0  =>   false
+ROR_15:73:double_cumulativeProbability(double): x <= 0  =>   x > 0
+ROR_16:73:double_cumulativeProbability(double): x <= 0  =>   x >= 0
+ROR_17:73:double_cumulativeProbability(double): x <= 0  =>   x < 0
+ROR_18:73:double_cumulativeProbability(double): x <= 0  =>   x == 0
+ROR_19:73:double_cumulativeProbability(double): x <= 0  =>   x != 0
+ROR_20:73:double_cumulativeProbability(double): x <= 0  =>   true
+ROR_21:73:double_cumulativeProbability(double): x <= 0  =>   false
+ROR_22:101:double_getNumericalMean(): denominatorDF > 2  =>   denominatorDF >= 2
+ROR_23:101:double_getNumericalMean(): denominatorDF > 2  =>   denominatorDF < 2
+ROR_24:101:double_getNumericalMean(): denominatorDF > 2  =>   denominatorDF <= 2
+ROR_25:101:double_getNumericalMean(): denominatorDF > 2  =>   denominatorDF == 2
+ROR_26:101:double_getNumericalMean(): denominatorDF > 2  =>   denominatorDF != 2
+ROR_27:101:double_getNumericalMean(): denominatorDF > 2  =>   true
+ROR_28:101:double_getNumericalMean(): denominatorDF > 2  =>   false
+ROR_29:119:double_calculateNumericalVariance(): denominatorDF > 4  =>   denominatorDF >= 4
+ROR_30:119:double_calculateNumericalVariance(): denominatorDF > 4  =>   denominatorDF < 4
+ROR_31:119:double_calculateNumericalVariance(): denominatorDF > 4  =>   denominatorDF <= 4
+ROR_32:119:double_calculateNumericalVariance(): denominatorDF > 4  =>   denominatorDF == 4
+ROR_33:119:double_calculateNumericalVariance(): denominatorDF > 4  =>   denominatorDF != 4
+ROR_34:119:double_calculateNumericalVariance(): denominatorDF > 4  =>   true
+ROR_35:119:double_calculateNumericalVariance(): denominatorDF > 4  =>   false
+SDL_1:54:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;
+SDL_2:54:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;
+SDL_3:56:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;
+SDL_4:56:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;
+SDL_5:56:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); } if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); } this.numeratorDegreesOfFreedom = numeratorDegreesOfFreedom; this.denominatorDegreesOfFreedom = denominatorDegreesOfFreedom;
+SDL_6:49:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom );  =>  
+SDL_7:51:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (numeratorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); }  =>   if (true) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, numeratorDegreesOfFreedom ); }
+SDL_8:52:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom );  =>  
+SDL_9:54:FDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (denominatorDegreesOfFreedom <= 0) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); }  =>   if (true) {     throw new org.apache.commons.math3.exception.NotStrictlyPositiveException( LocalizedFormats.DEGREES_OF_FREEDOM, denominatorDegreesOfFreedom ); }
+SDL_10:68:double_density(double): return FastMath.exp( nhalf * logn + nhalf * logx - logx + mhalf * logm - nhalf * lognxm - mhalf * lognxm - Beta.logBeta( nhalf, mhalf ) );  =>   return 0;
+SDL_11:74:double_cumulativeProbability(double): double ret; if (x <= 0) {     ret = 0; } else {     double n = numeratorDegreesOfFreedom;     double m = denominatorDegreesOfFreedom;     ret = Beta.regularizedBeta( n * x / (m + n * x), 0.5 * n, 0.5 * m ); } return ret;  =>   double ret; return ret;
+SDL_12:74:double_cumulativeProbability(double): ret = 0;  =>  
+SDL_13:80:double_cumulativeProbability(double): if (x <= 0) {     ret = 0; } else {     double n = numeratorDegreesOfFreedom;     double m = denominatorDegreesOfFreedom;     ret = Beta.regularizedBeta( n * x / (m + n * x), 0.5 * n, 0.5 * m ); }  =>   if (true) {     ret = 0; } else {     double n = numeratorDegreesOfFreedom;     double m = denominatorDegreesOfFreedom;     ret = Beta.regularizedBeta( n * x / (m + n * x), 0.5 * n, 0.5 * m ); }
+SDL_14:78:double_cumulativeProbability(double): double n = numeratorDegreesOfFreedom; double m = denominatorDegreesOfFreedom; ret = Beta.regularizedBeta( n * x / (m + n * x), 0.5 * n, 0.5 * m );  =>   double n = numeratorDegreesOfFreedom; double m = denominatorDegreesOfFreedom;
+SDL_15:81:double_cumulativeProbability(double): return ret;  =>   return 0;
+SDL_16:86:double_getNumeratorDegreesOfFreedom(): return numeratorDegreesOfFreedom;  =>   return 0;
+SDL_17:91:double_getDenominatorDegreesOfFreedom(): return denominatorDegreesOfFreedom;  =>   return 0;
+SDL_18:96:double_getSolverAbsoluteAccuracy(): return solverAbsoluteAccuracy;  =>   return 0;
+SDL_19:102:double_getNumericalMean(): final double denominatorDF = getDenominatorDegreesOfFreedom(); if (denominatorDF > 2) {     return denominatorDF / (denominatorDF - 2); } return Double.NaN;  =>   final double denominatorDF = getDenominatorDegreesOfFreedom(); return Double.NaN;
+SDL_20:104:double_getNumericalMean(): if (denominatorDF > 2) {     return denominatorDF / (denominatorDF - 2); }  =>   if (true) {     return denominatorDF / (denominatorDF - 2); }
+SDL_21:103:double_getNumericalMean(): return denominatorDF / (denominatorDF - 2);  =>   return 0;
+SDL_22:105:double_getNumericalMean(): return Double.NaN;  =>   return 0;
+SDL_23:110:double_getNumericalVariance(): if (!numericalVarianceIsCalculated) {     numericalVariance = calculateNumericalVariance();     numericalVarianceIsCalculated = true; } return numericalVariance;  =>   return numericalVariance;
+SDL_24:111:double_getNumericalVariance(): numericalVariance = calculateNumericalVariance(); numericalVarianceIsCalculated = true;  =>   numericalVarianceIsCalculated = true;
+SDL_25:111:double_getNumericalVariance(): numericalVariance = calculateNumericalVariance(); numericalVarianceIsCalculated = true;  =>   numericalVariance = calculateNumericalVariance();
+SDL_26:113:double_getNumericalVariance(): if (!numericalVarianceIsCalculated) {     numericalVariance = calculateNumericalVariance();     numericalVarianceIsCalculated = true; }  =>   if (true) {     numericalVariance = calculateNumericalVariance();     numericalVarianceIsCalculated = true; }
+SDL_27:114:double_getNumericalVariance(): return numericalVariance;  =>   return 0;
+SDL_28:120:double_calculateNumericalVariance(): final double denominatorDF = getDenominatorDegreesOfFreedom(); if (denominatorDF > 4) {     final double numeratorDF = getNumeratorDegreesOfFreedom();     final double denomDFMinusTwo = denominatorDF - 2;     return 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)); } return Double.NaN;  =>   final double denominatorDF = getDenominatorDegreesOfFreedom(); return Double.NaN;
+SDL_29:124:double_calculateNumericalVariance(): if (denominatorDF > 4) {     final double numeratorDF = getNumeratorDegreesOfFreedom();     final double denomDFMinusTwo = denominatorDF - 2;     return 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)); }  =>   if (true) {     final double numeratorDF = getNumeratorDegreesOfFreedom();     final double denomDFMinusTwo = denominatorDF - 2;     return 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4)); }
+SDL_30:123:double_calculateNumericalVariance(): return 2 * (denominatorDF * denominatorDF) * (numeratorDF + denominatorDF - 2) / (numeratorDF * (denomDFMinusTwo * denomDFMinusTwo) * (denominatorDF - 4));  =>   return 0;
+SDL_31:125:double_calculateNumericalVariance(): return Double.NaN;  =>   return 0;
+SDL_32:135:double_getSupportUpperBound(): return Double.POSITIVE_INFINITY;  =>   return 0;
+SDL_33:140:boolean_isSupportLowerBoundInclusive(): return true;  =>   return false;
+SDL_34:145:boolean_isSupportUpperBoundInclusive(): return false;  =>   return true;
+SDL_35:150:boolean_isSupportConnected(): return true;  =>   return false;

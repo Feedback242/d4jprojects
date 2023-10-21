@@ -1,0 +1,6 @@
+SubLine(org.apache.commons.math3.geometry.euclidean.threed.Line,org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet)
+SubLine(org.apache.commons.math3.geometry.euclidean.threed.Vector3D,org.apache.commons.math3.geometry.euclidean.threed.Vector3D)
+SubLine(org.apache.commons.math3.geometry.euclidean.threed.Segment)
+java.util.List_getSegments()
+org.apache.commons.math3.geometry.euclidean.threed.Vector3D_intersection(org.apache.commons.math3.geometry.euclidean.threed.SubLine,boolean)
+org.apache.commons.math3.geometry.euclidean.oned.IntervalsSet_buildIntervalSet(org.apache.commons.math3.geometry.euclidean.threed.Vector3D,org.apache.commons.math3.geometry.euclidean.threed.Vector3D)

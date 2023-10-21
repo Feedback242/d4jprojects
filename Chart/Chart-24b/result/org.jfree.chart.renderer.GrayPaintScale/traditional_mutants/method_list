@@ -1,0 +1,7 @@
+GrayPaintScale()
+GrayPaintScale(double,double)
+double_getLowerBound()
+double_getUpperBound()
+java.awt.Paint_getPaint(double)
+boolean_equals(java.lang.Object)
+java.lang.Object_clone()

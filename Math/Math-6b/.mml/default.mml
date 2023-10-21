@@ -1,0 +1,94 @@
+list_aor={+,-,*,/,%};
+list_lor={&,|,^};
+list_sor={<<,>>,>>>};
+list_oru={+,-,~};
+
+// Replacements for the AOR operator
+BIN(+)->list_aor;
+BIN(-)->list_aor;
+BIN(*)->list_aor;
+BIN(/)->list_aor;
+BIN(%)->list_aor;
+
+// Replacements for the SOR operator
+BIN(>>)->list_sor;
+BIN(<<)->list_sor;
+BIN(>>>)->list_sor;
+
+// Replacements for the LOR operator
+BIN(&)->list_lor;
+BIN(|)->list_lor;
+BIN(^)->list_lor;
+
+// Replacements for the ORU operator
+UNR(+)->list_oru;
+UNR(-)->list_oru;
+UNR(~)->list_oru;
+
+// Replacements the for ROR operator
+BIN(>)->{>=,!=,FALSE};
+BIN(<)->{<=,!=,FALSE};
+BIN(>=)->{>,==,TRUE};
+BIN(<=)->{<,==,TRUE};
+BIN(==)->{<=,>=,FALSE,LHS,RHS};
+BIN(!=)->{<,>,TRUE,LHS,RHS};
+
+// Replacements for COR
+BIN(&&)->{==,LHS,RHS,FALSE};
+BIN(||)->{!=,LHS,RHS,TRUE};
+
+// Deletions for the STD operator (type of statement that should be deleted)
+DEL(CALL);
+DEL(INC);
+DEL(DEC);
+DEL(ASSIGN);
+// Don't delete return, continue, and break statements by default
+//DEL(RETURN);
+//DEL(CONT);
+//DEL(BREAK);
+
+// Literal types for the LVR operator
+LIT(BOOLEAN);
+LIT(NUMBER);
+// Don't mutate String literals by default
+//LIT(STRING);
+
+-LVR<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-ORU<"org.apache.commons.math3.util.FastMathLiteralArrays">;
+-LVR<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+-STD<"org.apache.commons.math.optimization.direct.BOBYQAOptimizer@bobyqb">;
+
+// Enable operators for org.apache.commons.math3.optim.BaseOptimizer
+AOR<"org.apache.commons.math3.optim.BaseOptimizer">;
+ROR<"org.apache.commons.math3.optim.BaseOptimizer">;
+COR<"org.apache.commons.math3.optim.BaseOptimizer">;
+
+// Enable operators for org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer
+AOR<"org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer">;
+ROR<"org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer">;
+COR<"org.apache.commons.math3.optim.nonlinear.scalar.gradient.NonLinearConjugateGradientOptimizer">;
+
+// Enable operators for org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer
+AOR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer">;
+ROR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer">;
+COR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.CMAESOptimizer">;
+
+// Enable operators for org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer
+AOR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer">;
+ROR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer">;
+COR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.PowellOptimizer">;
+
+// Enable operators for org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer
+AOR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer">;
+ROR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer">;
+COR<"org.apache.commons.math3.optim.nonlinear.scalar.noderiv.SimplexOptimizer">;
+
+// Enable operators for org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer
+AOR<"org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer">;
+ROR<"org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer">;
+COR<"org.apache.commons.math3.optim.nonlinear.vector.jacobian.GaussNewtonOptimizer">;
+
+// Enable operators for org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer
+AOR<"org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer">;
+ROR<"org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer">;
+COR<"org.apache.commons.math3.optim.nonlinear.vector.jacobian.LevenbergMarquardtOptimizer">;

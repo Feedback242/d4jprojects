@@ -1,0 +1,211 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType,int,org.joda.time.Chronology):156:type == null |==> false
+2:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):193:types == null |==> false
+3:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):196:values == null |==> false
+4:ROR:!=(int,int):<(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):199:values.length != types.length |==> values.length < types.length
+5:ROR:!=(int,int):>(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):199:values.length != types.length |==> values.length > types.length
+6:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):199:values.length != types.length |==> true
+7:ROR:==(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):202:types.length == 0 |==> types.length <= 0
+8:ROR:==(int,int):>=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):202:types.length == 0 |==> types.length >= 0
+9:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):202:types.length == 0 |==> false
+10:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):207:i < types.length |==> i != types.length
+11:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):207:i < types.length |==> i <= types.length
+12:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):207:i < types.length |==> false
+13:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):208:types[i] == null |==> false
+14:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):213:i < types.length |==> i != types.length
+15:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):213:i < types.length |==> i <= types.length
+16:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):213:i < types.length |==> false
+17:ROR:>(int,int):!=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):216:i > 0 |==> i != 0
+18:ROR:>(int,int):>=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):216:i > 0 |==> i >= 0
+19:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):216:i > 0 |==> false
+20:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):218:compare < 0 |==> compare != 0
+21:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):218:compare < 0 |==> compare <= 0
+22:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):218:compare < 0 |==> false
+23:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):220:i - 1 |==> i % 1
+24:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):220:i - 1 |==> i * 1
+25:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):220:i - 1 |==> i + 1
+26:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):220:i - 1 |==> i / 1
+27:ROR:==(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):221:compare == 0 |==> compare <= 0
+28:ROR:==(int,int):>=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):221:compare == 0 |==> compare >= 0
+29:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):221:compare == 0 |==> false
+30:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):222:i - 1 |==> i % 1
+31:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):222:i - 1 |==> i * 1
+32:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):222:i - 1 |==> i + 1
+33:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):222:i - 1 |==> i / 1
+34:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):222:types[i - 1].getRangeDurationType() == null |==> false
+35:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):223:loopType.getRangeDurationType() == null |==> false
+36:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):225:i - 1 |==> i % 1
+37:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):225:i - 1 |==> i * 1
+38:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):225:i - 1 |==> i + 1
+39:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):225:i - 1 |==> i / 1
+40:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):228:loopType.getRangeDurationType() == null |==> false
+41:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):230:i - 1 |==> i % 1
+42:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):230:i - 1 |==> i * 1
+43:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):230:i - 1 |==> i + 1
+44:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):230:i - 1 |==> i / 1
+45:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):232:i - 1 |==> i % 1
+46:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):232:i - 1 |==> i * 1
+47:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):232:i - 1 |==> i + 1
+48:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):232:i - 1 |==> i / 1
+49:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):234:lastRangeField.compareTo(loopRangeField) < 0 |==> lastRangeField.compareTo(loopRangeField) != 0
+50:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):234:lastRangeField.compareTo(loopRangeField) < 0 |==> lastRangeField.compareTo(loopRangeField) <= 0
+51:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):234:lastRangeField.compareTo(loopRangeField) < 0 |==> false
+52:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):236:i - 1 |==> i % 1
+53:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):236:i - 1 |==> i * 1
+54:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):236:i - 1 |==> i + 1
+55:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):236:i - 1 |==> i / 1
+56:ROR:==(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):238:lastRangeField.compareTo(loopRangeField) == 0 |==> lastRangeField.compareTo(loopRangeField) <= 0
+57:ROR:==(int,int):>=(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):238:lastRangeField.compareTo(loopRangeField) == 0 |==> lastRangeField.compareTo(loopRangeField) >= 0
+58:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):238:lastRangeField.compareTo(loopRangeField) == 0 |==> false
+59:AOR:-(int,int):%(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):240:i - 1 |==> i % 1
+60:AOR:-(int,int):*(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):240:i - 1 |==> i * 1
+61:AOR:-(int,int):+(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):240:i - 1 |==> i + 1
+62:AOR:-(int,int):/(int,int):org.joda.time.Partial@<init>(org.joda.time.DateTimeFieldType[],int[],org.joda.time.Chronology):240:i - 1 |==> i / 1
+63:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@<init>(org.joda.time.ReadablePartial):261:partial == null |==> false
+64:ROR:<(int,int):!=(int,int):org.joda.time.Partial@<init>(org.joda.time.ReadablePartial):267:i < partial.size() |==> i != partial.size()
+65:ROR:<(int,int):<=(int,int):org.joda.time.Partial@<init>(org.joda.time.ReadablePartial):267:i < partial.size() |==> i <= partial.size()
+66:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@<init>(org.joda.time.ReadablePartial):267:i < partial.size() |==> false
+67:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@withChronologyRetainFields(org.joda.time.Chronology):404:newChronology == getChronology() |==> false
+68:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):429:fieldType == null |==> false
+69:ROR:==(int,int):<=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):433:index == -1 |==> index <= -1
+70:ROR:==(int,int):>=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):433:index == -1 |==> index >= -1
+71:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):433:index == -1 |==> false
+72:AOR:+(int,int):%(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):434:iTypes.length + 1 |==> iTypes.length % 1
+73:AOR:+(int,int):*(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):434:iTypes.length + 1 |==> iTypes.length * 1
+74:AOR:+(int,int):-(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):434:iTypes.length + 1 |==> iTypes.length - 1
+75:AOR:+(int,int):/(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):434:iTypes.length + 1 |==> iTypes.length / 1
+76:COR:unitField.isSupported():TRUE:org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):440:unitField.isSupported() |==> false
+77:COR:unitField.isSupported():FALSE:org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):440:unitField.isSupported() |==> true
+78:ROR:<(int,int):!=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):441:i < iTypes.length |==> i != iTypes.length
+79:ROR:<(int,int):<=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):441:i < iTypes.length |==> i <= iTypes.length
+80:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):441:i < iTypes.length |==> false
+81:COR:loopUnitField.isSupported():TRUE:org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):444:loopUnitField.isSupported() |==> false
+82:COR:loopUnitField.isSupported():FALSE:org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):444:loopUnitField.isSupported() |==> true
+83:ROR:>(int,int):!=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):446:compare > 0 |==> compare != 0
+84:ROR:>(int,int):>=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):446:compare > 0 |==> compare >= 0
+85:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):446:compare > 0 |==> false
+86:ROR:==(int,int):<=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):448:compare == 0 |==> compare <= 0
+87:ROR:==(int,int):>=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):448:compare == 0 |==> compare >= 0
+88:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):448:compare == 0 |==> false
+89:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):449:fieldType.getRangeDurationType() == null |==> false
+90:ROR:>(int,int):!=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):454:rangeField.compareTo(loopRangeField) > 0 |==> rangeField.compareTo(loopRangeField) != 0
+91:ROR:>(int,int):>=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):454:rangeField.compareTo(loopRangeField) > 0 |==> rangeField.compareTo(loopRangeField) >= 0
+92:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):454:rangeField.compareTo(loopRangeField) > 0 |==> false
+93:AOR:+(int,int):%(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:i + 1 |==> i % 1
+94:AOR:+(int,int):*(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:i + 1 |==> i * 1
+95:AOR:+(int,int):-(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:i + 1 |==> i - 1
+96:AOR:+(int,int):/(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:i + 1 |==> i / 1
+97:AOR:-(int,int):%(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i |==> newTypes.length % i
+98:AOR:-(int,int):*(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i |==> newTypes.length * i
+99:AOR:-(int,int):+(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i |==> newTypes.length + i
+100:AOR:-(int,int):/(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i |==> newTypes.length / i
+101:AOR:-(int,int):%(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i - 1 |==> (newTypes.length - i) % 1
+102:AOR:-(int,int):*(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i - 1 |==> (newTypes.length - i) * 1
+103:AOR:-(int,int):+(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i - 1 |==> newTypes.length - i + 1
+104:AOR:-(int,int):/(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):465:newTypes.length - i - 1 |==> (newTypes.length - i) / 1
+105:AOR:+(int,int):%(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:i + 1 |==> i % 1
+106:AOR:+(int,int):*(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:i + 1 |==> i * 1
+107:AOR:+(int,int):-(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:i + 1 |==> i - 1
+108:AOR:+(int,int):/(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:i + 1 |==> i / 1
+109:AOR:-(int,int):%(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i |==> newValues.length % i
+110:AOR:-(int,int):*(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i |==> newValues.length * i
+111:AOR:-(int,int):+(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i |==> newValues.length + i
+112:AOR:-(int,int):/(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i |==> newValues.length / i
+113:AOR:-(int,int):%(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i - 1 |==> (newValues.length - i) % 1
+114:AOR:-(int,int):*(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i - 1 |==> (newValues.length - i) * 1
+115:AOR:-(int,int):+(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i - 1 |==> newValues.length - i + 1
+116:AOR:-(int,int):/(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):466:newValues.length - i - 1 |==> (newValues.length - i) / 1
+117:ROR:==(int,int):<=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):473:value == getValue(index) |==> value <= getValue(index)
+118:ROR:==(int,int):>=(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):473:value == getValue(index) |==> value >= getValue(index)
+119:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@with(org.joda.time.DateTimeFieldType,int):473:value == getValue(index) |==> false
+120:ROR:!=(int,int):<(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):491:index != -1 |==> index < -1
+121:ROR:!=(int,int):>(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):491:index != -1 |==> index > -1
+122:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):491:index != -1 |==> true
+123:AOR:-(int,int):%(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):492:size() - 1 |==> size() % 1
+124:AOR:-(int,int):*(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):492:size() - 1 |==> size() * 1
+125:AOR:-(int,int):+(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):492:size() - 1 |==> size() + 1
+126:AOR:-(int,int):/(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):492:size() - 1 |==> size() / 1
+127:AOR:-(int,int):%(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):493:size() - 1 |==> size() % 1
+128:AOR:-(int,int):*(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):493:size() - 1 |==> size() * 1
+129:AOR:-(int,int):+(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):493:size() - 1 |==> size() + 1
+130:AOR:-(int,int):/(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):493:size() - 1 |==> size() / 1
+131:AOR:+(int,int):%(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:index + 1 |==> index % 1
+132:AOR:+(int,int):*(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:index + 1 |==> index * 1
+133:AOR:+(int,int):-(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:index + 1 |==> index - 1
+134:AOR:+(int,int):/(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:index + 1 |==> index / 1
+135:AOR:-(int,int):%(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:newTypes.length - index |==> newTypes.length % index
+136:AOR:-(int,int):*(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:newTypes.length - index |==> newTypes.length * index
+137:AOR:-(int,int):+(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:newTypes.length - index |==> newTypes.length + index
+138:AOR:-(int,int):/(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):495:newTypes.length - index |==> newTypes.length / index
+139:AOR:+(int,int):%(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:index + 1 |==> index % 1
+140:AOR:+(int,int):*(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:index + 1 |==> index * 1
+141:AOR:+(int,int):-(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:index + 1 |==> index - 1
+142:AOR:+(int,int):/(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:index + 1 |==> index / 1
+143:AOR:-(int,int):%(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:newValues.length - index |==> newValues.length % index
+144:AOR:-(int,int):*(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:newValues.length - index |==> newValues.length * index
+145:AOR:-(int,int):+(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:newValues.length - index |==> newValues.length + index
+146:AOR:-(int,int):/(int,int):org.joda.time.Partial@without(org.joda.time.DateTimeFieldType):497:newValues.length - index |==> newValues.length / index
+147:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withField(org.joda.time.DateTimeFieldType,int):522:value == getValue(index) |==> value <= getValue(index)
+148:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withField(org.joda.time.DateTimeFieldType,int):522:value == getValue(index) |==> value >= getValue(index)
+149:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withField(org.joda.time.DateTimeFieldType,int):522:value == getValue(index) |==> false
+150:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withFieldAdded(org.joda.time.DurationFieldType,int):546:amount == 0 |==> amount <= 0
+151:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withFieldAdded(org.joda.time.DurationFieldType,int):546:amount == 0 |==> amount >= 0
+152:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withFieldAdded(org.joda.time.DurationFieldType,int):546:amount == 0 |==> false
+153:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withFieldAddWrapped(org.joda.time.DurationFieldType,int):570:amount == 0 |==> amount <= 0
+154:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withFieldAddWrapped(org.joda.time.DurationFieldType,int):570:amount == 0 |==> amount >= 0
+155:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withFieldAddWrapped(org.joda.time.DurationFieldType,int):570:amount == 0 |==> false
+156:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:period == null |==> false
+157:ROR:==(int,int):<=(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:scalar == 0 |==> scalar <= 0
+158:ROR:==(int,int):>=(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:scalar == 0 |==> scalar >= 0
+159:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:scalar == 0 |==> false
+160:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:period == null || scalar == 0 |==> period == null != (scalar == 0)
+161:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:period == null || scalar == 0 |==> period == null
+162:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:period == null || scalar == 0 |==> scalar == 0
+163:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):594:period == null || scalar == 0 |==> true
+164:ROR:<(int,int):!=(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):598:i < period.size() |==> i != period.size()
+165:ROR:<(int,int):<=(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):598:i < period.size() |==> i <= period.size()
+166:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):598:i < period.size() |==> false
+167:ROR:>=(int,int):==(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):601:index >= 0 |==> index == 0
+168:ROR:>=(int,int):>(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):601:index >= 0 |==> index > 0
+169:ROR:>=(int,int):TRUE(int,int):org.joda.time.Partial@withPeriodAdded(org.joda.time.ReadablePeriod,int):601:index >= 0 |==> true
+170:ROR:<(int,int):!=(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadableInstant):663:i < iTypes.length |==> i != iTypes.length
+171:ROR:<(int,int):<=(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadableInstant):663:i < iTypes.length |==> i <= iTypes.length
+172:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadableInstant):663:i < iTypes.length |==> false
+173:ROR:!=(int,int):<(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadableInstant):665:value != iValues[i] |==> value < iValues[i]
+174:ROR:!=(int,int):>(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadableInstant):665:value != iValues[i] |==> value > iValues[i]
+175:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadableInstant):665:value != iValues[i] |==> true
+176:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@isMatch(org.joda.time.ReadablePartial):685:partial == null |==> false
+177:ROR:<(int,int):!=(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadablePartial):688:i < iTypes.length |==> i != iTypes.length
+178:ROR:<(int,int):<=(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadablePartial):688:i < iTypes.length |==> i <= iTypes.length
+179:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadablePartial):688:i < iTypes.length |==> false
+180:ROR:!=(int,int):<(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadablePartial):690:value != iValues[i] |==> value < iValues[i]
+181:ROR:!=(int,int):>(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadablePartial):690:value != iValues[i] |==> value > iValues[i]
+182:ROR:!=(int,int):TRUE(int,int):org.joda.time.Partial@isMatch(org.joda.time.ReadablePartial):690:value != iValues[i] |==> true
+183:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@getFormatter():711:f == null |==> false
+184:ROR:==(int,int):<=(int,int):org.joda.time.Partial@getFormatter():712:size() == 0 |==> size() <= 0
+185:ROR:==(int,int):>=(int,int):org.joda.time.Partial@getFormatter():712:size() == 0 |==> size() >= 0
+186:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@getFormatter():712:size() == 0 |==> false
+187:ROR:==(int,int):<=(int,int):org.joda.time.Partial@getFormatter():719:list.size() == 0 |==> list.size() <= 0
+188:ROR:==(int,int):>=(int,int):org.joda.time.Partial@getFormatter():719:list.size() == 0 |==> list.size() >= 0
+189:ROR:==(int,int):FALSE(int,int):org.joda.time.Partial@getFormatter():719:list.size() == 0 |==> false
+190:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString():744:f == null |==> false
+191:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString():747:f == null |==> false
+192:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString():752:f1 == null |==> false
+193:AOR:*(int,int):%(int,int):org.joda.time.Partial@toStringList():769:20 * size |==> 20 % size
+194:AOR:*(int,int):+(int,int):org.joda.time.Partial@toStringList():769:20 * size |==> 20 + size
+195:AOR:*(int,int):-(int,int):org.joda.time.Partial@toStringList():769:20 * size |==> 20 - size
+196:AOR:*(int,int):/(int,int):org.joda.time.Partial@toStringList():769:20 * size |==> 20 / size
+197:ROR:<(int,int):!=(int,int):org.joda.time.Partial@toStringList():771:i < size |==> i != size
+198:ROR:<(int,int):<=(int,int):org.joda.time.Partial@toStringList():771:i < size |==> i <= size
+199:ROR:<(int,int):FALSE(int,int):org.joda.time.Partial@toStringList():771:i < size |==> false
+200:ROR:>(int,int):!=(int,int):org.joda.time.Partial@toStringList():772:i > 0 |==> i != 0
+201:ROR:>(int,int):>=(int,int):org.joda.time.Partial@toStringList():772:i > 0 |==> i >= 0
+202:ROR:>(int,int):FALSE(int,int):org.joda.time.Partial@toStringList():772:i > 0 |==> false
+203:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString(java.lang.String):791:pattern == null |==> false
+204:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.Partial@toString(java.lang.String,java.util.Locale):806:pattern == null |==> false
+205:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@getInstance(org.joda.time.DurationFieldType):49:cCache == null |==> false
+206:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@getInstance(org.joda.time.DurationFieldType):55:field == null |==> false
+207:COR:durationField.isSupported():TRUE:org.joda.time.field.UnsupportedDurationField@compareTo(org.joda.time.DurationField):227:durationField.isSupported() |==> false
+208:COR:durationField.isSupported():FALSE:org.joda.time.field.UnsupportedDurationField@compareTo(org.joda.time.DurationField):227:durationField.isSupported() |==> true
+209:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@equals(java.lang.Object):241:this == obj |==> false
+210:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@equals(java.lang.Object):245:other.getName() == null |==> false
+211:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.field.UnsupportedDurationField@equals(java.lang.Object):246:getName() == null |==> false

@@ -1,0 +1,8 @@
+ShapeList()
+java.awt.Shape_getShape(int)
+void_setShape(int,java.awt.Shape)
+java.lang.Object_clone()
+boolean_equals(java.lang.Object)
+int_hashCode()
+void_writeObject(java.io.ObjectOutputStream)
+void_readObject(java.io.ObjectInputStream)

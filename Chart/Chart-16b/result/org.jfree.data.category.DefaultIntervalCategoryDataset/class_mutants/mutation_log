@@ -1,0 +1,31 @@
+ISI_1:109:getSeriesCount()  -->  super.getSeriesCount()
+ISI_2:120:getSeriesCount()  -->  super.getSeriesCount()
+ISI_3:131:getSeriesCount()  -->  super.getSeriesCount()
+ISI_4:197:getSeriesCount()  -->  super.getSeriesCount()
+ISI_5:221:getSeriesCount()  -->  super.getSeriesCount()
+ISI_6:232:getSeriesCount()  -->  super.getSeriesCount()
+ISI_7:245:getSeriesCount()  -->  super.getSeriesCount()
+PCD_1:332:(org.jfree.data.category.DefaultIntervalCategoryDataset) obj => obj
+PCD_2:351:(org.jfree.data.category.DefaultIntervalCategoryDataset) super.clone() => super.clone()
+JTD_1:60:this.seriesKeys => seriesKeys
+JTD_2:63:this.seriesKeys => seriesKeys
+JTD_3:74:this.categoryKeys => categoryKeys
+JTD_4:77:this.categoryKeys => categoryKeys
+JTD_5:80:this.seriesKeys => seriesKeys
+JTD_6:81:this.categoryKeys => categoryKeys
+JTD_7:123:this.seriesKeys => seriesKeys
+JTD_8:160:this.categoryKeys => categoryKeys
+JTI_1:56:seriesKeys  -->  this.seriesKeys
+JTI_2:57:seriesKeys  -->  this.seriesKeys
+JTI_3:60:seriesKeys  -->  this.seriesKeys
+JTI_4:70:categoryKeys  -->  this.categoryKeys
+JTI_5:71:categoryKeys  -->  this.categoryKeys
+JTI_6:74:categoryKeys  -->  this.categoryKeys
+JTI_7:117:seriesKeys  -->  this.seriesKeys
+JTI_8:120:seriesKeys  -->  this.seriesKeys
+JTI_9:123:seriesKeys  -->  this.seriesKeys
+JTI_10:149:categoryKeys  -->  this.categoryKeys
+JTI_11:152:categoryKeys  -->  this.categoryKeys
+JTI_12:155:categoryKeys  -->  this.categoryKeys
+JTI_13:156:categoryKeys  -->  this.categoryKeys
+JTI_14:160:categoryKeys  -->  this.categoryKeys

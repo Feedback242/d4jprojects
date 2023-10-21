@@ -1,0 +1,9 @@
+ISI_1:324:getLocalMillis()  -->  super.getLocalMillis()
+ISI_2:376:getLocalMillis()  -->  super.getLocalMillis()
+ISI_3:440:getLocalMillis()  -->  super.getLocalMillis()
+ISI_4:483:getLocalMillis()  -->  super.getLocalMillis()
+PCD_1:284:(org.joda.time.LocalDate) partial => partial
+PCD_2:307:(org.joda.time.LocalDate) partial => partial
+PCD_3:801:(org.joda.time.LocalDate) oos.readObject() => oos.readObject()
+PCD_4:802:(org.joda.time.DateTimeFieldType) oos.readObject() => oos.readObject()
+EOC_1:303:this == partial => this.equals(partial)

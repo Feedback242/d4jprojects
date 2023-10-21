@@ -1,0 +1,4 @@
+JTD_1:25:this.line => line
+JTD_2:26:this.remainingRegion => remainingRegion
+JTI_1:25:line  -->  this.line
+JTI_2:26:remainingRegion  -->  this.remainingRegion

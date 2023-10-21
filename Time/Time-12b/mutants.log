@@ -1,0 +1,340 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@now(org.joda.time.DateTimeZone):124:zone == null |==> false
+2:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@now(org.joda.time.Chronology):140:chronology == null |==> false
+3:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@fromCalendarFields(java.util.Calendar):196:calendar == null |==> false
+4:AOR:+(int,int):%(int,int):org.joda.time.LocalDateTime@fromCalendarFields(java.util.Calendar):202:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) % 1
+5:AOR:+(int,int):*(int,int):org.joda.time.LocalDateTime@fromCalendarFields(java.util.Calendar):202:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) * 1
+6:AOR:+(int,int):-(int,int):org.joda.time.LocalDateTime@fromCalendarFields(java.util.Calendar):202:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) - 1
+7:AOR:+(int,int):/(int,int):org.joda.time.LocalDateTime@fromCalendarFields(java.util.Calendar):202:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) / 1
+8:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):233:date == null |==> false
+9:AOR:+(int,int):%(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):238:date.getYear() + 1900 |==> date.getYear() % 1900
+10:AOR:+(int,int):*(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):238:date.getYear() + 1900 |==> date.getYear() * 1900
+11:AOR:+(int,int):-(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):238:date.getYear() + 1900 |==> date.getYear() - 1900
+12:AOR:+(int,int):/(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):238:date.getYear() + 1900 |==> date.getYear() / 1900
+13:AOR:+(int,int):%(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):239:date.getMonth() + 1 |==> date.getMonth() % 1
+14:AOR:+(int,int):*(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):239:date.getMonth() + 1 |==> date.getMonth() * 1
+15:AOR:+(int,int):-(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):239:date.getMonth() + 1 |==> date.getMonth() - 1
+16:AOR:+(int,int):/(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):239:date.getMonth() + 1 |==> date.getMonth() / 1
+17:AOR:%(long,long):*(long,long):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:date.getTime() % 1000 |==> date.getTime() * 1000
+18:AOR:%(long,long):+(long,long):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:date.getTime() % 1000 |==> date.getTime() + 1000
+19:AOR:%(long,long):-(long,long):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:date.getTime() % 1000 |==> date.getTime() - 1000
+20:AOR:%(long,long):/(long,long):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:date.getTime() % 1000 |==> date.getTime() / 1000
+21:AOR:+(int,int):%(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:((int)(date.getTime() % 1000)) + 1000 |==> ((int)(date.getTime() % 1000)) % 1000
+22:AOR:+(int,int):*(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:((int)(date.getTime() % 1000)) + 1000 |==> ((int)(date.getTime() % 1000)) * 1000
+23:AOR:+(int,int):-(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:((int)(date.getTime() % 1000)) + 1000 |==> ((int)(date.getTime() % 1000)) - 1000
+24:AOR:+(int,int):/(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:((int)(date.getTime() % 1000)) + 1000 |==> ((int)(date.getTime() % 1000)) / 1000
+25:AOR:%(int,int):*(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:(((int)(date.getTime() % 1000)) + 1000) % 1000 |==> (((int)(date.getTime() % 1000)) + 1000) * 1000
+26:AOR:%(int,int):+(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:(((int)(date.getTime() % 1000)) + 1000) % 1000 |==> (((int)(date.getTime() % 1000)) + 1000) + 1000
+27:AOR:%(int,int):-(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:(((int)(date.getTime() % 1000)) + 1000) % 1000 |==> (((int)(date.getTime() % 1000)) + 1000) - 1000
+28:AOR:%(int,int):/(int,int):org.joda.time.LocalDateTime@fromDateFields(java.util.Date):244:(((int)(date.getTime() % 1000)) + 1000) % 1000 |==> (((int)(date.getTime() % 1000)) + 1000) / 1000
+29:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@readResolve():512:iChronology == null |==> false
+30:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDateTime@readResolve():515:DateTimeZone.UTC.equals(iChronology.getZone()) == false |==> false
+31:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDateTime@readResolve():515:DateTimeZone.UTC.equals(iChronology.getZone()) == false |==> DateTimeZone.UTC.equals(iChronology.getZone())
+32:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDateTime@readResolve():515:DateTimeZone.UTC.equals(iChronology.getZone()) == false |==> false
+33:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@get(org.joda.time.DateTimeFieldType):597:type == null |==> false
+34:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@isSupported(org.joda.time.DateTimeFieldType):612:type == null |==> false
+35:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@isSupported(org.joda.time.DurationFieldType):626:type == null |==> false
+36:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@equals(java.lang.Object):663:this == partial |==> false
+37:COR:iChronology.equals(other.iChronology):TRUE:org.joda.time.LocalDateTime@equals(java.lang.Object):668:iChronology.equals(other.iChronology) |==> false
+38:COR:iChronology.equals(other.iChronology):FALSE:org.joda.time.LocalDateTime@equals(java.lang.Object):668:iChronology.equals(other.iChronology) |==> true
+39:ROR:==(long,long):<=(long,long):org.joda.time.LocalDateTime@equals(java.lang.Object):669:iLocalMillis == other.iLocalMillis |==> iLocalMillis <= other.iLocalMillis
+40:ROR:==(long,long):>=(long,long):org.joda.time.LocalDateTime@equals(java.lang.Object):669:iLocalMillis == other.iLocalMillis |==> iLocalMillis >= other.iLocalMillis
+41:ROR:==(long,long):FALSE(long,long):org.joda.time.LocalDateTime@equals(java.lang.Object):669:iLocalMillis == other.iLocalMillis |==> false
+42:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):693:this == partial |==> false
+43:COR:iChronology.equals(other.iChronology):TRUE:org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):698:iChronology.equals(other.iChronology) |==> false
+44:COR:iChronology.equals(other.iChronology):FALSE:org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):698:iChronology.equals(other.iChronology) |==> true
+45:ROR:<(long,long):!=(long,long):org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):699:iLocalMillis < other.iLocalMillis |==> iLocalMillis != other.iLocalMillis
+46:ROR:<(long,long):<=(long,long):org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):699:iLocalMillis < other.iLocalMillis |==> iLocalMillis <= other.iLocalMillis
+47:ROR:<(long,long):FALSE(long,long):org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):699:iLocalMillis < other.iLocalMillis |==> false
+48:ROR:==(long,long):<=(long,long):org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):700:iLocalMillis == other.iLocalMillis |==> iLocalMillis <= other.iLocalMillis
+49:ROR:==(long,long):>=(long,long):org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):700:iLocalMillis == other.iLocalMillis |==> iLocalMillis >= other.iLocalMillis
+50:ROR:==(long,long):FALSE(long,long):org.joda.time.LocalDateTime@compareTo(org.joda.time.ReadablePartial):700:iLocalMillis == other.iLocalMillis |==> false
+51:AOR:-(int,int):%(int,int):org.joda.time.LocalDateTime@toDate():778:getYear() - 1900 |==> getYear() % 1900
+52:AOR:-(int,int):*(int,int):org.joda.time.LocalDateTime@toDate():778:getYear() - 1900 |==> getYear() * 1900
+53:AOR:-(int,int):+(int,int):org.joda.time.LocalDateTime@toDate():778:getYear() - 1900 |==> getYear() + 1900
+54:AOR:-(int,int):/(int,int):org.joda.time.LocalDateTime@toDate():778:getYear() - 1900 |==> getYear() / 1900
+55:AOR:-(int,int):%(int,int):org.joda.time.LocalDateTime@toDate():778:getMonthOfYear() - 1 |==> getMonthOfYear() % 1
+56:AOR:-(int,int):*(int,int):org.joda.time.LocalDateTime@toDate():778:getMonthOfYear() - 1 |==> getMonthOfYear() * 1
+57:AOR:-(int,int):+(int,int):org.joda.time.LocalDateTime@toDate():778:getMonthOfYear() - 1 |==> getMonthOfYear() + 1
+58:AOR:-(int,int):/(int,int):org.joda.time.LocalDateTime@toDate():778:getMonthOfYear() - 1 |==> getMonthOfYear() / 1
+59:AOR:+(long,long):%(long,long):org.joda.time.LocalDateTime@toDate():780:date.getTime() + getMillisOfSecond() |==> date.getTime() % getMillisOfSecond()
+60:AOR:+(long,long):*(long,long):org.joda.time.LocalDateTime@toDate():780:date.getTime() + getMillisOfSecond() |==> date.getTime() * getMillisOfSecond()
+61:AOR:+(long,long):-(long,long):org.joda.time.LocalDateTime@toDate():780:date.getTime() + getMillisOfSecond() |==> date.getTime() - getMillisOfSecond()
+62:AOR:+(long,long):/(long,long):org.joda.time.LocalDateTime@toDate():780:date.getTime() + getMillisOfSecond() |==> date.getTime() / getMillisOfSecond()
+63:COR:check.isBefore(this):TRUE:org.joda.time.LocalDateTime@toDate():782:check.isBefore(this) |==> false
+64:COR:check.isBefore(this):FALSE:org.joda.time.LocalDateTime@toDate():782:check.isBefore(this) |==> true
+65:AOR:+(long,long):%(long,long):org.joda.time.LocalDateTime@toDate():786:date.getTime() + 60000 |==> date.getTime() % 60000
+66:AOR:+(long,long):*(long,long):org.joda.time.LocalDateTime@toDate():786:date.getTime() + 60000 |==> date.getTime() * 60000
+67:AOR:+(long,long):-(long,long):org.joda.time.LocalDateTime@toDate():786:date.getTime() + 60000 |==> date.getTime() - 60000
+68:AOR:+(long,long):/(long,long):org.joda.time.LocalDateTime@toDate():786:date.getTime() + 60000 |==> date.getTime() / 60000
+69:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDateTime@toDate():790:check.isBefore(this) == false |==> false
+70:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDateTime@toDate():790:check.isBefore(this) == false |==> check.isBefore(this)
+71:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDateTime@toDate():790:check.isBefore(this) == false |==> false
+72:AOR:-(long,long):%(long,long):org.joda.time.LocalDateTime@toDate():791:date.getTime() - 1000 |==> date.getTime() % 1000
+73:AOR:-(long,long):*(long,long):org.joda.time.LocalDateTime@toDate():791:date.getTime() - 1000 |==> date.getTime() * 1000
+74:AOR:-(long,long):+(long,long):org.joda.time.LocalDateTime@toDate():791:date.getTime() - 1000 |==> date.getTime() + 1000
+75:AOR:-(long,long):/(long,long):org.joda.time.LocalDateTime@toDate():791:date.getTime() - 1000 |==> date.getTime() / 1000
+76:AOR:+(long,long):%(long,long):org.joda.time.LocalDateTime@toDate():794:date.getTime() + 1000 |==> date.getTime() % 1000
+77:AOR:+(long,long):*(long,long):org.joda.time.LocalDateTime@toDate():794:date.getTime() + 1000 |==> date.getTime() * 1000
+78:AOR:+(long,long):-(long,long):org.joda.time.LocalDateTime@toDate():794:date.getTime() + 1000 |==> date.getTime() - 1000
+79:AOR:+(long,long):/(long,long):org.joda.time.LocalDateTime@toDate():794:date.getTime() + 1000 |==> date.getTime() / 1000
+80:COR:check.equals(this):TRUE:org.joda.time.LocalDateTime@toDate():795:check.equals(this) |==> false
+81:COR:check.equals(this):FALSE:org.joda.time.LocalDateTime@toDate():795:check.equals(this) |==> true
+82:AOR:-(long,long):%(long,long):org.joda.time.LocalDateTime@toDate():797:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() % TimeZone.getDefault().getDSTSavings()
+83:AOR:-(long,long):*(long,long):org.joda.time.LocalDateTime@toDate():797:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() * TimeZone.getDefault().getDSTSavings()
+84:AOR:-(long,long):+(long,long):org.joda.time.LocalDateTime@toDate():797:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() + TimeZone.getDefault().getDSTSavings()
+85:AOR:-(long,long):/(long,long):org.joda.time.LocalDateTime@toDate():797:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() / TimeZone.getDefault().getDSTSavings()
+86:COR:check.equals(this):TRUE:org.joda.time.LocalDateTime@toDate():799:check.equals(this) |==> false
+87:COR:check.equals(this):FALSE:org.joda.time.LocalDateTime@toDate():799:check.equals(this) |==> true
+88:ROR:==(long,long):<=(long,long):org.joda.time.LocalDateTime@withLocalMillis(long):818:newMillis == getLocalMillis() |==> newMillis <= getLocalMillis()
+89:ROR:==(long,long):>=(long,long):org.joda.time.LocalDateTime@withLocalMillis(long):818:newMillis == getLocalMillis() |==> newMillis >= getLocalMillis()
+90:ROR:==(long,long):FALSE(long,long):org.joda.time.LocalDateTime@withLocalMillis(long):818:newMillis == getLocalMillis() |==> false
+91:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@withFields(org.joda.time.ReadablePartial):890:partial == null |==> false
+92:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@withField(org.joda.time.DateTimeFieldType,int):916:fieldType == null |==> false
+93:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@withFieldAdded(org.joda.time.DurationFieldType,int):943:fieldType == null |==> false
+94:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@withFieldAdded(org.joda.time.DurationFieldType,int):946:amount == 0 |==> amount <= 0
+95:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@withFieldAdded(org.joda.time.DurationFieldType,int):946:amount == 0 |==> amount >= 0
+96:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@withFieldAdded(org.joda.time.DurationFieldType,int):946:amount == 0 |==> false
+97:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:durationToAdd == null |==> false
+98:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:scalar == 0 |==> scalar <= 0
+99:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:scalar == 0 |==> scalar >= 0
+100:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:scalar == 0 |==> false
+101:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:durationToAdd == null || scalar == 0 |==> durationToAdd == null != (scalar == 0)
+102:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:durationToAdd == null || scalar == 0 |==> durationToAdd == null
+103:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:durationToAdd == null || scalar == 0 |==> scalar == 0
+104:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.LocalDateTime@withDurationAdded(org.joda.time.ReadableDuration,int):965:durationToAdd == null || scalar == 0 |==> true
+105:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:period == null |==> false
+106:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:scalar == 0 |==> scalar <= 0
+107:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:scalar == 0 |==> scalar >= 0
+108:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:scalar == 0 |==> false
+109:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:period == null || scalar == 0 |==> period == null != (scalar == 0)
+110:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:period == null || scalar == 0 |==> period == null
+111:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:period == null || scalar == 0 |==> scalar == 0
+112:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.LocalDateTime@withPeriodAdded(org.joda.time.ReadablePeriod,int):988:period == null || scalar == 0 |==> true
+113:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusYears(int):1043:years == 0 |==> years <= 0
+114:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusYears(int):1043:years == 0 |==> years >= 0
+115:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusYears(int):1043:years == 0 |==> false
+116:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusMonths(int):1066:months == 0 |==> months <= 0
+117:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusMonths(int):1066:months == 0 |==> months >= 0
+118:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusMonths(int):1066:months == 0 |==> false
+119:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusWeeks(int):1089:weeks == 0 |==> weeks <= 0
+120:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusWeeks(int):1089:weeks == 0 |==> weeks >= 0
+121:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusWeeks(int):1089:weeks == 0 |==> false
+122:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusDays(int):1112:days == 0 |==> days <= 0
+123:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusDays(int):1112:days == 0 |==> days >= 0
+124:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusDays(int):1112:days == 0 |==> false
+125:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusHours(int):1136:hours == 0 |==> hours <= 0
+126:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusHours(int):1136:hours == 0 |==> hours >= 0
+127:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusHours(int):1136:hours == 0 |==> false
+128:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusMinutes(int):1159:minutes == 0 |==> minutes <= 0
+129:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusMinutes(int):1159:minutes == 0 |==> minutes >= 0
+130:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusMinutes(int):1159:minutes == 0 |==> false
+131:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusSeconds(int):1182:seconds == 0 |==> seconds <= 0
+132:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusSeconds(int):1182:seconds == 0 |==> seconds >= 0
+133:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusSeconds(int):1182:seconds == 0 |==> false
+134:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@plusMillis(int):1205:millis == 0 |==> millis <= 0
+135:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@plusMillis(int):1205:millis == 0 |==> millis >= 0
+136:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@plusMillis(int):1205:millis == 0 |==> false
+137:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusYears(int):1260:years == 0 |==> years <= 0
+138:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusYears(int):1260:years == 0 |==> years >= 0
+139:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusYears(int):1260:years == 0 |==> false
+140:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusMonths(int):1283:months == 0 |==> months <= 0
+141:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusMonths(int):1283:months == 0 |==> months >= 0
+142:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusMonths(int):1283:months == 0 |==> false
+143:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusWeeks(int):1306:weeks == 0 |==> weeks <= 0
+144:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusWeeks(int):1306:weeks == 0 |==> weeks >= 0
+145:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusWeeks(int):1306:weeks == 0 |==> false
+146:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusDays(int):1329:days == 0 |==> days <= 0
+147:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusDays(int):1329:days == 0 |==> days >= 0
+148:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusDays(int):1329:days == 0 |==> false
+149:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusHours(int):1353:hours == 0 |==> hours <= 0
+150:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusHours(int):1353:hours == 0 |==> hours >= 0
+151:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusHours(int):1353:hours == 0 |==> false
+152:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusMinutes(int):1376:minutes == 0 |==> minutes <= 0
+153:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusMinutes(int):1376:minutes == 0 |==> minutes >= 0
+154:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusMinutes(int):1376:minutes == 0 |==> false
+155:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusSeconds(int):1399:seconds == 0 |==> seconds <= 0
+156:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusSeconds(int):1399:seconds == 0 |==> seconds >= 0
+157:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusSeconds(int):1399:seconds == 0 |==> false
+158:ROR:==(int,int):<=(int,int):org.joda.time.LocalDateTime@minusMillis(int):1422:millis == 0 |==> millis <= 0
+159:ROR:==(int,int):>=(int,int):org.joda.time.LocalDateTime@minusMillis(int):1422:millis == 0 |==> millis >= 0
+160:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDateTime@minusMillis(int):1422:millis == 0 |==> false
+161:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@property(org.joda.time.DateTimeFieldType):1439:fieldType == null |==> false
+162:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDateTime@property(org.joda.time.DateTimeFieldType):1442:isSupported(fieldType) == false |==> false
+163:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDateTime@property(org.joda.time.DateTimeFieldType):1442:isSupported(fieldType) == false |==> isSupported(fieldType)
+164:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDateTime@property(org.joda.time.DateTimeFieldType):1442:isSupported(fieldType) == false |==> false
+165:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@toString(java.lang.String):2026:pattern == null |==> false
+166:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDateTime@toString(java.lang.String,java.util.Locale):2040:pattern == null |==> false
+167:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@now(org.joda.time.DateTimeZone):136:zone == null |==> false
+168:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@now(org.joda.time.Chronology):151:chronology == null |==> false
+169:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@fromCalendarFields(java.util.Calendar):207:calendar == null |==> false
+170:AOR:+(int,int):%(int,int):org.joda.time.LocalDate@fromCalendarFields(java.util.Calendar):213:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) % 1
+171:AOR:+(int,int):*(int,int):org.joda.time.LocalDate@fromCalendarFields(java.util.Calendar):213:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) * 1
+172:AOR:+(int,int):-(int,int):org.joda.time.LocalDate@fromCalendarFields(java.util.Calendar):213:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) - 1
+173:AOR:+(int,int):/(int,int):org.joda.time.LocalDate@fromCalendarFields(java.util.Calendar):213:calendar.get(Calendar.MONTH) + 1 |==> calendar.get(Calendar.MONTH) / 1
+174:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@fromDateFields(java.util.Date):240:date == null |==> false
+175:AOR:+(int,int):%(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):245:date.getYear() + 1900 |==> date.getYear() % 1900
+176:AOR:+(int,int):*(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):245:date.getYear() + 1900 |==> date.getYear() * 1900
+177:AOR:+(int,int):-(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):245:date.getYear() + 1900 |==> date.getYear() - 1900
+178:AOR:+(int,int):/(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):245:date.getYear() + 1900 |==> date.getYear() / 1900
+179:AOR:+(int,int):%(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):246:date.getMonth() + 1 |==> date.getMonth() % 1
+180:AOR:+(int,int):*(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):246:date.getMonth() + 1 |==> date.getMonth() * 1
+181:AOR:+(int,int):-(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):246:date.getMonth() + 1 |==> date.getMonth() - 1
+182:AOR:+(int,int):/(int,int):org.joda.time.LocalDate@fromDateFields(java.util.Date):246:date.getMonth() + 1 |==> date.getMonth() / 1
+183:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@readResolve():457:iChronology == null |==> false
+184:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDate@readResolve():460:DateTimeZone.UTC.equals(iChronology.getZone()) == false |==> false
+185:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@readResolve():460:DateTimeZone.UTC.equals(iChronology.getZone()) == false |==> DateTimeZone.UTC.equals(iChronology.getZone())
+186:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@readResolve():460:DateTimeZone.UTC.equals(iChronology.getZone()) == false |==> false
+187:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@get(org.joda.time.DateTimeFieldType):542:fieldType == null |==> false
+188:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDate@get(org.joda.time.DateTimeFieldType):545:isSupported(fieldType) == false |==> false
+189:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@get(org.joda.time.DateTimeFieldType):545:isSupported(fieldType) == false |==> isSupported(fieldType)
+190:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@get(org.joda.time.DateTimeFieldType):545:isSupported(fieldType) == false |==> false
+191:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):560:type == null |==> false
+192:ROR:>=(long,long):==(long,long):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):565:durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis() |==> durType.getField(getChronology()).getUnitMillis() == getChronology().days().getUnitMillis()
+193:ROR:>=(long,long):>(long,long):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):565:durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis() |==> durType.getField(getChronology()).getUnitMillis() > getChronology().days().getUnitMillis()
+194:ROR:>=(long,long):TRUE(long,long):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):565:durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis() |==> true
+195:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):564:DATE_DURATION_TYPES.contains(durType) || durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis() |==> DATE_DURATION_TYPES.contains(durType) != durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis()
+196:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):564:DATE_DURATION_TYPES.contains(durType) || durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis() |==> DATE_DURATION_TYPES.contains(durType)
+197:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):565:DATE_DURATION_TYPES.contains(durType) || durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis() |==> durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis()
+198:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DateTimeFieldType):564:DATE_DURATION_TYPES.contains(durType) || durType.getField(getChronology()).getUnitMillis() >= getChronology().days().getUnitMillis() |==> true
+199:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):580:type == null |==> false
+200:ROR:>=(long,long):==(long,long):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):585:field.getUnitMillis() >= getChronology().days().getUnitMillis() |==> field.getUnitMillis() == getChronology().days().getUnitMillis()
+201:ROR:>=(long,long):>(long,long):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):585:field.getUnitMillis() >= getChronology().days().getUnitMillis() |==> field.getUnitMillis() > getChronology().days().getUnitMillis()
+202:ROR:>=(long,long):TRUE(long,long):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):585:field.getUnitMillis() >= getChronology().days().getUnitMillis() |==> true
+203:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):584:DATE_DURATION_TYPES.contains(type) || field.getUnitMillis() >= getChronology().days().getUnitMillis() |==> DATE_DURATION_TYPES.contains(type) != field.getUnitMillis() >= getChronology().days().getUnitMillis()
+204:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):584:DATE_DURATION_TYPES.contains(type) || field.getUnitMillis() >= getChronology().days().getUnitMillis() |==> DATE_DURATION_TYPES.contains(type)
+205:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):585:DATE_DURATION_TYPES.contains(type) || field.getUnitMillis() >= getChronology().days().getUnitMillis() |==> field.getUnitMillis() >= getChronology().days().getUnitMillis()
+206:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.LocalDate@isSupported(org.joda.time.DurationFieldType):584:DATE_DURATION_TYPES.contains(type) || field.getUnitMillis() >= getChronology().days().getUnitMillis() |==> true
+207:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@equals(java.lang.Object):622:this == partial |==> false
+208:COR:iChronology.equals(other.iChronology):TRUE:org.joda.time.LocalDate@equals(java.lang.Object):627:iChronology.equals(other.iChronology) |==> false
+209:COR:iChronology.equals(other.iChronology):FALSE:org.joda.time.LocalDate@equals(java.lang.Object):627:iChronology.equals(other.iChronology) |==> true
+210:ROR:==(long,long):<=(long,long):org.joda.time.LocalDate@equals(java.lang.Object):628:iLocalMillis == other.iLocalMillis |==> iLocalMillis <= other.iLocalMillis
+211:ROR:==(long,long):>=(long,long):org.joda.time.LocalDate@equals(java.lang.Object):628:iLocalMillis == other.iLocalMillis |==> iLocalMillis >= other.iLocalMillis
+212:ROR:==(long,long):FALSE(long,long):org.joda.time.LocalDate@equals(java.lang.Object):628:iLocalMillis == other.iLocalMillis |==> false
+213:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@hashCode():642:hash == 0 |==> hash <= 0
+214:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@hashCode():642:hash == 0 |==> hash >= 0
+215:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@hashCode():642:hash == 0 |==> false
+216:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):666:this == partial |==> false
+217:COR:iChronology.equals(other.iChronology):TRUE:org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):671:iChronology.equals(other.iChronology) |==> false
+218:COR:iChronology.equals(other.iChronology):FALSE:org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):671:iChronology.equals(other.iChronology) |==> true
+219:ROR:<(long,long):!=(long,long):org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):672:iLocalMillis < other.iLocalMillis |==> iLocalMillis != other.iLocalMillis
+220:ROR:<(long,long):<=(long,long):org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):672:iLocalMillis < other.iLocalMillis |==> iLocalMillis <= other.iLocalMillis
+221:ROR:<(long,long):FALSE(long,long):org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):672:iLocalMillis < other.iLocalMillis |==> false
+222:ROR:==(long,long):<=(long,long):org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):673:iLocalMillis == other.iLocalMillis |==> iLocalMillis <= other.iLocalMillis
+223:ROR:==(long,long):>=(long,long):org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):673:iLocalMillis == other.iLocalMillis |==> iLocalMillis >= other.iLocalMillis
+224:ROR:==(long,long):FALSE(long,long):org.joda.time.LocalDate@compareTo(org.joda.time.ReadablePartial):673:iLocalMillis == other.iLocalMillis |==> false
+225:AOR:*(long,long):%(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:6L * DateTimeConstants.MILLIS_PER_HOUR |==> 6L % DateTimeConstants.MILLIS_PER_HOUR
+226:AOR:*(long,long):+(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:6L * DateTimeConstants.MILLIS_PER_HOUR |==> 6L + DateTimeConstants.MILLIS_PER_HOUR
+227:AOR:*(long,long):-(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:6L * DateTimeConstants.MILLIS_PER_HOUR |==> 6L - DateTimeConstants.MILLIS_PER_HOUR
+228:AOR:*(long,long):/(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:6L * DateTimeConstants.MILLIS_PER_HOUR |==> 6L / DateTimeConstants.MILLIS_PER_HOUR
+229:AOR:+(long,long):%(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:getLocalMillis() + 6L * DateTimeConstants.MILLIS_PER_HOUR |==> getLocalMillis() % (6L * DateTimeConstants.MILLIS_PER_HOUR)
+230:AOR:+(long,long):*(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:getLocalMillis() + 6L * DateTimeConstants.MILLIS_PER_HOUR |==> getLocalMillis() * (6L * DateTimeConstants.MILLIS_PER_HOUR)
+231:AOR:+(long,long):-(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:getLocalMillis() + 6L * DateTimeConstants.MILLIS_PER_HOUR |==> getLocalMillis() - 6L * DateTimeConstants.MILLIS_PER_HOUR
+232:AOR:+(long,long):/(long,long):org.joda.time.LocalDate@toDateTimeAtStartOfDay(org.joda.time.DateTimeZone):720:getLocalMillis() + 6L * DateTimeConstants.MILLIS_PER_HOUR |==> getLocalMillis() / (6L * DateTimeConstants.MILLIS_PER_HOUR)
+233:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@toLocalDateTime(org.joda.time.LocalTime):874:time == null |==> false
+234:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@toLocalDateTime(org.joda.time.LocalTime):877:getChronology() != time.getChronology() |==> true
+235:AOR:+(long,long):%(long,long):org.joda.time.LocalDate@toLocalDateTime(org.joda.time.LocalTime):880:getLocalMillis() + time.getLocalMillis() |==> getLocalMillis() % time.getLocalMillis()
+236:AOR:+(long,long):*(long,long):org.joda.time.LocalDate@toLocalDateTime(org.joda.time.LocalTime):880:getLocalMillis() + time.getLocalMillis() |==> getLocalMillis() * time.getLocalMillis()
+237:AOR:+(long,long):-(long,long):org.joda.time.LocalDate@toLocalDateTime(org.joda.time.LocalTime):880:getLocalMillis() + time.getLocalMillis() |==> getLocalMillis() - time.getLocalMillis()
+238:AOR:+(long,long):/(long,long):org.joda.time.LocalDate@toLocalDateTime(org.joda.time.LocalTime):880:getLocalMillis() + time.getLocalMillis() |==> getLocalMillis() / time.getLocalMillis()
+239:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@toDateTime(org.joda.time.LocalTime,org.joda.time.DateTimeZone):925:time != null |==> true
+240:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@toDateTime(org.joda.time.LocalTime,org.joda.time.DateTimeZone):925:getChronology() != time.getChronology() |==> true
+241:COR:&&(boolean,boolean):==(boolean,boolean):org.joda.time.LocalDate@toDateTime(org.joda.time.LocalTime,org.joda.time.DateTimeZone):925:time != null && getChronology() != time.getChronology() |==> time != null == (getChronology() != time.getChronology())
+242:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDate@toDateTime(org.joda.time.LocalTime,org.joda.time.DateTimeZone):925:time != null && getChronology() != time.getChronology() |==> false
+243:COR:&&(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@toDateTime(org.joda.time.LocalTime,org.joda.time.DateTimeZone):925:time != null && getChronology() != time.getChronology() |==> time != null
+244:COR:&&(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@toDateTime(org.joda.time.LocalTime,org.joda.time.DateTimeZone):925:time != null && getChronology() != time.getChronology() |==> getChronology() != time.getChronology()
+245:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@toDateTime(org.joda.time.LocalTime,org.joda.time.DateTimeZone):931:time != null |==> true
+246:AOR:-(int,int):%(int,int):org.joda.time.LocalDate@toDate():990:getYear() - 1900 |==> getYear() % 1900
+247:AOR:-(int,int):*(int,int):org.joda.time.LocalDate@toDate():990:getYear() - 1900 |==> getYear() * 1900
+248:AOR:-(int,int):+(int,int):org.joda.time.LocalDate@toDate():990:getYear() - 1900 |==> getYear() + 1900
+249:AOR:-(int,int):/(int,int):org.joda.time.LocalDate@toDate():990:getYear() - 1900 |==> getYear() / 1900
+250:AOR:-(int,int):%(int,int):org.joda.time.LocalDate@toDate():990:getMonthOfYear() - 1 |==> getMonthOfYear() % 1
+251:AOR:-(int,int):*(int,int):org.joda.time.LocalDate@toDate():990:getMonthOfYear() - 1 |==> getMonthOfYear() * 1
+252:AOR:-(int,int):+(int,int):org.joda.time.LocalDate@toDate():990:getMonthOfYear() - 1 |==> getMonthOfYear() + 1
+253:AOR:-(int,int):/(int,int):org.joda.time.LocalDate@toDate():990:getMonthOfYear() - 1 |==> getMonthOfYear() / 1
+254:COR:check.isBefore(this):TRUE:org.joda.time.LocalDate@toDate():992:check.isBefore(this) |==> false
+255:COR:check.isBefore(this):FALSE:org.joda.time.LocalDate@toDate():992:check.isBefore(this) |==> true
+256:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDate@toDate():995:check.equals(this) == false |==> false
+257:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@toDate():995:check.equals(this) == false |==> check.equals(this)
+258:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@toDate():995:check.equals(this) == false |==> false
+259:AOR:+(long,long):%(long,long):org.joda.time.LocalDate@toDate():996:date.getTime() + 3600000 |==> date.getTime() % 3600000
+260:AOR:+(long,long):*(long,long):org.joda.time.LocalDate@toDate():996:date.getTime() + 3600000 |==> date.getTime() * 3600000
+261:AOR:+(long,long):-(long,long):org.joda.time.LocalDate@toDate():996:date.getTime() + 3600000 |==> date.getTime() - 3600000
+262:AOR:+(long,long):/(long,long):org.joda.time.LocalDate@toDate():996:date.getTime() + 3600000 |==> date.getTime() / 3600000
+263:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@toDate():1000:date.getDate() == dom |==> date.getDate() <= dom
+264:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@toDate():1000:date.getDate() == dom |==> date.getDate() >= dom
+265:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@toDate():1000:date.getDate() == dom |==> false
+266:AOR:-(long,long):%(long,long):org.joda.time.LocalDate@toDate():1001:date.getTime() - 1000 |==> date.getTime() % 1000
+267:AOR:-(long,long):*(long,long):org.joda.time.LocalDate@toDate():1001:date.getTime() - 1000 |==> date.getTime() * 1000
+268:AOR:-(long,long):+(long,long):org.joda.time.LocalDate@toDate():1001:date.getTime() - 1000 |==> date.getTime() + 1000
+269:AOR:-(long,long):/(long,long):org.joda.time.LocalDate@toDate():1001:date.getTime() - 1000 |==> date.getTime() / 1000
+270:AOR:+(long,long):%(long,long):org.joda.time.LocalDate@toDate():1004:date.getTime() + 1000 |==> date.getTime() % 1000
+271:AOR:+(long,long):*(long,long):org.joda.time.LocalDate@toDate():1004:date.getTime() + 1000 |==> date.getTime() * 1000
+272:AOR:+(long,long):-(long,long):org.joda.time.LocalDate@toDate():1004:date.getTime() + 1000 |==> date.getTime() - 1000
+273:AOR:+(long,long):/(long,long):org.joda.time.LocalDate@toDate():1004:date.getTime() + 1000 |==> date.getTime() / 1000
+274:COR:check.equals(this):TRUE:org.joda.time.LocalDate@toDate():1005:check.equals(this) |==> false
+275:COR:check.equals(this):FALSE:org.joda.time.LocalDate@toDate():1005:check.equals(this) |==> true
+276:AOR:-(long,long):%(long,long):org.joda.time.LocalDate@toDate():1007:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() % TimeZone.getDefault().getDSTSavings()
+277:AOR:-(long,long):*(long,long):org.joda.time.LocalDate@toDate():1007:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() * TimeZone.getDefault().getDSTSavings()
+278:AOR:-(long,long):+(long,long):org.joda.time.LocalDate@toDate():1007:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() + TimeZone.getDefault().getDSTSavings()
+279:AOR:-(long,long):/(long,long):org.joda.time.LocalDate@toDate():1007:date.getTime() - TimeZone.getDefault().getDSTSavings() |==> date.getTime() / TimeZone.getDefault().getDSTSavings()
+280:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@toDate():1008:earlier.getDate() == dom |==> earlier.getDate() <= dom
+281:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@toDate():1008:earlier.getDate() == dom |==> earlier.getDate() >= dom
+282:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@toDate():1008:earlier.getDate() == dom |==> false
+283:ROR:==(long,long):<=(long,long):org.joda.time.LocalDate@withLocalMillis(long):1028:newMillis == getLocalMillis() |==> newMillis <= getLocalMillis()
+284:ROR:==(long,long):>=(long,long):org.joda.time.LocalDate@withLocalMillis(long):1028:newMillis == getLocalMillis() |==> newMillis >= getLocalMillis()
+285:ROR:==(long,long):FALSE(long,long):org.joda.time.LocalDate@withLocalMillis(long):1028:newMillis == getLocalMillis() |==> false
+286:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@withFields(org.joda.time.ReadablePartial):1046:partial == null |==> false
+287:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@withField(org.joda.time.DateTimeFieldType,int):1071:fieldType == null |==> false
+288:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDate@withField(org.joda.time.DateTimeFieldType,int):1074:isSupported(fieldType) == false |==> false
+289:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@withField(org.joda.time.DateTimeFieldType,int):1074:isSupported(fieldType) == false |==> isSupported(fieldType)
+290:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@withField(org.joda.time.DateTimeFieldType,int):1074:isSupported(fieldType) == false |==> false
+291:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@withFieldAdded(org.joda.time.DurationFieldType,int):1100:fieldType == null |==> false
+292:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDate@withFieldAdded(org.joda.time.DurationFieldType,int):1103:isSupported(fieldType) == false |==> false
+293:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@withFieldAdded(org.joda.time.DurationFieldType,int):1103:isSupported(fieldType) == false |==> isSupported(fieldType)
+294:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@withFieldAdded(org.joda.time.DurationFieldType,int):1103:isSupported(fieldType) == false |==> false
+295:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@withFieldAdded(org.joda.time.DurationFieldType,int):1106:amount == 0 |==> amount <= 0
+296:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@withFieldAdded(org.joda.time.DurationFieldType,int):1106:amount == 0 |==> amount >= 0
+297:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@withFieldAdded(org.joda.time.DurationFieldType,int):1106:amount == 0 |==> false
+298:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:period == null |==> false
+299:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:scalar == 0 |==> scalar <= 0
+300:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:scalar == 0 |==> scalar >= 0
+301:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:scalar == 0 |==> false
+302:COR:||(boolean,boolean):!=(boolean,boolean):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:period == null || scalar == 0 |==> period == null != (scalar == 0)
+303:COR:||(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:period == null || scalar == 0 |==> period == null
+304:COR:||(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:period == null || scalar == 0 |==> scalar == 0
+305:COR:||(boolean,boolean):TRUE(boolean,boolean):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1133:period == null || scalar == 0 |==> true
+306:ROR:<(int,int):!=(int,int):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1138:i < period.size() |==> i != period.size()
+307:ROR:<(int,int):<=(int,int):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1138:i < period.size() |==> i <= period.size()
+308:ROR:<(int,int):FALSE(int,int):org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1138:i < period.size() |==> false
+309:COR:isSupported(type):TRUE:org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1141:isSupported(type) |==> false
+310:COR:isSupported(type):FALSE:org.joda.time.LocalDate@withPeriodAdded(org.joda.time.ReadablePeriod,int):1141:isSupported(type) |==> true
+311:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@plusYears(int):1188:years == 0 |==> years <= 0
+312:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@plusYears(int):1188:years == 0 |==> years >= 0
+313:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@plusYears(int):1188:years == 0 |==> false
+314:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@plusMonths(int):1214:months == 0 |==> months <= 0
+315:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@plusMonths(int):1214:months == 0 |==> months >= 0
+316:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@plusMonths(int):1214:months == 0 |==> false
+317:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@plusWeeks(int):1237:weeks == 0 |==> weeks <= 0
+318:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@plusWeeks(int):1237:weeks == 0 |==> weeks >= 0
+319:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@plusWeeks(int):1237:weeks == 0 |==> false
+320:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@plusDays(int):1260:days == 0 |==> days <= 0
+321:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@plusDays(int):1260:days == 0 |==> days >= 0
+322:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@plusDays(int):1260:days == 0 |==> false
+323:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@minusYears(int):1307:years == 0 |==> years <= 0
+324:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@minusYears(int):1307:years == 0 |==> years >= 0
+325:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@minusYears(int):1307:years == 0 |==> false
+326:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@minusMonths(int):1333:months == 0 |==> months <= 0
+327:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@minusMonths(int):1333:months == 0 |==> months >= 0
+328:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@minusMonths(int):1333:months == 0 |==> false
+329:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@minusWeeks(int):1356:weeks == 0 |==> weeks <= 0
+330:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@minusWeeks(int):1356:weeks == 0 |==> weeks >= 0
+331:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@minusWeeks(int):1356:weeks == 0 |==> false
+332:ROR:==(int,int):<=(int,int):org.joda.time.LocalDate@minusDays(int):1379:days == 0 |==> days <= 0
+333:ROR:==(int,int):>=(int,int):org.joda.time.LocalDate@minusDays(int):1379:days == 0 |==> days >= 0
+334:ROR:==(int,int):FALSE(int,int):org.joda.time.LocalDate@minusDays(int):1379:days == 0 |==> false
+335:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@property(org.joda.time.DateTimeFieldType):1396:fieldType == null |==> false
+336:ROR:==(boolean,boolean):FALSE(boolean,boolean):org.joda.time.LocalDate@property(org.joda.time.DateTimeFieldType):1399:isSupported(fieldType) == false |==> false
+337:ROR:==(boolean,boolean):LHS(boolean,boolean):org.joda.time.LocalDate@property(org.joda.time.DateTimeFieldType):1399:isSupported(fieldType) == false |==> isSupported(fieldType)
+338:ROR:==(boolean,boolean):RHS(boolean,boolean):org.joda.time.LocalDate@property(org.joda.time.DateTimeFieldType):1399:isSupported(fieldType) == false |==> false
+339:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@toString(java.lang.String):1815:pattern == null |==> false
+340:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.joda.time.LocalDate@toString(java.lang.String,java.util.Locale):1829:pattern == null |==> false

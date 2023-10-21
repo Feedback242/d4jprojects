@@ -1,0 +1,4 @@
+GaussNewtonOptimizer(org.apache.commons.math3.optim.ConvergenceChecker)
+GaussNewtonOptimizer(boolean,org.apache.commons.math3.optim.ConvergenceChecker)
+org.apache.commons.math3.optim.PointVectorValuePair_doOptimize()
+void_checkParameters()

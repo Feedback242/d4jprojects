@@ -1,0 +1,11 @@
+1:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@equals(java.lang.Object):105:obj == this |==> false
+2:ROR:<(int,int):!=(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):136:i < count |==> i != count
+3:ROR:<(int,int):<=(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):136:i < count |==> i <= count
+4:ROR:<(int,int):FALSE(int,int):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):136:i < count |==> false
+5:ROR:!=(java.lang.Object,java.lang.Object):TRUE(java.lang.Object,java.lang.Object):org.jfree.chart.util.ShapeList@writeObject(java.io.ObjectOutputStream):138:shape != null |==> true
+6:ROR:<(int,int):!=(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):162:i < count |==> i != count
+7:ROR:<(int,int):<=(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):162:i < count |==> i <= count
+8:ROR:<(int,int):FALSE(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):162:i < count |==> false
+9:ROR:!=(int,int):<(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):164:index != -1 |==> index < -1
+10:ROR:!=(int,int):>(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):164:index != -1 |==> index > -1
+11:ROR:!=(int,int):TRUE(int,int):org.jfree.chart.util.ShapeList@readObject(java.io.ObjectInputStream):164:index != -1 |==> true

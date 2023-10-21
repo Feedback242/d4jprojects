@@ -1,0 +1,411 @@
+AORB_1:81:Fraction(double,double,int,int):a0 - value => a0 * value
+AORB_2:81:Fraction(double,double,int,int):a0 - value => a0 / value
+AORB_3:81:Fraction(double,double,int,int):a0 - value => a0 % value
+AORB_4:81:Fraction(double,double,int,int):a0 - value => a0 + value
+AORB_5:96:Fraction(double,double,int,int):r0 - a0 => r0 * a0
+AORB_6:96:Fraction(double,double,int,int):r0 - a0 => r0 / a0
+AORB_7:96:Fraction(double,double,int,int):r0 - a0 => r0 % a0
+AORB_8:96:Fraction(double,double,int,int):r0 - a0 => r0 + a0
+AORB_9:96:Fraction(double,double,int,int):1.0 / (r0 - a0) => 1.0 * (r0 - a0)
+AORB_10:96:Fraction(double,double,int,int):1.0 / (r0 - a0) => 1.0 % (r0 - a0)
+AORB_11:96:Fraction(double,double,int,int):1.0 / (r0 - a0) => 1.0 + (r0 - a0)
+AORB_12:96:Fraction(double,double,int,int):1.0 / (r0 - a0) => 1.0 - (r0 - a0)
+AORB_13:98:Fraction(double,double,int,int):a1 * p1 => a1 / p1
+AORB_14:98:Fraction(double,double,int,int):a1 * p1 => a1 % p1
+AORB_15:98:Fraction(double,double,int,int):a1 * p1 => a1 + p1
+AORB_16:98:Fraction(double,double,int,int):a1 * p1 => a1 - p1
+AORB_17:98:Fraction(double,double,int,int):a1 * p1 + p0 => a1 * p1 * p0
+AORB_18:98:Fraction(double,double,int,int):a1 * p1 + p0 => a1 * p1 / p0
+AORB_19:98:Fraction(double,double,int,int):a1 * p1 + p0 => a1 * p1 % p0
+AORB_20:98:Fraction(double,double,int,int):a1 * p1 + p0 => a1 * p1 - p0
+AORB_21:99:Fraction(double,double,int,int):a1 * q1 => a1 / q1
+AORB_22:99:Fraction(double,double,int,int):a1 * q1 => a1 % q1
+AORB_23:99:Fraction(double,double,int,int):a1 * q1 => a1 + q1
+AORB_24:99:Fraction(double,double,int,int):a1 * q1 => a1 - q1
+AORB_25:99:Fraction(double,double,int,int):a1 * q1 + q0 => a1 * q1 * q0
+AORB_26:99:Fraction(double,double,int,int):a1 * q1 + q0 => a1 * q1 / q0
+AORB_27:99:Fraction(double,double,int,int):a1 * q1 + q0 => a1 * q1 % q0
+AORB_28:99:Fraction(double,double,int,int):a1 * q1 + q0 => a1 * q1 - q0
+AORB_29:103:Fraction(double,double,int,int):(double) p2 / (double) q2 => (double) p2 * (double) q2
+AORB_30:103:Fraction(double,double,int,int):(double) p2 / (double) q2 => (double) p2 % (double) q2
+AORB_31:103:Fraction(double,double,int,int):(double) p2 / (double) q2 => (double) p2 + (double) q2
+AORB_32:103:Fraction(double,double,int,int):(double) p2 / (double) q2 => (double) p2 - (double) q2
+AORB_33:104:Fraction(double,double,int,int):convergent - value => convergent * value
+AORB_34:104:Fraction(double,double,int,int):convergent - value => convergent / value
+AORB_35:104:Fraction(double,double,int,int):convergent - value => convergent % value
+AORB_36:104:Fraction(double,double,int,int):convergent - value => convergent + value
+AORB_37:170:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) numerator * object.denominator => (long) numerator / object.denominator
+AORB_38:170:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) numerator * object.denominator => (long) numerator % object.denominator
+AORB_39:170:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) numerator * object.denominator => (long) numerator + object.denominator
+AORB_40:170:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) numerator * object.denominator => (long) numerator - object.denominator
+AORB_41:171:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) denominator * object.numerator => (long) denominator / object.numerator
+AORB_42:171:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) denominator * object.numerator => (long) denominator % object.numerator
+AORB_43:171:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) denominator * object.numerator => (long) denominator + object.numerator
+AORB_44:171:int_compareTo(org.apache.commons.math3.fraction.Fraction):(long) denominator * object.numerator => (long) denominator - object.numerator
+AORB_45:177:double_doubleValue():(double) numerator / (double) denominator => (double) numerator * (double) denominator
+AORB_46:177:double_doubleValue():(double) numerator / (double) denominator => (double) numerator % (double) denominator
+AORB_47:177:double_doubleValue():(double) numerator / (double) denominator => (double) numerator + (double) denominator
+AORB_48:177:double_doubleValue():(double) numerator / (double) denominator => (double) numerator - (double) denominator
+AORB_49:209:int_hashCode():37 * 17 => 37 / 17
+AORB_50:209:int_hashCode():37 * 17 => 37 % 17
+AORB_51:209:int_hashCode():37 * 17 => 37 + 17
+AORB_52:209:int_hashCode():37 * 17 => 37 - 17
+AORB_53:209:int_hashCode():37 * 17 + numerator => 37 * 17 * numerator
+AORB_54:209:int_hashCode():37 * 17 + numerator => 37 * 17 / numerator
+AORB_55:209:int_hashCode():37 * 17 + numerator => 37 * 17 % numerator
+AORB_56:209:int_hashCode():37 * 17 + numerator => 37 * 17 - numerator
+AORB_57:209:int_hashCode():37 * (37 * 17 + numerator) => 37 / (37 * 17 + numerator)
+AORB_58:209:int_hashCode():37 * (37 * 17 + numerator) => 37 % (37 * 17 + numerator)
+AORB_59:209:int_hashCode():37 * (37 * 17 + numerator) => 37 + (37 * 17 + numerator)
+AORB_60:209:int_hashCode():37 * (37 * 17 + numerator) => 37 - (37 * 17 + numerator)
+AORB_61:209:int_hashCode():37 * (37 * 17 + numerator) + denominator => 37 * (37 * 17 + numerator) * denominator
+AORB_62:209:int_hashCode():37 * (37 * 17 + numerator) + denominator => 37 * (37 * 17 + numerator) / denominator
+AORB_63:209:int_hashCode():37 * (37 * 17 + numerator) + denominator => 37 * (37 * 17 + numerator) % denominator
+AORB_64:209:int_hashCode():37 * (37 * 17 + numerator) + denominator => 37 * (37 * 17 + numerator) - denominator
+AORB_65:242:org.apache.commons.math3.fraction.Fraction_add(int):i * denominator => i / denominator
+AORB_66:242:org.apache.commons.math3.fraction.Fraction_add(int):i * denominator => i % denominator
+AORB_67:242:org.apache.commons.math3.fraction.Fraction_add(int):i * denominator => i + denominator
+AORB_68:242:org.apache.commons.math3.fraction.Fraction_add(int):i * denominator => i - denominator
+AORB_69:242:org.apache.commons.math3.fraction.Fraction_add(int):numerator + i * denominator => numerator * (i * denominator)
+AORB_70:242:org.apache.commons.math3.fraction.Fraction_add(int):numerator + i * denominator => numerator / (i * denominator)
+AORB_71:242:org.apache.commons.math3.fraction.Fraction_add(int):numerator + i * denominator => numerator % (i * denominator)
+AORB_72:242:org.apache.commons.math3.fraction.Fraction_add(int):numerator + i * denominator => numerator - i * denominator
+AORB_73:252:org.apache.commons.math3.fraction.Fraction_subtract(int):i * denominator => i / denominator
+AORB_74:252:org.apache.commons.math3.fraction.Fraction_subtract(int):i * denominator => i % denominator
+AORB_75:252:org.apache.commons.math3.fraction.Fraction_subtract(int):i * denominator => i + denominator
+AORB_76:252:org.apache.commons.math3.fraction.Fraction_subtract(int):i * denominator => i - denominator
+AORB_77:252:org.apache.commons.math3.fraction.Fraction_subtract(int):numerator - i * denominator => numerator * (i * denominator)
+AORB_78:252:org.apache.commons.math3.fraction.Fraction_subtract(int):numerator - i * denominator => numerator / (i * denominator)
+AORB_79:252:org.apache.commons.math3.fraction.Fraction_subtract(int):numerator - i * denominator => numerator % (i * denominator)
+AORB_80:252:org.apache.commons.math3.fraction.Fraction_subtract(int):numerator - i * denominator => numerator + i * denominator
+AORB_81:272:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d1 => fraction.denominator * d1
+AORB_82:272:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d1 => fraction.denominator % d1
+AORB_83:272:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d1 => fraction.denominator + d1
+AORB_84:272:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d1 => fraction.denominator - d1
+AORB_85:273:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator * d1
+AORB_86:273:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator % d1
+AORB_87:273:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator + d1
+AORB_88:273:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator - d1
+AORB_89:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator * d1
+AORB_90:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator % d1
+AORB_91:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator + d1
+AORB_92:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):denominator / d1 => denominator - d1
+AORB_93:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d2 => fraction.denominator * d2
+AORB_94:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d2 => fraction.denominator % d2
+AORB_95:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d2 => fraction.denominator + d2
+AORB_96:281:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean):fraction.denominator / d2 => fraction.denominator - d2
+AORB_97:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):numerator / d1 => numerator * d1
+AORB_98:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):numerator / d1 => numerator % d1
+AORB_99:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):numerator / d1 => numerator + d1
+AORB_100:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):numerator / d1 => numerator - d1
+AORB_101:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.numerator / d2 => fraction.numerator * d2
+AORB_102:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.numerator / d2 => fraction.numerator % d2
+AORB_103:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.numerator / d2 => fraction.numerator + d2
+AORB_104:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.numerator / d2 => fraction.numerator - d2
+AORB_105:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):denominator / d2 => denominator * d2
+AORB_106:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):denominator / d2 => denominator % d2
+AORB_107:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):denominator / d2 => denominator + d2
+AORB_108:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):denominator / d2 => denominator - d2
+AORB_109:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.denominator / d1 => fraction.denominator * d1
+AORB_110:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.denominator / d1 => fraction.denominator % d1
+AORB_111:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.denominator / d1 => fraction.denominator + d1
+AORB_112:294:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction):fraction.denominator / d1 => fraction.denominator - d1
+AORB_113:299:org.apache.commons.math3.fraction.Fraction_multiply(int):numerator * i => numerator / i
+AORB_114:299:org.apache.commons.math3.fraction.Fraction_multiply(int):numerator * i => numerator % i
+AORB_115:299:org.apache.commons.math3.fraction.Fraction_multiply(int):numerator * i => numerator + i
+AORB_116:299:org.apache.commons.math3.fraction.Fraction_multiply(int):numerator * i => numerator - i
+AORB_117:315:org.apache.commons.math3.fraction.Fraction_divide(int):denominator * i => denominator / i
+AORB_118:315:org.apache.commons.math3.fraction.Fraction_divide(int):denominator * i => denominator % i
+AORB_119:315:org.apache.commons.math3.fraction.Fraction_divide(int):denominator * i => denominator + i
+AORB_120:315:org.apache.commons.math3.fraction.Fraction_divide(int):denominator * i => denominator - i
+ROR_1:78:Fraction(double,double,int,int): a0 > overflow  =>   a0 >= overflow
+ROR_2:78:Fraction(double,double,int,int): a0 > overflow  =>   a0 < overflow
+ROR_3:78:Fraction(double,double,int,int): a0 > overflow  =>   a0 <= overflow
+ROR_4:78:Fraction(double,double,int,int): a0 > overflow  =>   a0 == overflow
+ROR_5:78:Fraction(double,double,int,int): a0 > overflow  =>   a0 != overflow
+ROR_6:78:Fraction(double,double,int,int): a0 > overflow  =>   true
+ROR_7:78:Fraction(double,double,int,int): a0 > overflow  =>   false
+ROR_8:81:Fraction(double,double,int,int): FastMath.abs( a0 - value ) < epsilon  =>   FastMath.abs( a0 - value ) > epsilon
+ROR_9:81:Fraction(double,double,int,int): FastMath.abs( a0 - value ) < epsilon  =>   FastMath.abs( a0 - value ) >= epsilon
+ROR_10:81:Fraction(double,double,int,int): FastMath.abs( a0 - value ) < epsilon  =>   FastMath.abs( a0 - value ) <= epsilon
+ROR_11:81:Fraction(double,double,int,int): FastMath.abs( a0 - value ) < epsilon  =>   FastMath.abs( a0 - value ) == epsilon
+ROR_12:81:Fraction(double,double,int,int): FastMath.abs( a0 - value ) < epsilon  =>   FastMath.abs( a0 - value ) != epsilon
+ROR_13:81:Fraction(double,double,int,int): FastMath.abs( a0 - value ) < epsilon  =>   true
+ROR_14:81:Fraction(double,double,int,int): FastMath.abs( a0 - value ) < epsilon  =>   false
+ROR_15:100:Fraction(double,double,int,int): p2 > overflow  =>   p2 >= overflow
+ROR_16:100:Fraction(double,double,int,int): p2 > overflow  =>   p2 < overflow
+ROR_17:100:Fraction(double,double,int,int): p2 > overflow  =>   p2 <= overflow
+ROR_18:100:Fraction(double,double,int,int): p2 > overflow  =>   p2 == overflow
+ROR_19:100:Fraction(double,double,int,int): p2 > overflow  =>   p2 != overflow
+ROR_20:100:Fraction(double,double,int,int): p2 > overflow  =>   true
+ROR_21:100:Fraction(double,double,int,int): p2 > overflow  =>   false
+ROR_22:100:Fraction(double,double,int,int): q2 > overflow  =>   q2 >= overflow
+ROR_23:100:Fraction(double,double,int,int): q2 > overflow  =>   q2 < overflow
+ROR_24:100:Fraction(double,double,int,int): q2 > overflow  =>   q2 <= overflow
+ROR_25:100:Fraction(double,double,int,int): q2 > overflow  =>   q2 == overflow
+ROR_26:100:Fraction(double,double,int,int): q2 > overflow  =>   q2 != overflow
+ROR_27:100:Fraction(double,double,int,int): q2 > overflow  =>   true
+ROR_28:100:Fraction(double,double,int,int): q2 > overflow  =>   false
+ROR_29:104:Fraction(double,double,int,int): n < maxIterations  =>   n > maxIterations
+ROR_30:104:Fraction(double,double,int,int): n < maxIterations  =>   n >= maxIterations
+ROR_31:104:Fraction(double,double,int,int): n < maxIterations  =>   n <= maxIterations
+ROR_32:104:Fraction(double,double,int,int): n < maxIterations  =>   n == maxIterations
+ROR_33:104:Fraction(double,double,int,int): n < maxIterations  =>   n != maxIterations
+ROR_34:104:Fraction(double,double,int,int): n < maxIterations  =>   true
+ROR_35:104:Fraction(double,double,int,int): n < maxIterations  =>   false
+ROR_36:104:Fraction(double,double,int,int): FastMath.abs( convergent - value ) > epsilon  =>   FastMath.abs( convergent - value ) >= epsilon
+ROR_37:104:Fraction(double,double,int,int): FastMath.abs( convergent - value ) > epsilon  =>   FastMath.abs( convergent - value ) < epsilon
+ROR_38:104:Fraction(double,double,int,int): FastMath.abs( convergent - value ) > epsilon  =>   FastMath.abs( convergent - value ) <= epsilon
+ROR_39:104:Fraction(double,double,int,int): FastMath.abs( convergent - value ) > epsilon  =>   FastMath.abs( convergent - value ) == epsilon
+ROR_40:104:Fraction(double,double,int,int): FastMath.abs( convergent - value ) > epsilon  =>   FastMath.abs( convergent - value ) != epsilon
+ROR_41:104:Fraction(double,double,int,int): FastMath.abs( convergent - value ) > epsilon  =>   true
+ROR_42:104:Fraction(double,double,int,int): FastMath.abs( convergent - value ) > epsilon  =>   false
+ROR_43:104:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 > maxDenominator
+ROR_44:104:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 >= maxDenominator
+ROR_45:104:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 <= maxDenominator
+ROR_46:104:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 == maxDenominator
+ROR_47:104:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 != maxDenominator
+ROR_48:104:Fraction(double,double,int,int): q2 < maxDenominator  =>   true
+ROR_49:104:Fraction(double,double,int,int): q2 < maxDenominator  =>   false
+ROR_50:115:Fraction(double,double,int,int): n >= maxIterations  =>   n > maxIterations
+ROR_51:115:Fraction(double,double,int,int): n >= maxIterations  =>   n < maxIterations
+ROR_52:115:Fraction(double,double,int,int): n >= maxIterations  =>   n <= maxIterations
+ROR_53:115:Fraction(double,double,int,int): n >= maxIterations  =>   n == maxIterations
+ROR_54:115:Fraction(double,double,int,int): n >= maxIterations  =>   n != maxIterations
+ROR_55:115:Fraction(double,double,int,int): n >= maxIterations  =>   true
+ROR_56:115:Fraction(double,double,int,int): n >= maxIterations  =>   false
+ROR_57:118:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 > maxDenominator
+ROR_58:118:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 >= maxDenominator
+ROR_59:118:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 <= maxDenominator
+ROR_60:118:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 == maxDenominator
+ROR_61:118:Fraction(double,double,int,int): q2 < maxDenominator  =>   q2 != maxDenominator
+ROR_62:118:Fraction(double,double,int,int): q2 < maxDenominator  =>   true
+ROR_63:118:Fraction(double,double,int,int): q2 < maxDenominator  =>   false
+ROR_64:134:Fraction(int,int): den == 0  =>   den > 0
+ROR_65:134:Fraction(int,int): den == 0  =>   den >= 0
+ROR_66:134:Fraction(int,int): den == 0  =>   den < 0
+ROR_67:134:Fraction(int,int): den == 0  =>   den <= 0
+ROR_68:134:Fraction(int,int): den == 0  =>   den != 0
+ROR_69:134:Fraction(int,int): den == 0  =>   true
+ROR_70:134:Fraction(int,int): den == 0  =>   false
+ROR_71:137:Fraction(int,int): den < 0  =>   den > 0
+ROR_72:137:Fraction(int,int): den < 0  =>   den >= 0
+ROR_73:137:Fraction(int,int): den < 0  =>   den <= 0
+ROR_74:137:Fraction(int,int): den < 0  =>   den == 0
+ROR_75:137:Fraction(int,int): den < 0  =>   den != 0
+ROR_76:137:Fraction(int,int): den < 0  =>   true
+ROR_77:137:Fraction(int,int): den < 0  =>   false
+ROR_78:138:Fraction(int,int): num == Integer.MIN_VALUE  =>   num > Integer.MIN_VALUE
+ROR_79:138:Fraction(int,int): num == Integer.MIN_VALUE  =>   num >= Integer.MIN_VALUE
+ROR_80:138:Fraction(int,int): num == Integer.MIN_VALUE  =>   num < Integer.MIN_VALUE
+ROR_81:138:Fraction(int,int): num == Integer.MIN_VALUE  =>   num <= Integer.MIN_VALUE
+ROR_82:138:Fraction(int,int): num == Integer.MIN_VALUE  =>   num != Integer.MIN_VALUE
+ROR_83:138:Fraction(int,int): num == Integer.MIN_VALUE  =>   true
+ROR_84:138:Fraction(int,int): num == Integer.MIN_VALUE  =>   false
+ROR_85:138:Fraction(int,int): den == Integer.MIN_VALUE  =>   den > Integer.MIN_VALUE
+ROR_86:138:Fraction(int,int): den == Integer.MIN_VALUE  =>   den >= Integer.MIN_VALUE
+ROR_87:138:Fraction(int,int): den == Integer.MIN_VALUE  =>   den < Integer.MIN_VALUE
+ROR_88:138:Fraction(int,int): den == Integer.MIN_VALUE  =>   den <= Integer.MIN_VALUE
+ROR_89:138:Fraction(int,int): den == Integer.MIN_VALUE  =>   den != Integer.MIN_VALUE
+ROR_90:138:Fraction(int,int): den == Integer.MIN_VALUE  =>   true
+ROR_91:138:Fraction(int,int): den == Integer.MIN_VALUE  =>   false
+ROR_92:145:Fraction(int,int): d > 1  =>   d >= 1
+ROR_93:145:Fraction(int,int): d > 1  =>   d < 1
+ROR_94:145:Fraction(int,int): d > 1  =>   d <= 1
+ROR_95:145:Fraction(int,int): d > 1  =>   d == 1
+ROR_96:145:Fraction(int,int): d > 1  =>   d != 1
+ROR_97:145:Fraction(int,int): d > 1  =>   true
+ROR_98:145:Fraction(int,int): d > 1  =>   false
+ROR_99:149:Fraction(int,int): den < 0  =>   den > 0
+ROR_100:149:Fraction(int,int): den < 0  =>   den >= 0
+ROR_101:149:Fraction(int,int): den < 0  =>   den <= 0
+ROR_102:149:Fraction(int,int): den < 0  =>   den == 0
+ROR_103:149:Fraction(int,int): den < 0  =>   den != 0
+ROR_104:149:Fraction(int,int): den < 0  =>   true
+ROR_105:149:Fraction(int,int): den < 0  =>   false
+ROR_106:160:org.apache.commons.math3.fraction.Fraction_abs(): numerator >= 0  =>   numerator > 0
+ROR_107:160:org.apache.commons.math3.fraction.Fraction_abs(): numerator >= 0  =>   numerator < 0
+ROR_108:160:org.apache.commons.math3.fraction.Fraction_abs(): numerator >= 0  =>   numerator <= 0
+ROR_109:160:org.apache.commons.math3.fraction.Fraction_abs(): numerator >= 0  =>   numerator == 0
+ROR_110:160:org.apache.commons.math3.fraction.Fraction_abs(): numerator >= 0  =>   numerator != 0
+ROR_111:160:org.apache.commons.math3.fraction.Fraction_abs(): numerator >= 0  =>   true
+ROR_112:160:org.apache.commons.math3.fraction.Fraction_abs(): numerator >= 0  =>   false
+ROR_113:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd < dOn  =>   nOd > dOn
+ROR_114:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd < dOn  =>   nOd >= dOn
+ROR_115:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd < dOn  =>   nOd <= dOn
+ROR_116:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd < dOn  =>   nOd == dOn
+ROR_117:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd < dOn  =>   nOd != dOn
+ROR_118:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd < dOn  =>   true
+ROR_119:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd < dOn  =>   false
+ROR_120:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd > dOn  =>   nOd >= dOn
+ROR_121:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd > dOn  =>   nOd < dOn
+ROR_122:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd > dOn  =>   nOd <= dOn
+ROR_123:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd > dOn  =>   nOd == dOn
+ROR_124:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd > dOn  =>   nOd != dOn
+ROR_125:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd > dOn  =>   true
+ROR_126:172:int_compareTo(org.apache.commons.math3.fraction.Fraction): nOd > dOn  =>   false
+ROR_127:182:boolean_equals(java.lang.Object): this == other  =>   this != other
+ROR_128:187:boolean_equals(java.lang.Object): numerator == rhs.numerator  =>   numerator > rhs.numerator
+ROR_129:187:boolean_equals(java.lang.Object): numerator == rhs.numerator  =>   numerator >= rhs.numerator
+ROR_130:187:boolean_equals(java.lang.Object): numerator == rhs.numerator  =>   numerator < rhs.numerator
+ROR_131:187:boolean_equals(java.lang.Object): numerator == rhs.numerator  =>   numerator <= rhs.numerator
+ROR_132:187:boolean_equals(java.lang.Object): numerator == rhs.numerator  =>   numerator != rhs.numerator
+ROR_133:187:boolean_equals(java.lang.Object): numerator == rhs.numerator  =>   true
+ROR_134:187:boolean_equals(java.lang.Object): numerator == rhs.numerator  =>   false
+ROR_135:187:boolean_equals(java.lang.Object): denominator == rhs.denominator  =>   denominator > rhs.denominator
+ROR_136:187:boolean_equals(java.lang.Object): denominator == rhs.denominator  =>   denominator >= rhs.denominator
+ROR_137:187:boolean_equals(java.lang.Object): denominator == rhs.denominator  =>   denominator < rhs.denominator
+ROR_138:187:boolean_equals(java.lang.Object): denominator == rhs.denominator  =>   denominator <= rhs.denominator
+ROR_139:187:boolean_equals(java.lang.Object): denominator == rhs.denominator  =>   denominator != rhs.denominator
+ROR_140:187:boolean_equals(java.lang.Object): denominator == rhs.denominator  =>   true
+ROR_141:187:boolean_equals(java.lang.Object): denominator == rhs.denominator  =>   false
+ROR_142:224:org.apache.commons.math3.fraction.Fraction_negate(): numerator == Integer.MIN_VALUE  =>   numerator > Integer.MIN_VALUE
+ROR_143:224:org.apache.commons.math3.fraction.Fraction_negate(): numerator == Integer.MIN_VALUE  =>   numerator >= Integer.MIN_VALUE
+ROR_144:224:org.apache.commons.math3.fraction.Fraction_negate(): numerator == Integer.MIN_VALUE  =>   numerator < Integer.MIN_VALUE
+ROR_145:224:org.apache.commons.math3.fraction.Fraction_negate(): numerator == Integer.MIN_VALUE  =>   numerator <= Integer.MIN_VALUE
+ROR_146:224:org.apache.commons.math3.fraction.Fraction_negate(): numerator == Integer.MIN_VALUE  =>   numerator != Integer.MIN_VALUE
+ROR_147:224:org.apache.commons.math3.fraction.Fraction_negate(): numerator == Integer.MIN_VALUE  =>   true
+ROR_148:224:org.apache.commons.math3.fraction.Fraction_negate(): numerator == Integer.MIN_VALUE  =>   false
+ROR_149:257:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction == null  =>   fraction != null
+ROR_150:260:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): numerator == 0  =>   numerator > 0
+ROR_151:260:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): numerator == 0  =>   numerator >= 0
+ROR_152:260:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): numerator == 0  =>   numerator < 0
+ROR_153:260:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): numerator == 0  =>   numerator <= 0
+ROR_154:260:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): numerator == 0  =>   numerator != 0
+ROR_155:260:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): numerator == 0  =>   true
+ROR_156:260:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): numerator == 0  =>   false
+ROR_157:263:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction.numerator == 0  =>   fraction.numerator > 0
+ROR_158:263:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction.numerator == 0  =>   fraction.numerator >= 0
+ROR_159:263:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction.numerator == 0  =>   fraction.numerator < 0
+ROR_160:263:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction.numerator == 0  =>   fraction.numerator <= 0
+ROR_161:263:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction.numerator == 0  =>   fraction.numerator != 0
+ROR_162:263:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction.numerator == 0  =>   true
+ROR_163:263:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): fraction.numerator == 0  =>   false
+ROR_164:267:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): d1 == 1  =>   d1 > 1
+ROR_165:267:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): d1 == 1  =>   d1 >= 1
+ROR_166:267:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): d1 == 1  =>   d1 < 1
+ROR_167:267:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): d1 == 1  =>   d1 <= 1
+ROR_168:267:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): d1 == 1  =>   d1 != 1
+ROR_169:267:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): d1 == 1  =>   true
+ROR_170:267:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): d1 == 1  =>   false
+ROR_171:276:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): tmodd1 == 0  =>   tmodd1 > 0
+ROR_172:276:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): tmodd1 == 0  =>   tmodd1 >= 0
+ROR_173:276:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): tmodd1 == 0  =>   tmodd1 < 0
+ROR_174:276:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): tmodd1 == 0  =>   tmodd1 <= 0
+ROR_175:276:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): tmodd1 == 0  =>   tmodd1 != 0
+ROR_176:276:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): tmodd1 == 0  =>   true
+ROR_177:276:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): tmodd1 == 0  =>   false
+ROR_178:278:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): w.bitLength() > 31  =>   w.bitLength() >= 31
+ROR_179:278:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): w.bitLength() > 31  =>   w.bitLength() < 31
+ROR_180:278:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): w.bitLength() > 31  =>   w.bitLength() <= 31
+ROR_181:278:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): w.bitLength() > 31  =>   w.bitLength() == 31
+ROR_182:278:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): w.bitLength() > 31  =>   w.bitLength() != 31
+ROR_183:278:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): w.bitLength() > 31  =>   true
+ROR_184:278:org.apache.commons.math3.fraction.Fraction_addSub(org.apache.commons.math3.fraction.Fraction,boolean): w.bitLength() > 31  =>   false
+ROR_185:286:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction == null  =>   fraction != null
+ROR_186:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0  =>   numerator > 0
+ROR_187:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0  =>   numerator >= 0
+ROR_188:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0  =>   numerator < 0
+ROR_189:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0  =>   numerator <= 0
+ROR_190:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0  =>   numerator != 0
+ROR_191:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0  =>   true
+ROR_192:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0  =>   false
+ROR_193:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator > 0
+ROR_194:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator >= 0
+ROR_195:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator < 0
+ROR_196:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator <= 0
+ROR_197:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator != 0
+ROR_198:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   true
+ROR_199:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   false
+ROR_200:304:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction == null  =>   fraction != null
+ROR_201:307:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator > 0
+ROR_202:307:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator >= 0
+ROR_203:307:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator < 0
+ROR_204:307:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator <= 0
+ROR_205:307:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   fraction.numerator != 0
+ROR_206:307:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   true
+ROR_207:307:org.apache.commons.math3.fraction.Fraction_divide(org.apache.commons.math3.fraction.Fraction): fraction.numerator == 0  =>   false
+ROR_208:325:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == 0  =>   denominator > 0
+ROR_209:325:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == 0  =>   denominator >= 0
+ROR_210:325:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == 0  =>   denominator < 0
+ROR_211:325:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == 0  =>   denominator <= 0
+ROR_212:325:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == 0  =>   denominator != 0
+ROR_213:325:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == 0  =>   true
+ROR_214:325:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == 0  =>   false
+ROR_215:328:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == 0  =>   numerator > 0
+ROR_216:328:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == 0  =>   numerator >= 0
+ROR_217:328:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == 0  =>   numerator < 0
+ROR_218:328:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == 0  =>   numerator <= 0
+ROR_219:328:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == 0  =>   numerator != 0
+ROR_220:328:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == 0  =>   true
+ROR_221:328:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == 0  =>   false
+ROR_222:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator > Integer.MIN_VALUE
+ROR_223:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator >= Integer.MIN_VALUE
+ROR_224:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator < Integer.MIN_VALUE
+ROR_225:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator <= Integer.MIN_VALUE
+ROR_226:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator != Integer.MIN_VALUE
+ROR_227:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   true
+ROR_228:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   false
+ROR_229:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): (numerator & 1) == 0  =>   (numerator & 1) > 0
+ROR_230:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): (numerator & 1) == 0  =>   (numerator & 1) >= 0
+ROR_231:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): (numerator & 1) == 0  =>   (numerator & 1) < 0
+ROR_232:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): (numerator & 1) == 0  =>   (numerator & 1) <= 0
+ROR_233:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): (numerator & 1) == 0  =>   (numerator & 1) != 0
+ROR_234:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): (numerator & 1) == 0  =>   true
+ROR_235:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): (numerator & 1) == 0  =>   false
+ROR_236:335:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator < 0  =>   denominator > 0
+ROR_237:335:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator < 0  =>   denominator >= 0
+ROR_238:335:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator < 0  =>   denominator <= 0
+ROR_239:335:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator < 0  =>   denominator == 0
+ROR_240:335:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator < 0  =>   denominator != 0
+ROR_241:335:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator < 0  =>   true
+ROR_242:335:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator < 0  =>   false
+ROR_243:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE  =>   numerator > Integer.MIN_VALUE
+ROR_244:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE  =>   numerator >= Integer.MIN_VALUE
+ROR_245:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE  =>   numerator < Integer.MIN_VALUE
+ROR_246:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE  =>   numerator <= Integer.MIN_VALUE
+ROR_247:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE  =>   numerator != Integer.MIN_VALUE
+ROR_248:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE  =>   true
+ROR_249:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE  =>   false
+ROR_250:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator > Integer.MIN_VALUE
+ROR_251:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator >= Integer.MIN_VALUE
+ROR_252:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator < Integer.MIN_VALUE
+ROR_253:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator <= Integer.MIN_VALUE
+ROR_254:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   denominator != Integer.MIN_VALUE
+ROR_255:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   true
+ROR_256:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE  =>   false
+ROR_257:351:java.lang.String_toString(): denominator == 1  =>   denominator > 1
+ROR_258:351:java.lang.String_toString(): denominator == 1  =>   denominator >= 1
+ROR_259:351:java.lang.String_toString(): denominator == 1  =>   denominator < 1
+ROR_260:351:java.lang.String_toString(): denominator == 1  =>   denominator <= 1
+ROR_261:351:java.lang.String_toString(): denominator == 1  =>   denominator != 1
+ROR_262:351:java.lang.String_toString(): denominator == 1  =>   true
+ROR_263:351:java.lang.String_toString(): denominator == 1  =>   false
+ROR_264:354:java.lang.String_toString(): numerator == 0  =>   numerator > 0
+ROR_265:354:java.lang.String_toString(): numerator == 0  =>   numerator >= 0
+ROR_266:354:java.lang.String_toString(): numerator == 0  =>   numerator < 0
+ROR_267:354:java.lang.String_toString(): numerator == 0  =>   numerator <= 0
+ROR_268:354:java.lang.String_toString(): numerator == 0  =>   numerator != 0
+ROR_269:354:java.lang.String_toString(): numerator == 0  =>   true
+ROR_270:354:java.lang.String_toString(): numerator == 0  =>   false
+COR_1:100:Fraction(double,double,int,int): p2 > overflow || q2 > overflow  =>   p2 > overflow && q2 > overflow
+COR_2:100:Fraction(double,double,int,int): p2 > overflow || q2 > overflow  =>   p2 > overflow ^ q2 > overflow
+COR_3:104:Fraction(double,double,int,int): n < maxIterations && FastMath.abs( convergent - value ) > epsilon  =>   n < maxIterations || FastMath.abs( convergent - value ) > epsilon
+COR_4:104:Fraction(double,double,int,int): n < maxIterations && FastMath.abs( convergent - value ) > epsilon  =>   n < maxIterations ^ FastMath.abs( convergent - value ) > epsilon
+COR_5:104:Fraction(double,double,int,int): n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator  =>   n < maxIterations && FastMath.abs( convergent - value ) > epsilon || q2 < maxDenominator
+COR_6:104:Fraction(double,double,int,int): n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator  =>   (n < maxIterations && FastMath.abs( convergent - value ) > epsilon) ^ q2 < maxDenominator
+COR_7:138:Fraction(int,int): num == Integer.MIN_VALUE || den == Integer.MIN_VALUE  =>   num == Integer.MIN_VALUE && den == Integer.MIN_VALUE
+COR_8:138:Fraction(int,int): num == Integer.MIN_VALUE || den == Integer.MIN_VALUE  =>   num == Integer.MIN_VALUE ^ den == Integer.MIN_VALUE
+COR_9:187:boolean_equals(java.lang.Object): numerator == rhs.numerator && denominator == rhs.denominator  =>   numerator == rhs.numerator || denominator == rhs.denominator
+COR_10:187:boolean_equals(java.lang.Object): numerator == rhs.numerator && denominator == rhs.denominator  =>   numerator == rhs.numerator ^ denominator == rhs.denominator
+COR_11:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0 || fraction.numerator == 0  =>   numerator == 0 && fraction.numerator == 0
+COR_12:289:org.apache.commons.math3.fraction.Fraction_multiply(org.apache.commons.math3.fraction.Fraction): numerator == 0 || fraction.numerator == 0  =>   numerator == 0 ^ fraction.numerator == 0
+COR_13:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE && (numerator & 1) == 0  =>   denominator == Integer.MIN_VALUE || (numerator & 1) == 0
+COR_14:331:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): denominator == Integer.MIN_VALUE && (numerator & 1) == 0  =>   denominator == Integer.MIN_VALUE ^ (numerator & 1) == 0
+COR_15:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE || denominator == Integer.MIN_VALUE  =>   numerator == Integer.MIN_VALUE && denominator == Integer.MIN_VALUE
+COR_16:336:org.apache.commons.math3.fraction.Fraction_getReducedFraction(int,int): numerator == Integer.MIN_VALUE || denominator == Integer.MIN_VALUE  =>   numerator == Integer.MIN_VALUE ^ denominator == Integer.MIN_VALUE
+SDL_1:122:Fraction(double,double,int,int): long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }  =>   long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }
+SDL_2:120:Fraction(double,double,int,int): long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }  =>   long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }
+SDL_3:104:Fraction(double,double,int,int): long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }  =>   long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }
+SDL_4:122:Fraction(double,double,int,int): long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }  =>   long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }
+SDL_5:118:Fraction(double,double,int,int): long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop = true;     } } while (!stop); if (n >= maxIterations) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, maxIterations ); } if (q2 < maxDenominator) {     this.numerator = (int) p2;     this.denominator = (int) q2; } else {     this.numerator = (int) p1;     this.denominator = (int) q1; }  =>   long overflow = Integer.MAX_VALUE; double r0 = value; long a0 = (long) FastMath.floor( r0 ); if (a0 > overflow) {     throw new org.apache.commons.math3.fraction.FractionConversionException( value, a0, 1l ); } if (FastMath.abs( a0 - value ) < epsilon) {     this.numerator = (int) a0;     this.denominator = 1;     return; } long p0 = 1; long q0 = 0; long p1 = a0; long q1 = 1; long p2 = 0; long q2 = 1; int n = 0; boolean stop = false; do {     ++n;     double r1 = 1.0 / (r0 - a0);     long a1 = (long) FastMath.floor( r1 );     p2 = a1 * p1 + p0;     q2 = a1 * q1 + q0;     if (p2 > overflow || q2 > overflow) {         throw new org.apache.commons.math3.fraction.FractionConversionException( value, p2, q2 );     }     double convergent = (double) p2 / (double) q2;     if (n < maxIterations && FastMath.abs( convergent - value ) > epsilon && q2 < maxDenominator) {         p0 = p1;         p1 = p2;         q0 = q1;         q1 = q2;         a0 = a1;         r0 = r1;     } else {         stop 

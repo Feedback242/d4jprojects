@@ -1,0 +1,54 @@
+
+initialise:
+
+compile:
+    [javac] /home/rein/IdeaProjects/defects4j/framework/projects/Chart/Chart.build.xml:57: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile-experimental:
+    [javac] /home/rein/IdeaProjects/defects4j/framework/projects/Chart/Chart.build.xml:106: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+compile.tests:
+    [javac] /home/rein/IdeaProjects/defects4j/framework/projects/Chart/Chart.build.xml:123: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: [1;31morg.jfree.chart.renderer.junit.GrayPaintScaleTests[testGetPaint] failed![0m
+    [junit] MAJOR: [1;31m -> java.lang.IllegalArgumentException[0m
+    [junit] MAJOR: [1;31m -> "Color parameter outside of expected range: Red Green Blue"[0m
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR: [1;31m - org.jfree.chart.renderer.junit.GrayPaintScaleTests[0m
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 2 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 0.18 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 26
+    [junit] MAJOR: Mutants covered:   10 (38.46%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 2 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m1/2 - org.jfree.chart.title.junit.PaintScaleLegendTests (41ms / 10):[0m
+    [junit] MAJOR: 256 (3 / 10 / 10) -> AVG-RTPM: 25ms
+    [junit] MAJOR: Mutants killed / live: 3 (2-1-0) / 7
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m2/2 - org.jfree.chart.renderer.xy.junit.XYBlockRendererTests (43ms / 10):[0m
+    [junit] MAJOR: 460 (0 / 7 / 10) -> AVG-RTPM: 29ms
+    [junit] MAJOR: Mutants killed / live: 3 (2-1-0) / 7
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  0.5 seconds
+    [junit] MAJOR: Mutation score: 11.54% (30.00%)
+    [junit] MAJOR: Mutants killed / live: 3 (2-1-0) / 7
+    [junit] MAJOR: Mutant executions: 17
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /tmp/Chart/Chart-24b/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 1 second

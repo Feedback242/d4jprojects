@@ -1,0 +1,12 @@
+JTD_1:54:this.numeratorDegreesOfFreedom => numeratorDegreesOfFreedom
+JTD_2:55:this.denominatorDegreesOfFreedom => denominatorDegreesOfFreedom
+JTI_1:35:numeratorDegreesOfFreedom  -->  this.numeratorDegreesOfFreedom
+JTI_2:35:denominatorDegreesOfFreedom  -->  this.denominatorDegreesOfFreedom
+JTI_3:41:numeratorDegreesOfFreedom  -->  this.numeratorDegreesOfFreedom
+JTI_4:41:denominatorDegreesOfFreedom  -->  this.denominatorDegreesOfFreedom
+JTI_5:48:numeratorDegreesOfFreedom  -->  this.numeratorDegreesOfFreedom
+JTI_6:49:numeratorDegreesOfFreedom  -->  this.numeratorDegreesOfFreedom
+JTI_7:51:denominatorDegreesOfFreedom  -->  this.denominatorDegreesOfFreedom
+JTI_8:52:denominatorDegreesOfFreedom  -->  this.denominatorDegreesOfFreedom
+JTI_9:54:numeratorDegreesOfFreedom  -->  this.numeratorDegreesOfFreedom
+JTI_10:55:denominatorDegreesOfFreedom  -->  this.denominatorDegreesOfFreedom

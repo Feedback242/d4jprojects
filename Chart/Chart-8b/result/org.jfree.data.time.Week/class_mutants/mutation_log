@@ -1,0 +1,21 @@
+ISI_1:43:peg( Calendar.getInstance() )  -->  super.peg( Calendar.getInstance() )
+ISI_2:53:peg( Calendar.getInstance() )  -->  super.peg( Calendar.getInstance() )
+ISI_3:91:peg( calendar )  -->  super.peg( calendar )
+ISI_4:121:getFirstMillisecond( calendar )  -->  super.getFirstMillisecond( calendar )
+ISI_5:122:getLastMillisecond( calendar )  -->  super.getLastMillisecond( calendar )
+PCD_1:172:(java.util.Calendar) calendar.clone() => calendar.clone()
+PCD_2:186:(java.util.Calendar) calendar.clone() => calendar.clone()
+PCD_3:211:(org.jfree.data.time.Week) obj => obj
+PCD_4:233:(org.jfree.data.time.Week) o1 => o1
+JTD_1:41:this.week => week
+JTD_2:42:this.year => year
+JTD_3:51:this.week => week
+JTD_4:52:this.year => year
+JTI_1:38:week  -->  this.week
+JTI_2:38:week  -->  this.week
+JTI_3:41:week  -->  this.week
+JTI_4:42:year  -->  this.year
+JTI_5:48:week  -->  this.week
+JTI_6:48:week  -->  this.week
+JTI_7:51:week  -->  this.week
+JTI_8:52:year  -->  this.year

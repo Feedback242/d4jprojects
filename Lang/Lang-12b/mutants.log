@@ -1,0 +1,106 @@
+1:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):225:count == 0 |==> count <= 0
+2:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):225:count == 0 |==> count >= 0
+3:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):225:count == 0 |==> false
+4:ROR:<(int,int):!=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):227:count < 0 |==> count != 0
+5:ROR:<(int,int):<=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):227:count < 0 |==> count <= 0
+6:ROR:<(int,int):FALSE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):227:count < 0 |==> false
+7:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:start == 0 |==> start <= 0
+8:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:start == 0 |==> start >= 0
+9:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:start == 0 |==> false
+10:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:end == 0 |==> end <= 0
+11:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:end == 0 |==> end >= 0
+12:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:end == 0 |==> false
+13:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:start == 0 && end == 0 |==> start == 0 == (end == 0)
+14:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:start == 0 && end == 0 |==> false
+15:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:start == 0 && end == 0 |==> start == 0
+16:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):231:start == 0 && end == 0 |==> end == 0
+17:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):232:!letters && !numbers |==> !letters == !numbers
+18:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):232:!letters && !numbers |==> false
+19:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):232:!letters && !numbers |==> !letters
+20:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):232:!letters && !numbers |==> !numbers
+21:AOR:+(int,int):%(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):235:'z' + 1 |==> 'z' % 1
+22:AOR:+(int,int):*(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):235:'z' + 1 |==> 'z' * 1
+23:AOR:+(int,int):-(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):235:'z' + 1 |==> 'z' - 1
+24:AOR:+(int,int):/(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):235:'z' + 1 |==> 'z' / 1
+25:AOR:-(int,int):%(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):241:end - start |==> end % start
+26:AOR:-(int,int):*(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):241:end - start |==> end * start
+27:AOR:-(int,int):+(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):241:end - start |==> end + start
+28:AOR:-(int,int):/(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):241:end - start |==> end / start
+29:ROR:!=(int,int):<(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):243:count-- != 0 |==> count-- < 0
+30:ROR:!=(int,int):>(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):243:count-- != 0 |==> count-- > 0
+31:ROR:!=(int,int):TRUE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):243:count-- != 0 |==> true
+32:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):245:chars == null |==> false
+33:AOR:+(int,int):%(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):246:random.nextInt(gap) + start |==> random.nextInt(gap) % start
+34:AOR:+(int,int):*(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):246:random.nextInt(gap) + start |==> random.nextInt(gap) * start
+35:AOR:+(int,int):-(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):246:random.nextInt(gap) + start |==> random.nextInt(gap) - start
+36:AOR:+(int,int):/(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):246:random.nextInt(gap) + start |==> random.nextInt(gap) / start
+37:AOR:+(int,int):%(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):248:random.nextInt(gap) + start |==> random.nextInt(gap) % start
+38:AOR:+(int,int):*(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):248:random.nextInt(gap) + start |==> random.nextInt(gap) * start
+39:AOR:+(int,int):-(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):248:random.nextInt(gap) + start |==> random.nextInt(gap) - start
+40:AOR:+(int,int):/(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):248:random.nextInt(gap) + start |==> random.nextInt(gap) / start
+41:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) |==> letters == Character.isLetter(ch)
+42:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) |==> false
+43:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) |==> letters
+44:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) |==> Character.isLetter(ch)
+45:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):251:numbers && Character.isDigit(ch) |==> numbers == Character.isDigit(ch)
+46:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):251:numbers && Character.isDigit(ch) |==> false
+47:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):251:numbers && Character.isDigit(ch) |==> numbers
+48:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):251:numbers && Character.isDigit(ch) |==> Character.isDigit(ch)
+49:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) |==> (letters && Character.isLetter(ch)) != (numbers && Character.isDigit(ch))
+50:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) |==> letters && Character.isLetter(ch)
+51:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):251:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) |==> numbers && Character.isDigit(ch)
+52:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):251:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) |==> true
+53:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):252:!letters && !numbers |==> !letters == !numbers
+54:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):252:!letters && !numbers |==> false
+55:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):252:!letters && !numbers |==> !letters
+56:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):252:!letters && !numbers |==> !numbers
+57:COR:||(boolean,boolean):!=(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) || !letters && !numbers |==> (letters && Character.isLetter(ch) || numbers && Character.isDigit(ch)) != (!letters && !numbers)
+58:COR:||(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):250:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) || !letters && !numbers |==> letters && Character.isLetter(ch) || numbers && Character.isDigit(ch)
+59:COR:||(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):252:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) || !letters && !numbers |==> !letters && !numbers
+60:COR:||(boolean,boolean):TRUE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):252:letters && Character.isLetter(ch) || numbers && Character.isDigit(ch) || !letters && !numbers |==> true
+61:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch >= 56320 |==> ch == 56320
+62:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch >= 56320 |==> ch > 56320
+63:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch >= 56320 |==> true
+64:ROR:<=(int,int):<(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch <= 57343 |==> ch < 57343
+65:ROR:<=(int,int):==(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch <= 57343 |==> ch == 57343
+66:ROR:<=(int,int):TRUE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch <= 57343 |==> true
+67:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch >= 56320 && ch <= 57343 |==> ch >= 56320 == ch <= 57343
+68:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch >= 56320 && ch <= 57343 |==> false
+69:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch >= 56320 && ch <= 57343 |==> ch >= 56320
+70:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):253:ch >= 56320 && ch <= 57343 |==> ch <= 57343
+71:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):254:count == 0 |==> count <= 0
+72:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):254:count == 0 |==> count >= 0
+73:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):254:count == 0 |==> false
+74:AOR:+(int,int):%(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):260:55296 + random.nextInt(128) |==> 55296 % random.nextInt(128)
+75:AOR:+(int,int):*(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):260:55296 + random.nextInt(128) |==> 55296 * random.nextInt(128)
+76:AOR:+(int,int):-(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):260:55296 + random.nextInt(128) |==> 55296 - random.nextInt(128)
+77:AOR:+(int,int):/(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):260:55296 + random.nextInt(128) |==> 55296 / random.nextInt(128)
+78:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch >= 55296 |==> ch == 55296
+79:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch >= 55296 |==> ch > 55296
+80:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch >= 55296 |==> true
+81:ROR:<=(int,int):<(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch <= 56191 |==> ch < 56191
+82:ROR:<=(int,int):==(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch <= 56191 |==> ch == 56191
+83:ROR:<=(int,int):TRUE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch <= 56191 |==> true
+84:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch >= 55296 && ch <= 56191 |==> ch >= 55296 == ch <= 56191
+85:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch >= 55296 && ch <= 56191 |==> false
+86:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch >= 55296 && ch <= 56191 |==> ch >= 55296
+87:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):262:ch >= 55296 && ch <= 56191 |==> ch <= 56191
+88:ROR:==(int,int):<=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):263:count == 0 |==> count <= 0
+89:ROR:==(int,int):>=(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):263:count == 0 |==> count >= 0
+90:ROR:==(int,int):FALSE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):263:count == 0 |==> false
+91:AOR:+(int,int):%(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):267:56320 + random.nextInt(128) |==> 56320 % random.nextInt(128)
+92:AOR:+(int,int):*(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):267:56320 + random.nextInt(128) |==> 56320 * random.nextInt(128)
+93:AOR:+(int,int):-(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):267:56320 + random.nextInt(128) |==> 56320 - random.nextInt(128)
+94:AOR:+(int,int):/(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):267:56320 + random.nextInt(128) |==> 56320 / random.nextInt(128)
+95:ROR:>=(int,int):==(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch >= 56192 |==> ch == 56192
+96:ROR:>=(int,int):>(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch >= 56192 |==> ch > 56192
+97:ROR:>=(int,int):TRUE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch >= 56192 |==> true
+98:ROR:<=(int,int):<(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch <= 56319 |==> ch < 56319
+99:ROR:<=(int,int):==(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch <= 56319 |==> ch == 56319
+100:ROR:<=(int,int):TRUE(int,int):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch <= 56319 |==> true
+101:COR:&&(boolean,boolean):==(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch >= 56192 && ch <= 56319 |==> ch >= 56192 == ch <= 56319
+102:COR:&&(boolean,boolean):FALSE(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch >= 56192 && ch <= 56319 |==> false
+103:COR:&&(boolean,boolean):LHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch >= 56192 && ch <= 56319 |==> ch >= 56192
+104:COR:&&(boolean,boolean):RHS(boolean,boolean):org.apache.commons.lang3.RandomStringUtils@random(int,int,int,boolean,boolean,char[],java.util.Random):271:ch >= 56192 && ch <= 56319 |==> ch <= 56319
+105:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.RandomStringUtils@random(int,java.lang.String):299:chars == null |==> false
+106:ROR:==(java.lang.Object,java.lang.Object):FALSE(java.lang.Object,java.lang.Object):org.apache.commons.lang3.RandomStringUtils@random(int,char[]):318:chars == null |==> false

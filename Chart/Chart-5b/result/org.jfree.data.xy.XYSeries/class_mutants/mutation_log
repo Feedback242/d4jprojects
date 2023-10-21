@@ -1,0 +1,21 @@
+ISI_1:154:getItemCount()  -->  super.getItemCount()
+ISI_2:250:getItemCount()  -->  super.getItemCount()
+ISI_3:275:getItemCount()  -->  super.getItemCount()
+ISD_4:300:super.clone() => clone()
+ISI_5:346:getItemCount()  -->  super.getItemCount()
+PCD_1:172:(org.jfree.data.xy.XYDataItem) this.data.remove( index ) => this.data.remove( index )
+PCD_2:192:(org.jfree.data.xy.XYDataItem) this.data.get( index ) => this.data.get( index )
+PCD_3:237:(org.jfree.data.xy.XYDataItem) this.data.get( index ) => this.data.get( index )
+PCD_4:239:(org.jfree.data.xy.XYDataItem) existing.clone() => existing.clone()
+PCD_5:264:(org.jfree.data.xy.XYDataItem) this.data.get( i ) => this.data.get( i )
+PCD_6:292:(org.jfree.data.xy.XYSeries) super.clone() => super.clone()
+PCD_7:293:(java.util.List) ObjectUtilities.deepClone( this.data ) => ObjectUtilities.deepClone( this.data )
+PCD_8:300:(org.jfree.data.xy.XYSeries) super.clone() => super.clone()
+PCD_9:304:(org.jfree.data.xy.XYDataItem) this.data.get( index ) => this.data.get( index )
+PCD_10:305:(org.jfree.data.xy.XYDataItem) item.clone() => item.clone()
+PCD_11:327:(org.jfree.data.xy.XYSeries) obj => obj
+JTD_1:43:this.autoSort => autoSort
+JTD_2:44:this.allowDuplicateXValues => allowDuplicateXValues
+JTI_1:36:autoSort  -->  this.autoSort
+JTI_2:43:autoSort  -->  this.autoSort
+JTI_3:44:allowDuplicateXValues  -->  this.allowDuplicateXValues

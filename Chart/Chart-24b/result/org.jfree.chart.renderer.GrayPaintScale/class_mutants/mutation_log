@@ -1,0 +1,7 @@
+PCD_1:60:(org.jfree.chart.renderer.GrayPaintScale) obj => obj
+JTD_1:30:this.lowerBound => lowerBound
+JTD_2:31:this.upperBound => upperBound
+JTI_1:27:lowerBound  -->  this.lowerBound
+JTI_2:27:upperBound  -->  this.upperBound
+JTI_3:30:lowerBound  -->  this.lowerBound
+JTI_4:31:upperBound  -->  this.upperBound

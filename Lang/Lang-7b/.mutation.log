@@ -1,0 +1,54 @@
+
+init:
+     [echo] -------- commons-lang3 3.2-SNAPSHOT --------
+
+compile:
+
+compile.tests:
+
+update.all.tests:
+
+mutation.test:
+     [echo] Running mutation analysis ...
+    [junit] MAJOR: Mutation analysis enabled
+    [junit] MAJOR: [1;31morg.apache.commons.lang3.math.NumberUtilsTest[testCreateNumber] failed![0m
+    [junit] MAJOR: [1;31m -> AssertionFailedError[0m
+    [junit] MAJOR: [1;31m -> "Expected NumberFormatException"[0m
+    [junit] MAJOR: Exclude 1 failing test class:
+    [junit] MAJOR: [1;31m - org.apache.commons.lang3.math.NumberUtilsTest[0m
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run 3 ordered tests to verify independence
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Preprocessing time: 0.15 seconds
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Mutants generated: 632
+    [junit] MAJOR: Mutants covered:   0 (0.00%)
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export test map to testMap.csv
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Run mutation analysis with 3 individual tests
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m1/3 - org.apache.commons.lang3.reflect.ConstructorUtilsTest (14ms / 0):[0m
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m2/3 - org.apache.commons.lang3.reflect.MethodUtilsTest (24ms / 0):[0m
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: [1;34m3/3 - org.apache.commons.lang3.BooleanUtilsTest (79ms / 0):[0m
+    [junit] MAJOR: 0 (0 / 0 / 0) -> AVG-RTPM: 0ms
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Summary:
+    [junit] MAJOR: 
+    [junit] MAJOR: Analysis time:  0.0 seconds
+    [junit] MAJOR: Mutation score: 0.00% (0.00%)
+    [junit] MAJOR: Mutants killed / live: 0 (0-0-0) / 0
+    [junit] MAJOR: Mutant executions: 0
+    [junit] MAJOR: ------------------------------------------------------------
+    [junit] MAJOR: Export summary of results to summary.csv
+    [junit] MAJOR: Export mutant kill details to /tmp/Lang/Lang-7b/kill.csv
+
+BUILD SUCCESSFUL
+Total time: 0 seconds

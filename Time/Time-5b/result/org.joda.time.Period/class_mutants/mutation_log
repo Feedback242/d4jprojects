@@ -1,0 +1,1 @@
+EOC_1:520:this == ZERO => this.equals(ZERO)

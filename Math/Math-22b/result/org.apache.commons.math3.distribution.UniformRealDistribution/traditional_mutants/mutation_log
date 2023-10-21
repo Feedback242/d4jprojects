@@ -1,0 +1,118 @@
+AORB_1:60:double_density(double):upper - lower => upper * lower
+AORB_2:60:double_density(double):upper - lower => upper / lower
+AORB_3:60:double_density(double):upper - lower => upper % lower
+AORB_4:60:double_density(double):upper - lower => upper + lower
+AORB_5:60:double_density(double):1 / (upper - lower) => 1 * (upper - lower)
+AORB_6:60:double_density(double):1 / (upper - lower) => 1 % (upper - lower)
+AORB_7:60:double_density(double):1 / (upper - lower) => 1 + (upper - lower)
+AORB_8:60:double_density(double):1 / (upper - lower) => 1 - (upper - lower)
+AORB_9:71:double_cumulativeProbability(double):x - lower => x * lower
+AORB_10:71:double_cumulativeProbability(double):x - lower => x / lower
+AORB_11:71:double_cumulativeProbability(double):x - lower => x % lower
+AORB_12:71:double_cumulativeProbability(double):x - lower => x + lower
+AORB_13:71:double_cumulativeProbability(double):upper - lower => upper * lower
+AORB_14:71:double_cumulativeProbability(double):upper - lower => upper / lower
+AORB_15:71:double_cumulativeProbability(double):upper - lower => upper % lower
+AORB_16:71:double_cumulativeProbability(double):upper - lower => upper + lower
+AORB_17:71:double_cumulativeProbability(double):(x - lower) / (upper - lower) => (x - lower) * (upper - lower)
+AORB_18:71:double_cumulativeProbability(double):(x - lower) / (upper - lower) => (x - lower) % (upper - lower)
+AORB_19:71:double_cumulativeProbability(double):(x - lower) / (upper - lower) => x - lower + (upper - lower)
+AORB_20:71:double_cumulativeProbability(double):(x - lower) / (upper - lower) => x - lower - (upper - lower)
+AORB_21:81:double_getNumericalMean():lower + upper => lower * upper
+AORB_22:81:double_getNumericalMean():lower + upper => lower / upper
+AORB_23:81:double_getNumericalMean():lower + upper => lower % upper
+AORB_24:81:double_getNumericalMean():lower + upper => lower - upper
+AORB_25:81:double_getNumericalMean():0.5 * (lower + upper) => 0.5 / (lower + upper)
+AORB_26:81:double_getNumericalMean():0.5 * (lower + upper) => 0.5 % (lower + upper)
+AORB_27:81:double_getNumericalMean():0.5 * (lower + upper) => 0.5 + (lower + upper)
+AORB_28:81:double_getNumericalMean():0.5 * (lower + upper) => 0.5 - (lower + upper)
+AORB_29:86:double_getNumericalVariance():upper - lower => upper * lower
+AORB_30:86:double_getNumericalVariance():upper - lower => upper / lower
+AORB_31:86:double_getNumericalVariance():upper - lower => upper % lower
+AORB_32:86:double_getNumericalVariance():upper - lower => upper + lower
+AORB_33:87:double_getNumericalVariance():ul * ul => ul / ul
+AORB_34:87:double_getNumericalVariance():ul * ul => ul % ul
+AORB_35:87:double_getNumericalVariance():ul * ul => ul + ul
+AORB_36:87:double_getNumericalVariance():ul * ul => ul - ul
+AORB_37:87:double_getNumericalVariance():ul * ul / 12 => ul * ul * 12
+AORB_38:87:double_getNumericalVariance():ul * ul / 12 => ul * ul % 12
+AORB_39:87:double_getNumericalVariance():ul * ul / 12 => ul * ul + 12
+AORB_40:87:double_getNumericalVariance():ul * ul / 12 => ul * ul - 12
+AORB_41:118:double_sample():u * upper => u / upper
+AORB_42:118:double_sample():u * upper => u % upper
+AORB_43:118:double_sample():u * upper => u + upper
+AORB_44:118:double_sample():u * upper => u - upper
+AORB_45:118:double_sample():1 - u => 1 * u
+AORB_46:118:double_sample():1 - u => 1 / u
+AORB_47:118:double_sample():1 - u => 1 % u
+AORB_48:118:double_sample():1 - u => 1 + u
+AORB_49:118:double_sample():(1 - u) * lower => (1 - u) / lower
+AORB_50:118:double_sample():(1 - u) * lower => (1 - u) % lower
+AORB_51:118:double_sample():(1 - u) * lower => 1 - u + lower
+AORB_52:118:double_sample():(1 - u) * lower => 1 - u - lower
+AORB_53:118:double_sample():u * upper + (1 - u) * lower => u * upper * ((1 - u) * lower)
+AORB_54:118:double_sample():u * upper + (1 - u) * lower => u * upper / ((1 - u) * lower)
+AORB_55:118:double_sample():u * upper + (1 - u) * lower => u * upper % ((1 - u) * lower)
+AORB_56:118:double_sample():u * upper + (1 - u) * lower => u * upper - (1 - u) * lower
+ROR_1:47:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): lower >= upper  =>   lower > upper
+ROR_2:47:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): lower >= upper  =>   lower < upper
+ROR_3:47:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): lower >= upper  =>   lower <= upper
+ROR_4:47:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): lower >= upper  =>   lower == upper
+ROR_5:47:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): lower >= upper  =>   lower != upper
+ROR_6:47:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): lower >= upper  =>   true
+ROR_7:47:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): lower >= upper  =>   false
+ROR_8:57:double_density(double): x < lower  =>   x > lower
+ROR_9:57:double_density(double): x < lower  =>   x >= lower
+ROR_10:57:double_density(double): x < lower  =>   x <= lower
+ROR_11:57:double_density(double): x < lower  =>   x == lower
+ROR_12:57:double_density(double): x < lower  =>   x != lower
+ROR_13:57:double_density(double): x < lower  =>   true
+ROR_14:57:double_density(double): x < lower  =>   false
+ROR_15:57:double_density(double): x > upper  =>   x >= upper
+ROR_16:57:double_density(double): x > upper  =>   x < upper
+ROR_17:57:double_density(double): x > upper  =>   x <= upper
+ROR_18:57:double_density(double): x > upper  =>   x == upper
+ROR_19:57:double_density(double): x > upper  =>   x != upper
+ROR_20:57:double_density(double): x > upper  =>   true
+ROR_21:57:double_density(double): x > upper  =>   false
+ROR_22:65:double_cumulativeProbability(double): x <= lower  =>   x > lower
+ROR_23:65:double_cumulativeProbability(double): x <= lower  =>   x >= lower
+ROR_24:65:double_cumulativeProbability(double): x <= lower  =>   x < lower
+ROR_25:65:double_cumulativeProbability(double): x <= lower  =>   x == lower
+ROR_26:65:double_cumulativeProbability(double): x <= lower  =>   x != lower
+ROR_27:65:double_cumulativeProbability(double): x <= lower  =>   true
+ROR_28:65:double_cumulativeProbability(double): x <= lower  =>   false
+ROR_29:68:double_cumulativeProbability(double): x >= upper  =>   x > upper
+ROR_30:68:double_cumulativeProbability(double): x >= upper  =>   x < upper
+ROR_31:68:double_cumulativeProbability(double): x >= upper  =>   x <= upper
+ROR_32:68:double_cumulativeProbability(double): x >= upper  =>   x == upper
+ROR_33:68:double_cumulativeProbability(double): x >= upper  =>   x != upper
+ROR_34:68:double_cumulativeProbability(double): x >= upper  =>   true
+ROR_35:68:double_cumulativeProbability(double): x >= upper  =>   false
+COR_1:57:double_density(double): x < lower || x > upper  =>   x < lower && x > upper
+COR_2:57:double_density(double): x < lower || x > upper  =>   x < lower ^ x > upper
+SDL_1:50:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); } this.lower = lower; this.upper = upper; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   this.lower = lower; this.upper = upper; solverAbsoluteAccuracy = inverseCumAccuracy;
+SDL_2:52:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); } this.lower = lower; this.upper = upper; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); } this.upper = upper; solverAbsoluteAccuracy = inverseCumAccuracy;
+SDL_3:52:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); } this.lower = lower; this.upper = upper; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); } this.lower = lower; solverAbsoluteAccuracy = inverseCumAccuracy;
+SDL_4:52:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); } this.lower = lower; this.upper = upper; solverAbsoluteAccuracy = inverseCumAccuracy;  =>   if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); } this.lower = lower; this.upper = upper;
+SDL_5:48:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false );  =>  
+SDL_6:50:UniformRealDistribution(org.apache.commons.math3.random.RandomGenerator,double,double,double): if (lower >= upper) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); }  =>   if (true) {     throw new org.apache.commons.math3.exception.NumberIsTooLargeException( LocalizedFormats.LOWER_BOUND_NOT_BELOW_UPPER_BOUND, lower, upper, false ); }
+SDL_7:58:double_density(double): if (x < lower || x > upper) {     return 0.0; } return 1 / (upper - lower);  =>   return 1 / (upper - lower);
+SDL_8:60:double_density(double): if (x < lower || x > upper) {     return 0.0; }  =>   if (true) {     return 0.0; }
+SDL_9:59:double_density(double): return 0.0;  =>   return 0;
+SDL_10:61:double_density(double): return 1 / (upper - lower);  =>   return 0;
+SDL_11:69:double_cumulativeProbability(double): if (x <= lower) {     return 0; } if (x >= upper) {     return 1; } return (x - lower) / (upper - lower);  =>   if (x >= upper) {     return 1; } return (x - lower) / (upper - lower);
+SDL_12:69:double_cumulativeProbability(double): if (x <= lower) {     return 0; } if (x >= upper) {     return 1; } return (x - lower) / (upper - lower);  =>   if (x <= lower) {     return 0; } return (x - lower) / (upper - lower);
+SDL_13:68:double_cumulativeProbability(double): if (x <= lower) {     return 0; }  =>   if (true) {     return 0; }
+SDL_14:71:double_cumulativeProbability(double): if (x >= upper) {     return 1; }  =>   if (true) {     return 1; }
+SDL_15:70:double_cumulativeProbability(double): return 1;  =>   return 0;
+SDL_16:72:double_cumulativeProbability(double): return (x - lower) / (upper - lower);  =>   return 0;
+SDL_17:77:double_getSolverAbsoluteAccuracy(): return solverAbsoluteAccuracy;  =>   return 0;
+SDL_18:82:double_getNumericalMean(): return 0.5 * (lower + upper);  =>   return 0;
+SDL_19:88:double_getNumericalVariance(): return ul * ul / 12;  =>   return 0;
+SDL_20:93:double_getSupportLowerBound(): return lower;  =>   return 0;
+SDL_21:98:double_getSupportUpperBound(): return upper;  =>   return 0;
+SDL_22:103:boolean_isSupportLowerBoundInclusive(): return true;  =>   return false;
+SDL_23:108:boolean_isSupportUpperBoundInclusive(): return false;  =>   return true;
+SDL_24:113:boolean_isSupportConnected(): return true;  =>   return false;
+SDL_25:119:double_sample(): return u * upper + (1 - u) * lower;  =>   return 0;
